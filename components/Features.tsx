@@ -19,9 +19,9 @@ const Features = () => {
   const currentFeature = featureList[activeIndex];
 
   return (
-    <section className="w-full py-12 sm:py-16">
-      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 font-sans text-gray-800">
-        <nav className="mb-8 border-b border-gray-100 pb-2">
+    <section className="w-full py-12 sm:py-16 bg-white">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 font-sans text-slate-900">
+        <nav className="mb-8 border-b border-slate-100 pb-2">
           <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 sm:gap-x-12">
             {featureList.map((feature, index) => (
               <li
@@ -30,7 +30,7 @@ const Features = () => {
                 className={`
                   flex items-center cursor-pointer pb-2
                   text-base sm:text-lg font-medium
-                  ${index === activeIndex ? 'text-blue-600 border-b-4 border-blue-600' : 'text-gray-500'}
+                  ${index === activeIndex ? 'text-blue-600 border-b-4 border-blue-600' : 'text-slate-500'}
                   transition-all duration-300 ease-in-out
                 `}
               >
@@ -41,7 +41,7 @@ const Features = () => {
           </ul>
         </nav>
 
-        <div className="mx-auto mt-4 w-full max-w-5xl overflow-hidden rounded-xl shadow-2xl aspect-video bg-slate-100">
+        <div className="mx-auto mt-4 w-full max-w-5xl overflow-hidden rounded-xl shadow-2xl aspect-video bg-slate-50 border border-slate-100">
           <img
             src={currentFeature.image}
             alt={`${currentFeature.name} feature view`}
