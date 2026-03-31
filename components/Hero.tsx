@@ -33,10 +33,10 @@ const ModernHero = () => {
         }`}>
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
+            {/* <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
               <Monitor size={20} />
-            </div>
-            <span className="font-bold text-xl tracking-tight uppercase">BestX <span className="font-light text-slate-300">Software</span></span>
+            </div> */}
+            <img src="/assets/images/company_logo180.png" alt="Keylogger Logo" className="h-10 w-auto" />
           </div>
 
           {/* Desktop Nav */}
