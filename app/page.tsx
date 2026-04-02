@@ -4,6 +4,7 @@ import MainFeatures from "@/components/MainFeatures";
 import WhatCustomersSay from "@/components/WhatCustomersSay";
 import Footer from "@/components/Footer";
 
+
 export default function Home() {
   return (
     <div className="w-full min-h-screen overflow-x-hidden">

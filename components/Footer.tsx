@@ -1,11 +1,8 @@
 import React from 'react';
 import {
-  ShieldCheck,
   Globe,
   MessageCircle,
   GitBranch,
-  Mail,
-  ArrowRight,
   Lock,
   ChevronRight
 } from 'lucide-react';
@@ -21,9 +18,9 @@ const ModernDarkFooter = () => {
   };
 
   return (
-    <footer className="relative bg-[#050608] text-slate-400 pt-24 pb-12 overflow-hidden font-sans">
+    <footer className="relative bg-slate-900 text-slate-400 pt-24 pb-12 overflow-hidden font-sans">
       {/* Aesthetic Background Elements */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-indigo-600/10 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-emerald-500/5 blur-[100px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -69,7 +66,7 @@ const ModernDarkFooter = () => {
             </p>
             <div className="flex gap-4">
               {[Globe, MessageCircle, GitBranch].map((Icon, i) => (
-                <a key={i} href="#" className="p-2.5 rounded-lg border border-white/5 bg-white/5 hover:bg-indigo-600/10 hover:border-indigo-600/30 hover:text-indigo-400 transition-all">
+                <a key={i} href="#" className="p-2.5 rounded-lg border border-white/5 bg-white/5 hover:bg-blue-500/10 hover:border-blue-500/30 hover:text-blue-400 transition-all">
                   <Icon size={18} />
                 </a>
               ))}
@@ -85,7 +82,7 @@ const ModernDarkFooter = () => {
                   <li key={link}>
                     <a href="#" className="text-sm text-slate-500 hover:text-white transition-colors flex items-center gap-1 group">
                       {link}
-                      <ChevronRight size={12} className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-indigo-500" />
+                      <ChevronRight size={12} className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-blue-500" />
                     </a>
                   </li>
                 ))}
