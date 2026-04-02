@@ -6,6 +6,7 @@ import {
   Users, Clock, Lock, Shield, Mail, Database, Trash2, EyeOff,
   Power, UserCheck, ShieldAlert, Hourglass, GlobeLock, Ban
 } from 'lucide-react';
+import Navbar from '@/components/layout/Navbar';
 
 type FeatureItemProps = {
   icon: any;
@@ -14,6 +15,8 @@ type FeatureItemProps = {
 
 const FeatureItem = ({ icon: Icon, text }: FeatureItemProps) => (
   <div className="flex items-center gap-4 p-3 rounded-xl transition-all duration-300 hover:bg-white/60 hover:shadow-md group">
+
+
 
     {/* Icon */}
     <div className="p-2 rounded-lg bg-gradient-to-br from-indigo-500/10 to-purple-500/10 group-hover:from-blue-500 group-hover:to-blue-500 transition-all">
@@ -60,47 +63,52 @@ const KeyloggerFeatures = () => {
   ];
 
   return (
-    <section className="relative py-20 px-4 bg-gradient-to-br from-gray-50 to-gray-100">
+    <>
+      <Navbar />
+      <section className="relative py-20 pt-32 px-4 bg-gradient-to-br from-gray-50 to-gray-100">
 
-      {/* Header */}
-      <div className="max-w-6xl mx-auto text-center mb-14">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-          Powerful Keylogger Features
-        </h2>
-        <p className="text-lg text-gray-500 max-w-xl mx-auto">
-          Everything you need for advanced monitoring with a clean and modern experience.
-        </p>
-      </div>
 
-      {/* Card */}
-      <div className="max-w-6xl mx-auto backdrop-blur-xl bg-white/70 border border-white/40 shadow-xl rounded-3xl p-8 md:p-14">
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-          {/* Column 1 */}
-          <div className="space-y-3">
-            {column1.map((item, index) => (
-              <FeatureItem key={index} icon={item.icon} text={item.text} />
-            ))}
-          </div>
-
-          {/* Column 2 */}
-          <div className="space-y-3">
-            {column2.map((item, index) => (
-              <FeatureItem key={index} icon={item.icon} text={item.text} />
-            ))}
-          </div>
-
-          {/* Column 3 */}
-          <div className="space-y-3">
-            {column3.map((item, index) => (
-              <FeatureItem key={index} icon={item.icon} text={item.text} />
-            ))}
-          </div>
-
+        {/* Header */}
+        <div className="max-w-6xl mx-auto text-center mb-14">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Powerful Keylogger Features
+          </h2>
+          <p className="text-lg text-gray-500 max-w-xl mx-auto">
+            Everything you need for advanced monitoring with a clean and modern experience.
+          </p>
         </div>
-      </div>
-    </section>
+
+        {/* Card */}
+        <div className="max-w-6xl mx-auto backdrop-blur-xl bg-white/70 border border-white/40 shadow-xl rounded-3xl p-8 md:p-14">
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            {/* Column 1 */}
+            <div className="space-y-3">
+              {column1.map((item, index) => (
+                <FeatureItem key={index} icon={item.icon} text={item.text} />
+              ))}
+            </div>
+
+            {/* Column 2 */}
+            <div className="space-y-3">
+              {column2.map((item, index) => (
+                <FeatureItem key={index} icon={item.icon} text={item.text} />
+              ))}
+            </div>
+
+            {/* Column 3 */}
+            <div className="space-y-3">
+              {column3.map((item, index) => (
+                <FeatureItem key={index} icon={item.icon} text={item.text} />
+              ))}
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 

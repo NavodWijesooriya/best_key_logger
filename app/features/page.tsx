@@ -1,13 +1,14 @@
 import React from 'react'
 import Features from '@/components/features/Features'
-import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/Footer'
+import FeaturesCard from '@/components/features/Featurescard'
 
 const page = () => {
   return (
     <div>
-      <Navbar />
+
       <Features />
+      <FeaturesCard />
       <Footer />
 
     </div>
