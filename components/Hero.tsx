@@ -10,7 +10,7 @@ const ModernHero = () => {
     <div>
       <Navbar />
 
-      <div className="relative min-h-screen w-full bg-[#050608] text-slate-300 font-sans overflow-hidden">
+      <div className="relative min-h-screen w-full bg-[#050608] text-slate-300 font-sans overflow-hidden pt-24 md:pt-28">
 
 
 
@@ -29,7 +29,7 @@ const ModernHero = () => {
         <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-cyan-500/5 blur-[100px] rounded-full pointer-events-none" />
 
         {/* Hero Content */}
-        <main className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-6">
+        <main className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-6rem)] text-center px-6">
           <div className="max-w-4xl mx-auto">
 
             <div className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wide text-indigo-300 uppercase bg-indigo-500/10 rounded-full border border-indigo-500/20">
