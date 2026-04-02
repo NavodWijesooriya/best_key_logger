@@ -64,6 +64,13 @@ const BestFreeKeyloggerUI = () => {
               <p className="text-slate-500 text-sm leading-relaxed mb-8">
                 Record all keystrokes, internet activity, and clipboard usage. Seamlessly captures screenshots at custom intervals for a complete visual audit trail.
               </p>
+              <div className="mb-8 overflow-hidden rounded-xl border border-slate-200">
+                <img
+                  src="/assets/images/best-free-keylogger-applications.png"
+                  alt="Total Visibility preview"
+                  className="h-40 w-full object-cover"
+                />
+              </div>
               <ul className="space-y-3">
                 {['Keystrokes', 'Websites', 'Local Apps'].map((t) => (
                   <li key={t} className="flex items-center text-xs font-bold text-slate-400">
@@ -84,6 +91,13 @@ const BestFreeKeyloggerUI = () => {
               <p className="text-slate-400 text-sm leading-relaxed mb-6">
                 No more digging through raw data. Our "Smart-Read" engine formats keystrokes into human-readable conversations.
               </p>
+              <div className="mb-6 overflow-hidden rounded-xl border border-slate-700">
+                <img
+                  src="/assets/images/best-free-keylogger-applications (1).png"
+                  alt="Smart-Read Intelligence preview"
+                  className="h-40 w-full object-cover"
+                />
+              </div>
 
               {/* Report Preview UI */}
               <div className="mt-auto bg-slate-800/50 rounded-xl p-4 border border-slate-700">
@@ -114,6 +128,14 @@ const BestFreeKeyloggerUI = () => {
               Get logs delivered directly to your inbox, FTP server, or local network. Automatic USB sync available for offline environments.
             </p>
 
+            <div className="mb-8 overflow-hidden rounded-xl border border-slate-200">
+              <img
+                src="/assets/images/best-free-keylogger-applications (2).png"
+                alt="Remote Delivery preview"
+                className="h-40 w-full object-cover"
+              />
+            </div>
+
             <div className="grid grid-cols-2 gap-3">
               {['Email', 'FTP', 'LAN', 'USB'].map((method) => (
                 <div key={method} className="flex items-center p-2 bg-slate-50 rounded-lg text-[10px] font-bold text-slate-600 border border-slate-100">
@@ -124,6 +146,83 @@ const BestFreeKeyloggerUI = () => {
 
             <button className="mt-8 flex items-center text-blue-600 font-bold text-sm group-hover:translate-x-2 transition-transform">
               Configure SMTP <ArrowRight size={16} className="ml-2" />
+            </button>
+          </div>
+
+          {/* Card 4: Stealth Mode */}
+          <div className="relative group bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden">
+            <div className="w-12 h-12 bg-violet-100 rounded-2xl flex items-center justify-center text-violet-600 mb-6">
+              <EyeOff size={24} />
+            </div>
+            <h3 className="text-2xl font-bold mb-4 text-slate-900">Stealth Operation</h3>
+            <p className="text-slate-500 text-sm leading-relaxed mb-8">
+              Runs invisibly in the background with secure startup behavior, helping ensure consistent monitoring without interrupting daily workflow.
+            </p>
+
+            <div className="mb-8 overflow-hidden rounded-xl border border-slate-200">
+              <img
+                src="/assets/images/best-free-keylogger-applications (3).png"
+                alt="Stealth Operation preview"
+                className="h-40 w-full object-cover"
+              />
+            </div>
+
+            <div className="grid grid-cols-2 gap-3">
+              {['Hidden UI', 'Silent Start', 'Auto Run', 'Low Profile'].map((mode) => (
+                <div key={mode} className="flex items-center p-2 bg-slate-50 rounded-lg text-[10px] font-bold text-slate-600 border border-slate-100">
+                  <Lock size={12} className="mr-2 text-violet-500" /> {mode}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Card 5: Timeline Tracking */}
+          <div className="relative group bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden">
+            <div className="w-12 h-12 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600 mb-6">
+              <Calendar size={24} />
+            </div>
+            <h3 className="text-2xl font-bold mb-4 text-slate-900">Timeline Insights</h3>
+            <p className="text-slate-500 text-sm leading-relaxed mb-8">
+              Review activity in chronological order with clear timestamps so you can quickly reconstruct events and identify key moments.
+            </p>
+
+            <div className="mb-8 overflow-hidden rounded-xl border border-slate-200">
+              <img
+                src="/assets/images/best-free-keylogger-applications (4).png"
+                alt="Timeline Insights preview"
+                className="h-40 w-full object-cover"
+              />
+            </div>
+
+            <ul className="space-y-3">
+              {['Daily Logs', 'Exact Time', 'Session View'].map((item) => (
+                <li key={item} className="flex items-center text-xs font-bold text-slate-400">
+                  <div className="w-1.5 h-1.5 rounded-full bg-amber-500 mr-2" /> {item.toUpperCase()}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Card 6: Secure Storage */}
+          <div className="relative group bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden">
+            <div className="w-12 h-12 bg-cyan-100 rounded-2xl flex items-center justify-center text-cyan-600 mb-6">
+              <HardDrive size={24} />
+            </div>
+            <h3 className="text-2xl font-bold mb-4 text-slate-900">Secure Archive</h3>
+            <p className="text-slate-500 text-sm leading-relaxed mb-8">
+              Store captured data locally with organized report history and simple export options for audits, reviews, and long-term tracking.
+            </p>
+
+            <div className="mb-8 overflow-hidden rounded-xl border border-slate-200">
+              <img
+                src="/assets/images/best-free-keylogger-applications.png"
+                alt="Secure Archive preview"
+                className="h-40 w-full object-cover"
+              />
+            </div>
+
+            <button className="mt-auto flex items-center text-blue-600 font-bold text-sm group-hover:translate-x-2 transition-transform">
+              Open Reports <ArrowRight size={16} className="ml-2" />
             </button>
           </div>
 
