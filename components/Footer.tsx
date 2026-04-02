@@ -29,7 +29,7 @@ const ModernDarkFooter = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
 
         {/* Newsletter / "The Hook" Section */}
-        <div className="relative overflow-hidden rounded-[2rem] border border-white/5 bg-gradient-to-b from-slate-900/50 to-slate-950/50 p-8 md:p-12 mb-20 backdrop-blur-xl">
+        {/* <div className="relative overflow-hidden rounded-[2rem] border border-white/5 bg-gradient-to-b from-slate-900/50 to-slate-950/50 p-8 md:p-12 mb-20 backdrop-blur-xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
@@ -54,19 +54,15 @@ const ModernDarkFooter = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Main Grid */}
         <div className="grid grid-cols-2 lg:grid-cols-6 gap-12 mb-20">
           {/* Brand Column */}
           <div className="col-span-2">
             <div className="flex items-center gap-2 mb-6">
-              <div className="bg-gradient-to-br from-indigo-500 to-purple-600 p-2 rounded-xl shadow-inner">
-                <ShieldCheck className="text-white" size={24} />
-              </div>
-              <span className="text-xl font-bold tracking-tight text-white">
-                Bestx<span className="text-indigo-500">.</span>io
-              </span>
+
+              <img src="/assets/images/company_logo180.png" alt="Keylogger Logo" className="h-10 w-auto" />
             </div>
             <p className="text-sm leading-relaxed text-slate-500 mb-8 max-w-xs">
               Next-generation monitoring architecture. Built for the modern web with security at its core.
