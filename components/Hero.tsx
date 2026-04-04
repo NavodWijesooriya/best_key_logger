@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Monitor, Download, ChevronRight, Menu, X } from 'lucide-react';
+import Navbar from '@/components/layout/Navbar';
 
 const ModernHero = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,35 +29,7 @@ const ModernHero = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/40 to-slate-900"></div>
       </div>
 
-      {/* Navbar */}
-      <nav className={`fixed w-full z-50 transition-all duration-300 px-6 py-4 ${isScrolled ? 'bg-slate-900/80 backdrop-blur-md shadow-lg' : 'bg-transparent'
-        }`}>
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            {/* <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
-              <Monitor size={20} />
-            </div> */}
-            <img src="/assets/images/company_logo180.png" alt="Keylogger Logo" className="h-10 w-auto" />
-          </div>
-
-          {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium">
-            {['Home', 'Features', 'Buy now', 'Support', 'Download', 'Blog'].map((item) => (
-              <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-blue-400 transition-colors">
-                {item}
-              </a>
-            ))}
-            <button className="bg-white/10 hover:bg-white/20 px-3 py-1 rounded-md border border-white/20 transition-all">
-              EN ▾
-            </button>
-          </div>
-
-          {/* Mobile Toggle */}
-          <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-            {mobileMenuOpen ? <X /> : <Menu />}
-          </button>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero Content */}
       <main className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-6 pt-20">

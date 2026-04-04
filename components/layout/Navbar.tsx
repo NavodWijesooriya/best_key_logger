@@ -39,7 +39,7 @@ const Navbar = () => {
           {[
             { name: 'Home', path: '/' },
             { name: 'Features', path: '/features' },
-            { name: 'Buy now', path: '/buy' },
+            { name: 'Buy now', path: '/buy_now' },
             { name: 'Support', path: '/support' },
             { name: 'Download', path: '/download' },
             { name: 'Blog', path: '/blog' },
@@ -73,7 +73,7 @@ const Navbar = () => {
           {[
             { name: 'Home', path: '/' },
             { name: 'Features', path: '/features' },
-            { name: 'Buy now', path: '/buy' },
+            { name: 'Buy now', path: '/buy_now  ' },
             { name: 'Support', path: '/support' },
             { name: 'Download', path: '/download' },
             { name: 'Blog', path: '/blog' },
