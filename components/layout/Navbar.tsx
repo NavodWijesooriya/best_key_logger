@@ -35,7 +35,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8 text-sm font-medium">
+        <div className="hidden md:flex items-center gap-8 text-sm font-semibold">
           {[
             { name: 'Home', path: '/' },
             { name: 'Features', path: '/features' },
@@ -47,7 +47,7 @@ const Navbar = () => {
             <Link
               key={item.name}
               href={item.path}
-              className="text-slate-400 hover:text-white transition-colors"
+              className="text-slate-400  transition-colors"
             >
               {item.name}
             </Link>
