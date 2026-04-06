@@ -71,13 +71,7 @@ const BestFreeKeyloggerUI = () => {
                   className="h-40 w-full object-cover"
                 />
               </div>
-              {/* <ul className="space-y-3">
-                {['Keystrokes', 'Websites', 'Local Apps'].map((t) => (
-                  <li key={t} className="flex items-center text-xs font-bold text-slate-400">
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2" /> {t.toUpperCase()}
-                  </li>
-                ))}
-              </ul> */}
+
             </div>
           </div>
 
@@ -99,22 +93,7 @@ const BestFreeKeyloggerUI = () => {
                 />
               </div>
 
-              {/* Report Preview UI */}
-              {/* <div className="mt-auto bg-slate-800/50 rounded-xl p-4 border border-slate-700">
-                <div className="flex items-center justify-between mb-3 border-b border-slate-700 pb-2">
-                  <span className="text-[10px] text-indigo-400 font-mono">LATEST_LOG.DAT</span>
-                  <div className="flex gap-1">
-                    <div className="w-2 h-2 rounded-full bg-red-500" />
-                    <div className="w-2 h-2 rounded-full bg-amber-500" />
-                    <div className="w-2 h-2 rounded-full bg-green-500" />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <div className="h-2 w-3/4 bg-slate-700 rounded" />
-                  <div className="h-2 w-1/2 bg-slate-700 rounded" />
-                  <div className="h-2 w-2/3 bg-indigo-500/30 rounded" />
-                </div>
-              </div> */}
+
             </div>
           </div>
 
@@ -136,17 +115,7 @@ const BestFreeKeyloggerUI = () => {
               />
             </div>
 
-            {/* <div className="grid grid-cols-2 gap-3">
-              {['Email', 'FTP', 'LAN', 'USB'].map((method) => (
-                <div key={method} className="flex items-center p-2 bg-slate-50 rounded-lg text-[10px] font-bold text-slate-600 border border-slate-100">
-                  <Mail size={12} className="mr-2 text-emerald-500" /> {method}
-                </div>
-              ))}
-            </div> */}
 
-            {/* <button className="mt-8 flex items-center text-blue-600 font-bold text-sm group-hover:translate-x-2 transition-transform">
-              Configure SMTP <ArrowRight size={16} className="ml-2" />
-            </button> */}
           </div>
 
           {/* Card 4: Stealth Mode */}
@@ -172,13 +141,7 @@ const BestFreeKeyloggerUI = () => {
               />
             </div>
 
-            {/* <div className="grid grid-cols-2 gap-3">
-              {['Hidden UI', 'Silent Start', 'Auto Run', 'Low Profile'].map((mode) => (
-                <div key={mode} className="flex items-center p-2 bg-slate-50 rounded-lg text-[10px] font-bold text-slate-600 border border-slate-100">
-                  <Lock size={12} className="mr-2 text-violet-500" /> {mode}
-                </div>
-              ))}
-            </div> */}
+
           </div>
 
           {/* Card 5: Timeline Tracking */}
@@ -199,13 +162,7 @@ const BestFreeKeyloggerUI = () => {
               />
             </div>
 
-            {/* <ul className="space-y-3">
-              {['Daily Logs', 'Exact Time', 'Session View'].map((item) => (
-                <li key={item} className="flex items-center text-xs font-bold text-slate-400">
-                  <div className="w-1.5 h-1.5 rounded-full bg-amber-500 mr-2" /> {item.toUpperCase()}
-                </li>
-              ))}
-            </ul> */}
+
           </div>
 
           {/* Card 6: Secure Storage */}
@@ -225,10 +182,7 @@ const BestFreeKeyloggerUI = () => {
                 className="h-40 w-full object-cover"
               />
             </div>
-            {/* 
-            <button className="mt-auto flex items-center text-blue-600 font-bold text-sm group-hover:translate-x-2 transition-transform">
-              Open Reports <ArrowRight size={16} className="ml-2" />
-            </button> */}
+
           </div>
 
         </div>

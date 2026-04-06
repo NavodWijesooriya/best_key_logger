@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, Users, Scale, Star, Quote, CheckCircle2, Award, Shield } from 'lucide-react';
+import { ShieldCheck, Users, Scale, Star, Quote, CheckCircle2 } from 'lucide-react';
 
 const ModernKeyloggerUI = () => {
   const targetAudience = [
@@ -22,19 +22,10 @@ const ModernKeyloggerUI = () => {
     }
   ];
 
-  // Placeholder for the award logos from the image
-  const awards = [
-    { name: "Supreme Software 2016", icon: <Award size={32} /> },
-    { name: "SC Magazine", label: "SC" },
-    { name: "Info Security", label: "INFOSEC" },
-    { name: "SourceForge", label: "SOURCEFORGE" },
-    { name: "Editor's Choice", label: "EDITOR" },
-    { name: "Reader's Choice", label: "READERS" },
-    { name: "100% Clean", icon: <Shield size={32} /> }
-  ];
+
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100 p-6 md:p-12">
+    <section className="bg-white text-slate-900 font-sans selection:bg-blue-100 py-16 md:py-20 px-6 md:px-10">
       <div className="max-w-6xl mx-auto">
 
         <div className="text-center mb-16">
@@ -49,10 +40,10 @@ const ModernKeyloggerUI = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 
           {/* Sidebar Area */}
-          <div className="lg:col-span-4 space-y-6">
+          <div className="lg:col-span-5 space-y-6">
 
             {/* Audience Card */}
             <div className="bg-white rounded-3xl p-8 shadow-sm border border-slate-200/60 relative overflow-hidden group">
@@ -94,7 +85,7 @@ const ModernKeyloggerUI = () => {
           </div>
 
           {/* Testimonials Area */}
-          <div className="lg:col-span-8 grid grid-cols-1 gap-6">
+          <div className="lg:col-span-7 grid grid-cols-1 gap-6 content-start">
             {testimonials.map((t, i) => (
               <div key={i} className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-slate-200/60 flex flex-col justify-between hover:border-blue-300 transition-all duration-300 group">
                 <div>
@@ -126,43 +117,17 @@ const ModernKeyloggerUI = () => {
           </div>
 
         </div>
-
-        {/* Header Section */}
-        <div className="text-center mt-20 mb-12">
-          <span className="inline-block px-4 py-1.5 mb-4 text-xs font-bold tracking-widest uppercase bg-blue-50 text-blue-600 rounded-full">
-            Industry Recognized
-          </span>
-          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-slate-900 mb-4 max-w-3xl mx-auto">
-            Trusted by thousands of users worldwide.
-          </h2>
-          <p className="text-slate-500 max-w-3xl mx-auto text-lg leading-relaxed">
-            Consistently rated for reliability, security, and ease of use by global users and review platforms.
-          </p>
+        <div className="mt-14 border-t border-slate-100 pt-10 flex flex-wrap items-center justify-center gap-6 md:gap-12">
+          <img src="/assets/awards/awardlogo1.png" alt="Awards" className="h-12 w-auto object-contain" />
+          <img src="/assets/awards/awardlogo2.png" alt="Reviews" className="h-12 w-auto object-contain" />
+          <img src="/assets/awards/awardlogo3.png" alt="Press" className="h-12 w-auto object-contain" />
+          <img src="/assets/awards/awardlogo6.png" alt="Verified" className="h-12 w-auto object-contain" />
+          <img src="/assets/awards/awardlogo7.png" alt="Secure" className="h-12 w-auto object-contain" />
+          <img src="/assets/awards/img0027.png" alt="Privacy" className="h-12 w-auto object-contain" />
+          <img src="/assets/awards/img0028.png" alt="Compliance" className="h-12 w-auto object-contain" />
         </div>
-
-        <div className="mb-16 rounded-3xl border border-slate-200/80 bg-white/80 p-4 md:p-6 shadow-sm backdrop-blur-sm">
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-3 md:gap-4">
-            {awards.map((award, idx) => (
-              <div
-                key={idx}
-                className="group w-full min-h-28 rounded-2xl border border-slate-200/70 bg-white p-4 flex flex-col items-center justify-center text-center transition-all duration-300 hover:-translate-y-1 hover:border-blue-300 hover:shadow-md"
-              >
-                <div className="mb-2 text-slate-600 transition-colors group-hover:text-blue-600">
-                  {award.icon ? (
-                    award.icon
-                  ) : (
-                    <span className="font-black text-sm md:text-base tracking-tight text-slate-700">{award.label}</span>
-                  )}
-                </div>
-                <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-slate-400">Awarded</span>
-                <span className="mt-1 text-[11px] font-medium text-slate-500 leading-tight">{award.name}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
       </div>
-    </div>
+    </section>
   );
 };
 
