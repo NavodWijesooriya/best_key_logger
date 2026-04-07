@@ -21,21 +21,37 @@ const KeyloggerDownloadPage = () => {
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-3 gap-10 items-stretch">
 
         {/* Branding Card */}
-        <div className="bg-white rounded-2xl shadow-sm p-6 flex flex-col items-center md:items-start border border-gray-100 hover:shadow-md transition">
+        <div className="bg-white p-6 inline-flex flex-col items-center">
+          {/* Icon Container with Overlap */}
           <div className="relative mb-6">
-            <div className="w-28 h-28 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center shadow-md">
-              <span className="text-white text-5xl">🔑</span>
-            </div>
+            {/* Main Blue Key Icon */}
+            <img
+              src="/assets/download/img0026.png"
+              alt="Keylogger Icon"
+              className="w-24 h-24 object-contain"
+            />
 
-            <div className="absolute -bottom-3 -right-3 bg-white border border-gray-200 rounded-lg px-2 py-1 shadow-sm text-[10px] text-gray-500 font-medium">
-              Windows 11
+            {/* Windows 11 Compatibility Badge (Overlaid) */}
+            <div className="absolute -bottom-2 -right-2 bg-white p-0.5 shadow-sm border border-gray-100 rounded-sm">
+              <img
+                src="/assets/download/logo.png"
+                alt="Windows 11 Compatible"
+                className="w-12 h-auto"
+              />
             </div>
           </div>
 
-          <div className="text-sm text-gray-500 space-y-1 text-center md:text-left">
-            <p><span className="font-medium text-gray-700">Version:</span> 8.2.1</p>
-            <p><span className="font-medium text-gray-700">Released:</span> 2025-07-15</p>
-            <p><span className="font-medium text-gray-700">Size:</span> 6.6 MB</p>
+          {/* Metadata Text */}
+          <div className="text-[15px] text-gray-600 leading-tight space-y-0.5 text-center">
+            <p>
+              Version: <span className="text-gray-500">8.2.1</span>
+            </p>
+            <p>
+              Released: <span className="text-gray-500">2025-07-15</span>
+            </p>
+            <p>
+              File-size: <span className="text-gray-500">6.6 MB</span>
+            </p>
           </div>
         </div>
 
