@@ -8,11 +8,14 @@ const KeyloggerDownloadPage = () => {
     <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-6 font-sans text-gray-700 pt-24">
 
       {/* Header */}
-      <header className="text-center mb-14 max-w-2xl">
+      <header className="max-w-6xl mx-auto text-center mb-20">
+        <div className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-blue-600 uppercase bg-blue-50 rounded-full">
+          Download Center
+        </div>
         <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4 font-family-roboto">
           Download Best Free Keylogger
         </h2>
-        <p className="text-lg text-gray-500">
+        <p className="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">
           Simple, secure, and lightweight monitoring software.
         </p>
       </header>

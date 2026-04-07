@@ -8,12 +8,10 @@ import {
   Send,
   LifeBuoy,
   MessageSquare,
-  Star,
   Zap,
   ArrowRight,
   Award
 } from 'lucide-react';
-import Navbar from '@/components/layout/Navbar';
 
 const ProductPage = () => {
   const pricingFeatures = [
@@ -63,11 +61,19 @@ const ProductPage = () => {
   ];
 
   return (
-    <div className="bg-white min-h-screen py-12 px-4 flex flex-col items-center gap-16 font-sans pt-24">
+    <div className="relative py-24 px-4 md:px-6 bg-linear-to-br from-gray-50 to-gray-100 min-h-screen flex flex-col items-center gap-16 font-sans">
 
-      <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4 font-family-roboto">
-        Don't have Pro version
-      </h2>
+      <div className="max-w-6xl mx-auto text-center">
+        <div className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-blue-600 uppercase bg-blue-50 rounded-full">
+          Pricing Plans
+        </div>
+        <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4 font-family-roboto">
+          Don&apos;t have Pro version
+        </h2>
+        <p className="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">
+          Compare Lite and Pro editions and choose the plan that fits your monitoring needs.
+        </p>
+      </div>
 
       {/* 1. Pricing Table Section */}
       <div className="relative w-full max-w-5xl">
