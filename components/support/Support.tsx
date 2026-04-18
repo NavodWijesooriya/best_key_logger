@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { HelpCircle, FileText, MessageCircle, ChevronRight, Headphones, BookOpen, Mail } from 'lucide-react';
 
 interface SupportCardProps {
@@ -6,11 +7,12 @@ interface SupportCardProps {
   title: string;
   description: string;
   badge?: string;
+  path: string;
 }
 
-const SupportCard: React.FC<SupportCardProps> = ({ icon, title, description, badge }) => {
+const SupportCard: React.FC<SupportCardProps> = ({ icon, title, description, badge, path }) => {
   return (
-    <div className="group relative flex flex-col items-center p-8 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer border border-gray-100 hover:border-gray-200 hover:-translate-y-1">
+    <Link href={path} className="group relative flex flex-col items-center p-8 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-gray-200 hover:-translate-y-1">
       {/* Badge */}
       {badge && (
         <div className="absolute -top-3 left-6">
@@ -43,7 +45,7 @@ const SupportCard: React.FC<SupportCardProps> = ({ icon, title, description, bad
         <span>Learn More</span>
         <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
       </div>
-    </div>
+    </Link>
   );
 };
 
@@ -81,23 +83,28 @@ export const SupportCenter: React.FC = () => {
           title="FAQs"
           description="Find answers to frequently asked questions and quick solutions to common issues"
           badge="Most Popular"
+          path="/support/faq"
+
         />
+
 
         <SupportCard
           icon={<FileText size={64} strokeWidth={1.5} />}
           title="Documentation"
           description="Technical documentation for Best Free Keylogger with detailed guides and API references"
+          path="/download"
         />
 
         <SupportCard
           icon={<MessageCircle size={64} strokeWidth={1.5} />}
           title="Contact Us"
           description="Get personalized help from our expert support team via email or live chat"
+          path="/support#contact-support"
         />
       </div>
 
       {/* Additional Support Info */}
-      <div className="text-center max-w-2xl w-full">
+      <div id="contact-support" className="text-center max-w-2xl w-full scroll-mt-32">
         <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
           <div className="flex items-center justify-center gap-2 mb-3">
             <Mail size={18} className="text-slate-600" />
