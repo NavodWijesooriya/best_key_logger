@@ -4,7 +4,22 @@ import React, { useEffect, useMemo, useState } from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/Footer';
 
-type SectionKey = 'installation' | 'unhide' | 'login' | 'user-interface' | 'upgrade-to-pro';
+type SectionKey =
+  | 'installation'
+  | 'unhide'
+  | 'login'
+  | 'user-interface'
+  | 'upgrade-to-pro'
+  | 'security'
+  | 'remove-logs'
+  | 'uninstall'
+  | 'advanced';
+
+type SectionGroup = {
+  title: string;
+  key: string;
+  items: Array<{ key: SectionKey; label: string }>;
+};
 
 type SectionContent = {
   title: string;
@@ -12,21 +27,88 @@ type SectionContent = {
   content: React.ReactNode;
 };
 
-const SECTIONS: Array<{ key: SectionKey; label: string }> = [
-  { key: 'installation', label: 'Installation' },
-  { key: 'unhide', label: 'Unhide' },
-  { key: 'login', label: 'Login' },
-  { key: 'user-interface', label: 'User Interface' },
-  { key: 'upgrade-to-pro', label: 'Upgrade To Pro' },
+const SECTION_GROUPS: SectionGroup[] = [
+  {
+    title: 'Getting Started',
+    key: 'getting-started',
+    items: [
+      { key: 'installation', label: 'Installation' },
+      { key: 'unhide', label: 'Unhide' },
+      { key: 'login', label: 'Login' },
+      { key: 'user-interface', label: 'User Interface' },
+      { key: 'upgrade-to-pro', label: 'Upgrade To Pro' },
+    ],
+  },
+  {
+    title: 'General Settings',
+    key: 'general-settings',
+    items: [
+      { key: 'security', label: 'Security' },
+      { key: 'remove-logs', label: 'Remove Logs' },
+      { key: 'uninstall', label: 'Uninstall' },
+      { key: 'advanced', label: 'Advanced' },
+    ],
+  },
+
+  {
+    title: 'Monitoring Settings',
+    key: 'monitoring-settings',
+    items: [
+      { key: 'security', label: 'Start/Stop Monitoring' },
+      { key: 'remove-logs', label: 'Schedule Monitoring' },
+      { key: 'uninstall', label: 'Limit Monitoring' },
+      { key: 'advanced', label: 'Screenshot Settings' },
+    ],
+  },
+
+  {
+    title: 'Delivery Settings',
+    key: 'delivery-settings',
+    items: [
+      { key: 'security', label: 'Delivery Methods' },
+      { key: 'remove-logs', label: 'Email Delivery' },
+      { key: 'uninstall', label: 'Lan Delivery' },
+      { key: 'advanced', label: 'FTP Delivery' },
+      { key: 'advanced', label: 'USB Delivery' },
+    ],
+  },
+
+  {
+    title: 'Reports',
+    key: 'reports',
+    items: [
+      { key: 'security', label: 'Load Reports' },
+      { key: 'remove-logs', label: 'import Reports' },
+      { key: 'uninstall', label: 'View Reports' },
+      { key: 'advanced', label: 'Filter Reports' },
+    ],
+  },
+
+  {
+    title: 'Parental Controls',
+    key: 'parental-controls',
+    items: [
+      { key: 'security', label: 'Web Filtering & Blocking' },
+      { key: 'remove-logs', label: 'Application Blocking' },
+      { key: 'uninstall', label: 'Time Limiting' },
+      { key: 'advanced', label: 'Exclusions' },
+    ],
+  },
 ];
+
+const getSectionGroupKey = (sectionKey: SectionKey) =>
+  SECTION_GROUPS.find((group) => group.items.some((item) => item.key === sectionKey))?.key ??
+  SECTION_GROUPS[0].key;
 
 const UpgradeToProPage = () => {
   const [activeSection, setActiveSection] = useState<SectionKey>('upgrade-to-pro');
+  const [openGroup, setOpenGroup] = useState<string>(getSectionGroupKey('upgrade-to-pro'));
 
   useEffect(() => {
     const hash = window.location.hash.replace('#', '') as SectionKey;
-    if (SECTIONS.some((section) => section.key === hash)) {
+    if (SECTION_GROUPS.some((group) => group.items.some((section) => section.key === hash))) {
       setActiveSection(hash);
+      setOpenGroup(getSectionGroupKey(hash));
     }
   }, []);
 
@@ -113,6 +195,46 @@ const UpgradeToProPage = () => {
           </div>
         ),
       },
+      security: {
+        title: 'Security',
+        linkLabel: 'Security',
+        content: (
+          <div className="text-gray-700 leading-relaxed space-y-6">
+            <p>Use the Security page to protect the application with your password and access controls.</p>
+            <p>Choose a strong password and keep it in a secure place so only authorized users can open the app.</p>
+          </div>
+        ),
+      },
+      'remove-logs': {
+        title: 'Remove Logs',
+        linkLabel: 'Remove Logs',
+        content: (
+          <div className="text-gray-700 leading-relaxed space-y-6">
+            <p>Use Remove Logs to clear stored activity records from the dashboard.</p>
+            <p>Confirm the action carefully before deleting logs, because removed data cannot be restored.</p>
+          </div>
+        ),
+      },
+      uninstall: {
+        title: 'Uninstall',
+        linkLabel: 'Uninstall',
+        content: (
+          <div className="text-gray-700 leading-relaxed space-y-6">
+            <p>Open the uninstall instructions if you want to remove the software from your device.</p>
+            <p>Follow the on-screen prompts to complete removal and restart the system if prompted.</p>
+          </div>
+        ),
+      },
+      advanced: {
+        title: 'Advanced',
+        linkLabel: 'Advanced',
+        content: (
+          <div className="text-gray-700 leading-relaxed space-y-6">
+            <p>The Advanced section contains expert options for configuring behavior, privacy, and app preferences.</p>
+            <p>Adjust these settings only if you are familiar with the impact of each option.</p>
+          </div>
+        ),
+      },
     }),
     []
   );
@@ -121,7 +243,12 @@ const UpgradeToProPage = () => {
 
   const handleSectionClick = (section: SectionKey) => {
     setActiveSection(section);
+    setOpenGroup(getSectionGroupKey(section));
     window.history.replaceState(null, '', `#${section}`);
+  };
+
+  const handleGroupClick = (groupKey: string) => {
+    setOpenGroup((current) => (current === groupKey ? '' : groupKey));
   };
 
   return (
@@ -137,29 +264,45 @@ const UpgradeToProPage = () => {
           {/* Sidebar */}
           <aside className="w-64 shrink-0">
             <nav className="space-y-4">
-              <div>
-                <h2 className="font-bold text-gray-800 mb-2">Getting Started</h2>
-                <ul className="space-y-2 text-gray-600 pl-4">
-                  {SECTIONS.map((section) => {
-                    const isActive = activeSection === section.key;
+              {SECTION_GROUPS.map((group) => {
+                const isOpen = openGroup === group.key;
 
-                    return (
-                      <li key={section.key}>
-                        <button
-                          type="button"
-                          onClick={() => handleSectionClick(section.key)}
-                          className={`w-full text-left cursor-pointer transition-colors ${isActive
-                            ? 'text-blue-600 font-bold border-l-2 border-blue-600 pl-2'
-                            : 'hover:text-blue-600 pl-3'
-                            }`}
-                        >
-                          {section.label}
-                        </button>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
+                return (
+                  <div key={group.key}>
+                    <button
+                      type="button"
+                      onClick={() => handleGroupClick(group.key)}
+                      className="font-bold text-gray-800 mb-2 flex items-center justify-between w-full text-left"
+                    >
+                      <span>{group.title}</span>
+                      <span className="text-gray-400 text-sm">{isOpen ? '−' : '+'}</span>
+                    </button>
+
+                    {isOpen && (
+                      <ul className="space-y-2 text-gray-600 pl-4">
+                        {group.items.map((section) => {
+                          const isActive = activeSection === section.key;
+
+                          return (
+                            <li key={section.key}>
+                              <button
+                                type="button"
+                                onClick={() => handleSectionClick(section.key)}
+                                className={`w-full text-left cursor-pointer transition-colors ${isActive
+                                  ? 'text-blue-600 font-bold border-l-2 border-blue-600 pl-2'
+                                  : 'hover:text-blue-600 pl-3'
+                                  }`}
+                              >
+                                {section.label}
+                              </button>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    )}
+                  </div>
+                );
+              })}
             </nav>
           </aside>
 
