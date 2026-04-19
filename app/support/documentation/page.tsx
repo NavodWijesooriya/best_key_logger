@@ -102,13 +102,15 @@ const getSectionGroupKey = (sectionKey: SectionKey) =>
 
 const UpgradeToProPage = () => {
   const [activeSection, setActiveSection] = useState<SectionKey>('upgrade-to-pro');
-  const [openGroup, setOpenGroup] = useState<string>(getSectionGroupKey('upgrade-to-pro'));
+  const [openGroups, setOpenGroups] = useState<string[]>([getSectionGroupKey('upgrade-to-pro')]);
 
   useEffect(() => {
     const hash = window.location.hash.replace('#', '') as SectionKey;
     if (SECTION_GROUPS.some((group) => group.items.some((section) => section.key === hash))) {
       setActiveSection(hash);
-      setOpenGroup(getSectionGroupKey(hash));
+      setOpenGroups((current) =>
+        current.includes(getSectionGroupKey(hash)) ? current : [...current, getSectionGroupKey(hash)]
+      );
     }
   }, []);
 
@@ -243,12 +245,19 @@ const UpgradeToProPage = () => {
 
   const handleSectionClick = (section: SectionKey) => {
     setActiveSection(section);
-    setOpenGroup(getSectionGroupKey(section));
+    setOpenGroups((current) => {
+      const groupKey = getSectionGroupKey(section);
+      return current.includes(groupKey) ? current : [...current, groupKey];
+    });
     window.history.replaceState(null, '', `#${section}`);
   };
 
   const handleGroupClick = (groupKey: string) => {
-    setOpenGroup((current) => (current === groupKey ? '' : groupKey));
+    setOpenGroups((current) =>
+      current.includes(groupKey)
+        ? current.filter((key) => key !== groupKey)
+        : [...current, groupKey]
+    );
   };
 
   return (
@@ -265,7 +274,7 @@ const UpgradeToProPage = () => {
           <aside className="w-64 shrink-0">
             <nav className="space-y-4">
               {SECTION_GROUPS.map((group) => {
-                const isOpen = openGroup === group.key;
+                const isOpen = openGroups.includes(group.key);
 
                 return (
                   <div key={group.key}>
