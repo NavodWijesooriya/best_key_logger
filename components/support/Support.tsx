@@ -92,7 +92,7 @@ export const SupportCenter: React.FC = () => {
           icon={<FileText size={64} strokeWidth={1.5} />}
           title="Documentation"
           description="Technical documentation for Best Free Keylogger with detailed guides and API references"
-          path="/su"
+          path="/support/documentation"
         />
 
         <SupportCard
