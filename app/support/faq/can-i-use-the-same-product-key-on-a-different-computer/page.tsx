@@ -1,9 +1,17 @@
-import React from 'react'
+import FaqAnswerPage from '../_components/FaqAnswerPage';
 
-const page = () => {
+const Page = () => {
   return (
-    <div>page</div>
-  )
-}
+    <FaqAnswerPage
+      title="Can I use the same product key on a different computer?"
+      question="Can one product key be reused across multiple devices?"
+      answer={[
+        'In most cases, a license key is tied to one device unless your plan includes multiple seats.',
+        'If you changed computers, contact support with your order details to request key transfer help.',
+        'This is placeholder licensing text and can be replaced with exact plan terms.'
+      ]}
+    />
+  );
+};
 
-export default page
+export default Page;

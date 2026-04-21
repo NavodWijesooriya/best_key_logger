@@ -1,9 +1,17 @@
-import React from 'react'
+import FaqAnswerPage from '../_components/FaqAnswerPage';
 
-const page = () => {
+const Page = () => {
   return (
-    <div>page</div>
-  )
-}
+    <FaqAnswerPage
+      title="How to set up Email Delivery"
+      question="How can I automatically receive logs by email?"
+      answer={[
+        'Open the delivery settings, enable email reports, and enter a destination inbox.',
+        'Save your SMTP credentials, run a test send, and confirm messages are not blocked by spam filters.',
+        'This is placeholder setup guidance and can be updated with exact screenshots later.'
+      ]}
+    />
+  );
+};
 
-export default page
+export default Page;

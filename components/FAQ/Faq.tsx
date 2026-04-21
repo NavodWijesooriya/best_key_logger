@@ -6,26 +6,26 @@ const FAQPage = () => {
   const productFAQs = [
     { title: "How to reset the login password", path: "/support/faq/how_to_reset_the_login_password" },
     { title: "How to set up Email Delivery", path: "/support/faq/how_to_set_up_email_delivery" },
-    { title: "How to set up FTP Delivery", path: "/support/faq/how_to_set_up_ftp_delivery" },
+    { title: "How to set up FTP Delivery", path: "/support/faq/how-to-set-up-ftp-delivery" },
     { title: "How to unhide Best Free Keylogger", path: "/support/faq/how_to_unhide_best_free_keylogger" },
-    { title: "How to import and view logs", path: "/support/faq/how_to_import_and_view_logs" },
-    { title: "How to uninstall Best Free Keylogger", path: "/support/faq/how_to_uninstall_best_free_keylogger" },
-    { title: "Can I reuse the same product key?", path: "/support/faq/can_i_reuse_the_same_product_key" },
-    { title: "What are the compatible Windows versions?", path: "/support/faq/what_are_the_compatible_windows_versions" },
-    { title: "Can I install Best Free Keylogger on a remote computer?", path: "/support/faq/can_i_install_best_free_keylogger_on_a_remote_computer" },
-    { title: "Is Best Free Keylogger completely undetectable?", path: "/support/faq/is_best_free_keylogger_completely_undetectable" },
-    { title: "Does Best Free Keylogger collect user information?", path: "/support/faq/does_best_free_keylogger_collect_user_information" },
-    { title: "Does BFK work with applications other than web browsers?", path: "/support/faq/does_bfk_work_with_applications_other_than_web_browsers" },
-    { title: "Can I use information recorded with BFK as legal evidence?", path: "/support/faq/can_i_use_information_recorded_with_bfk_as_legal_evidence" },
-    { title: "I cannot find Best Free Keylogger on my computer", path: "/support/faq/i_cannot_find_best_free_keylogger_on_my_computer" }
+    { title: "How to import and view logs", path: "/support/faq/how_toimport_and_view_logs" },
+    { title: "How to load reports", path: "/support/faq/how-to-load-reports" },
+    { title: "Can I reuse the same product key?", path: "/support/faq/can-i-use-the-same-product-key-on-a-different-computer" },
+    { title: "What are the compatible Windows versions?", path: "/support/faq/what-are-the-compatible-windows-versions" },
+    { title: "Can I install Best Free Keylogger on a remote computer?", path: "/support/faq/can-i-install-on-a-remote-computer" },
+    { title: "Is Best Free Keylogger completely undetectable?", path: "/support/faq/is-best-free-keylogger-undetectable" },
+    { title: "Does Best Free Keylogger collect user information?", path: "/support/faq/does-best-free-keylogger-collect-user-information" },
+    { title: "Does BFK work with applications other than web browsers?", path: "/support/faq/does-best-free-keylogger-work-with-applications-other-than-web-browsers" },
+    { title: "Can I use information recorded with BFK as legal evidence?", path: "/support/faq/can-i-use-best-free-keylogger-data-as-legal-evidence" },
+    { title: "I cannot find Best Free Keylogger on my computer", path: "/support/faq/i-cannot-find-best-free-keylogger" }
   ];
 
   const orderingFAQs = [
-    { title: "How to retrieve a lost license key", path: "/support/faq/how_to_retrieve_a_lost_license_key" },
-    { title: "How to buy Best Free Keylogger", path: "/support/faq/how_to_buy_best_free_keylogger" },
-    { title: "How to get the license key", path: "/support/faq/how_to_get_the_license_key" },
-    { title: "How to buy for multiple computers", path: "/support/faq/how_to_buy_for_multiple_computers" },
-    { title: "Are there any recurring charges?", path: "/support/faq/are_there_any_recurring_charges" }
+    { title: "How to retrieve a lost license key", path: "/support/faq/how-to-retrieve-a-lost-licence-key" },
+    { title: "How to buy Best Free Keylogger", path: "/support/faq/how-to-buy-best-free-keylogger" },
+    { title: "How to get the license key", path: "/support/faq/how-to-get-the-license-key" },
+    { title: "How to buy for multiple computers", path: "/support/faq/how-to-buy-best-free-keylogger-for-multiple-computers" },
+    { title: "Are there any recurring charges?", path: "/support/faq/are-there-any-recurring-charges-to-use-best-free-keylogger" }
   ];
 
   const blogPosts = [
