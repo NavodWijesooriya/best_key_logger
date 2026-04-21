@@ -11,7 +11,7 @@ const styles = {
     fontFamily: 'sans-serif',
     maxWidth: '1200px',
     margin: '0 auto',
-    padding: '20px',
+    padding: '104px 20px 40px',
   },
   // --- Hero Section Styles (from image_0.png) ---
   hero: {
@@ -19,7 +19,7 @@ const styles = {
     flexDirection: 'column' as 'column',
     alignItems: 'center',
     textAlign: 'center' as 'center',
-    marginBottom: '60px',
+    marginBottom: '48px',
   },
   title: {
     fontSize: '2.5rem',
