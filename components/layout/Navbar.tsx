@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
+import LanguageSelector from './LanguageSelector';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -53,9 +54,7 @@ const Navbar = () => {
             </Link>
           ))}
 
-          <button className="bg-white/5 hover:bg-white/10 px-3 py-1 rounded-md border border-white/10 text-slate-300 transition-all">
-            EN ▾
-          </button>
+          <LanguageSelector />
         </div>
 
         {/* Mobile Toggle */}
@@ -73,7 +72,7 @@ const Navbar = () => {
           {[
             { name: 'Home', path: '/' },
             { name: 'Features', path: '/features' },
-            { name: 'Buy now', path: '/buy_now  ' },
+            { name: 'Buy now', path: '/buy_now' },
             { name: 'Support', path: '/support' },
             { name: 'Download', path: '/download' },
             { name: 'Blog', path: '/blog' },
@@ -87,6 +86,9 @@ const Navbar = () => {
               {item.name}
             </Link>
           ))}
+          <div className="pt-1">
+            <LanguageSelector />
+          </div>
         </div>
       )}
     </nav>

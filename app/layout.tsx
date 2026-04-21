@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,7 +28,32 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <div id="google_translate_element" className="hidden" />
+        {children}
+        <Script id="google-translate-init" strategy="afterInteractive">
+          {`
+            window.googleTranslateElementInit = function () {
+              if (!window.google || !window.google.translate || !window.google.translate.TranslateElement) {
+                return;
+              }
+
+              new window.google.translate.TranslateElement(
+                {
+                  pageLanguage: 'en',
+                  includedLanguages: 'en,es,de,ru,pl',
+                  autoDisplay: false,
+                },
+                'google_translate_element'
+              );
+            };
+          `}
+        </Script>
+        <Script
+          src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+          strategy="afterInteractive"
+        />
+      </body>
     </html>
   );
 }

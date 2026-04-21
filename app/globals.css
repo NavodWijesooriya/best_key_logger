@@ -24,3 +24,18 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+#google_translate_element {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+
+.goog-te-banner-frame,
+iframe.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
+}
