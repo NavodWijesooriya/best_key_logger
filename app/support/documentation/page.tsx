@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useMemo, useState } from 'react';
+import { FileText, Folder, FolderOpen } from 'lucide-react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/Footer';
 
@@ -283,8 +284,14 @@ const UpgradeToProPage = () => {
                       onClick={() => handleGroupClick(group.key)}
                       className="font-bold text-gray-800 mb-2 flex items-center justify-between w-full text-left"
                     >
-                      <span>{group.title}</span>
-                      <span className="text-gray-400 text-sm">{isOpen ? '−' : '+'}</span>
+                      <span className="flex items-center gap-2">
+                        {isOpen ? (
+                          <FolderOpen size={16} className="text-amber-600" aria-hidden="true" />
+                        ) : (
+                          <Folder size={16} className="text-amber-600" aria-hidden="true" />
+                        )}
+                        <span>{group.title}</span>
+                      </span>
                     </button>
 
                     {isOpen && (
@@ -297,12 +304,13 @@ const UpgradeToProPage = () => {
                               <button
                                 type="button"
                                 onClick={() => handleSectionClick(section.key)}
-                                className={`w-full text-left cursor-pointer transition-colors ${isActive
+                                className={`w-full text-left cursor-pointer transition-colors flex items-center gap-2 ${isActive
                                   ? 'text-blue-600 font-bold border-l-2 border-blue-600 pl-2'
                                   : 'hover:text-blue-600 pl-3'
                                   }`}
                               >
-                                {section.label}
+                                <FileText size={14} aria-hidden="true" />
+                                <span>{section.label}</span>
                               </button>
                             </li>
                           );
