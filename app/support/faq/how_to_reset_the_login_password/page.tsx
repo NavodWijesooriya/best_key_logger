@@ -15,7 +15,7 @@ const PasswordResetHelp: React.FC = () => {
     },
     {
       title: 'How to import and view logs',
-      path: '/support/faq/how_to_import_and_view_logs',
+      path: '/support/faq/how_toimport_and_view_logs',
     },
   ];
 
