@@ -10,17 +10,19 @@ const Navbar = () => {
 
   return (
     <nav
-      className="fixed w-full z-50 transition-all duration-300 px-6 py-4 bg-transparent shadow-md shadow-black/25"
+      className="fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 py-4 bg-transparent shadow-md shadow-black/25"
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
 
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img
-            src="/assets/images/company_logo180.png"
-            alt="Keylogger Logo"
-            className="h-10 w-auto"
-          />
+          <Link href="/" className="flex items-center gap-2">
+            <img
+              src="/assets/images/company_logo180.png"
+              alt="Keylogger Logo"
+              className="h-10 w-auto"
+            />
+          </Link>
         </div>
 
         {/* Desktop Nav */}

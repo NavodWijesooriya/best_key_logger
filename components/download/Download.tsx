@@ -70,7 +70,7 @@ const KeyloggerDownloadPage = () => {
           </div>
 
           <div>
-            <button className="w-full bg-[#38a815] hover:bg-[#2f8f12] text-white flex items-center justify-center gap-3 py-3 rounded-xl text-lg font-semibold shadow-sm transition-all">
+            <button className="w-full bg-emerald-500 hover:bg-emerald-400 text-white flex items-center justify-center gap-3 py-3 rounded-xl text-lg font-semibold shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all">
               <Download className="w-5 h-5" /> Download
             </button>
 
@@ -97,7 +97,7 @@ const KeyloggerDownloadPage = () => {
           </div>
 
           <div>
-            <button className="w-full bg-[#38a815] hover:bg-[#2f8f12] text-white flex items-center justify-center gap-3 py-3 rounded-xl text-lg font-semibold shadow-sm transition-all">
+            <button className="w-full bg-emerald-500 hover:bg-emerald-400 text-white flex items-center justify-center gap-3 py-3 rounded-xl text-lg font-semibold shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all">
               <Download className="w-5 h-5" /> Download
             </button>
 

@@ -61,7 +61,7 @@ const ProductPage = () => {
   ];
 
   return (
-    <div className="relative py-24 px-4 md:px-6 bg-linear-to-br from-gray-50 to-gray-100 min-h-screen flex flex-col items-center gap-16 font-sans">
+    <div className="relative py-16 md:py-20 px-4 md:px-6 bg-linear-to-br from-gray-50 to-gray-100 min-h-screen flex flex-col items-center gap-16 font-sans">
 
       <div className="max-w-6xl mx-auto text-center">
         <div className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-blue-600 uppercase bg-blue-50 rounded-full">
@@ -111,7 +111,7 @@ const ProductPage = () => {
                   </div>
                   <div className="text-lg font-semibold text-gray-700">Pro</div>
                   <div className="text-3xl font-bold text-gray-900 mt-2">$39</div>
-                  <button className="mt-4 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-semibold py-2.5 px-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 text-sm w-full">
+                  <button className="mt-4 bg-emerald-500 hover:bg-emerald-400 text-white font-semibold py-2.5 px-6 rounded-xl shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all duration-200 text-sm w-full">
                     Get Pro
                   </button>
                 </th>
@@ -163,7 +163,7 @@ const ProductPage = () => {
         </div>
 
         {/* Button */}
-        <button className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-bold py-3 px-10 rounded-xl shadow-md hover:shadow-xl transition-all duration-200 text-lg flex items-center gap-2 group">
+        <button className="bg-emerald-500 hover:bg-emerald-400 text-white font-bold py-3 px-10 rounded-xl shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all duration-200 text-lg flex items-center gap-2 group">
           Buy Now
           <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
         </button>

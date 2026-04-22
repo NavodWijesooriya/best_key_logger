@@ -5,12 +5,14 @@ import Footer from '@/components/Footer'
 
 const page = () => {
   return (
-    <div className="pt-24 md:pt-28">
+    <>
       <Navbar />
-      <BuyNow />
+      <main className="pt-16 md:pt-20">
+        <BuyNow />
+      </main>
       <Footer />
 
-    </div>
+    </>
   )
 }
 

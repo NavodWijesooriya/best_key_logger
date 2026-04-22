@@ -16,7 +16,7 @@ type FeatureItemProps = {
 const FeatureItem = ({ icon: Icon, text }: FeatureItemProps) => (
   <div className="flex items-center gap-4 p-3.5 rounded-2xl transition-all duration-500 hover:bg-white hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] group cursor-default">
     {/* Modern Icon Container */}
-    <div className="relative flex items-center justify-center w-11 h-11 rounded-full bg-slate-50 border border-slate-100 group-hover:scale-110 group-hover:bg-blue-600 transition-all duration-500">
+    <div className="relative flex items-center justify-center w-11 h-11 rounded-full bg-slate-50 border border-slate-100 group-hover:scale-110 group-hover:bg-emerald-500 transition-all duration-500">
       <Icon className="w-5 h-5 text-slate-600 group-hover:text-white transition-colors duration-500" />
     </div>
 
@@ -66,7 +66,7 @@ const KeyloggerFeatures = () => {
 
         {/* Header Section */}
         <div className="max-w-6xl mx-auto text-center mb-20">
-          <div className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-blue-600 uppercase bg-blue-50 rounded-full">
+          <div className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-emerald-500 uppercase bg-emerald-500/10 rounded-full border border-emerald-500/20">
             Security Features
           </div>
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4 font-family-roboto">
