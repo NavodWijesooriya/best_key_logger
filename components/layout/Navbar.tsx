@@ -1,28 +1,16 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
 import LanguageSelector from './LanguageSelector';
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 px-6 py-4 shadow-sm shadow-black/20 ${isScrolled
-        ? 'bg-[#050608]/85 backdrop-blur-xl shadow-lg shadow-black/20 border-b border-white/5'
-        : 'bg-transparent'
-        }`}
+      className="fixed w-full z-50 transition-all duration-300 px-6 py-4 bg-transparent shadow-md shadow-black/25"
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
 
