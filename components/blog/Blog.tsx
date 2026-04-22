@@ -1,118 +1,125 @@
-import React from 'react';
+import Link from 'next/link';
+import { ArrowUpRight, Sparkles } from 'lucide-react';
 
+const posts = [
+  {
+    title: 'Top 10 free keylogger software',
+    image: '/assets/blog/top-10-free-keylogger-software.png',
+    tag: 'Roundup',
+    summary: 'A quick comparison of free options, strengths, and trade-offs.',
+    path: '/blog/top-10-free-keylogger-software',
+  },
+  {
+    title: 'How to add an Antivirus Exception',
+    image: '/assets/blog/how-to-add-an-antivirus-exception.png',
+    tag: 'Tutorial',
+    summary: 'Step-by-step instructions to reduce false positives safely.',
+    path: '/blog/how-to-add-an-antivirus-exception',
+  },
+  {
+    title: 'Email Delivery Configuration Guide',
+    image: '/assets/blog/email-delivery-configuration-guide.png',
+    tag: 'Setup',
+    summary: 'Configure email reports correctly and verify they arrive on time.',
+    path: '/blog/email-delivery-configuration-guide',
+  },
 
-// import heroImage from './assets/hero_illustration.svg';
-const keyloggerImage = '/assets/blog/email-delivery-configuration-guide.png';
-const antivirusImage = '/assets/blog/how-to-add-an-antivirus-exception.png';
-const emailImage = '/assets/blog/top-10-free-keylogger-software.png';
+  {
+    title: 'Email Delivery Configuration Guide',
+    image: '/assets/blog/email-delivery-configuration-guide.png',
+    tag: 'Setup',
+    summary: 'Configure email reports correctly and verify they arrive on time.',
+    path: '/blog/email-delivery-configuration-guide',
+  },
 
-const styles = {
-  page: {
-    fontFamily: 'sans-serif',
-    maxWidth: '1200px',
-    margin: '0 auto',
-    padding: '104px 20px 40px',
+  {
+    title: 'Email Delivery Configuration Guide',
+    image: '/assets/blog/email-delivery-configuration-guide.png',
+    tag: 'Setup',
+    summary: 'Configure email reports correctly and verify they arrive on time.',
+    path: '/blog/email-delivery-configuration-guide',
   },
-  // --- Hero Section Styles (from image_0.png) ---
-  hero: {
-    display: 'flex',
-    flexDirection: 'column' as 'column',
-    alignItems: 'center',
-    textAlign: 'center' as 'center',
-    marginBottom: '48px',
-  },
-  title: {
-    fontSize: '2.5rem',
-    color: '#333',
-    marginBottom: '30px',
-  },
-  illustration: {
-    maxWidth: '600px',
-    height: 'auto',
-  },
-  // --- Featured Posts Styles (from image_1.png) ---
-  featured: {
-    //
-  },
-  sectionHeading: {
-    fontSize: '1.5rem',
-    color: '#555',
-    marginBottom: '30px',
-  },
-  postGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-    gap: '30px',
-  },
-  postCard: {
-    backgroundColor: '#fff',
-    border: '1px solid #e0e0e0',
-    borderRadius: '8px',
-    overflow: 'hidden',
-    display: 'flex',
-    flexDirection: 'column' as 'column',
-    textAlign: 'center' as 'center',
-    boxShadow: '0 2px 5px rgba(0,0,0,0.05)', // Subtle shadow like in the image
-  },
-  postImage: {
-    width: '100%',
-    height: 'auto',
-    display: 'block', // Prevents extra space at the bottom of the image
-  },
-  postContent: {
-    padding: '20px',
-  },
-  postTitle: {
-    margin: '0',
-    fontSize: '1.2rem',
-    color: '#333',
-    lineHeight: '1.4',
-  },
-};
 
-const BestxsoftwareBlog: React.FC = () => {
-  const posts = [
-    {
-      title: 'Top 10 free keylogger software',
-      image: keyloggerImage,
+  {
+    title: 'Email Delivery Configuration Guide',
+    image: '/assets/blog/email-delivery-configuration-guide.png',
+    tag: 'Setup',
+    summary: 'Configure email reports correctly and verify they arrive on time.',
+    path: '/blog/email-delivery-configuration-guide',
+  },
 
-    },
-    {
-      title: 'How to add an Antivirus Exception',
-      image: antivirusImage,
+  {
+    title: 'Email Delivery Configuration Guide',
+    image: '/assets/blog/email-delivery-configuration-guide.png',
+    tag: 'Setup',
+    summary: 'Configure email reports correctly and verify they arrive on time.',
+    path: '/blog/email-delivery-configuration-guide',
+  },
+];
 
-    },
-    {
-      title: 'Email Delivery Configuration Guide',
-      image: emailImage,
-
-    },
-  ];
-
+const BestxsoftwareBlog = () => {
   return (
-    <div style={styles.page}>
-      {/* --- Hero Section --- */}
-      <section style={styles.hero}>
-        <h1 style={styles.title}>Welcome to Bestxsoftware Blog!</h1>
-        {/* <img src={heroImage} alt="Person on couch illustration" style={styles.illustration} /> */}
-      </section>
+    <main className="relative min-h-screen overflow-hidden bg-slate-50 text-slate-900">
+      <div className="pointer-events-none absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80"
+          alt="Modern workspace"
+          className="h-full w-full object-cover opacity-12"
+        />
+        <div className="absolute inset-0 bg-linear-to-b from-white/60 via-slate-50/85 to-slate-50" />
+      </div>
 
-      {/* --- Featured Posts Section --- */}
-      <section style={styles.featured}>
-        <h2 style={styles.sectionHeading}>Featured Posts</h2>
-        <div style={styles.postGrid}>
-          {posts.map((post, index) => (
-            <div key={index} style={styles.postCard}>
-              {/* Image is placed outside postContent to go edge-to-edge */}
-              <img src={post.image} alt={post.title} style={styles.postImage} />
-              <div style={styles.postContent}>
-                <h3 style={styles.postTitle}>{post.title}</h3>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-    </div>
+      <div className="relative z-10 mx-auto max-w-6xl px-4 pb-16 pt-28 sm:px-6 lg:px-8">
+        <section className="mb-12 rounded-4xl border border-slate-200 bg-white/85 p-6 text-center shadow-[0_20px_50px_rgba(15,23,42,0.08)] backdrop-blur-md sm:p-10">
+          <div className="mx-auto mb-3 flex w-fit items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700 backdrop-blur">
+            <Sparkles size={16} />
+            Fresh Reads
+          </div>
+          <h1 className="font-['Trebuchet_MS','Segoe_UI',sans-serif] text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+            Welcome to Bestxsoftware Blog!
+          </h1>
+          <p className="mx-auto mt-4 max-w-2xl text-sm text-slate-600 sm:text-base">
+            Pick a post to learn setup tips, troubleshooting tricks, and practical walkthroughs.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="mb-6 font-['Trebuchet_MS','Segoe_UI',sans-serif] text-2xl font-bold text-slate-900 sm:text-3xl">
+            Featured Posts
+          </h2>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {posts.map((post, index) => (
+              <Link
+                key={`${post.title}-${index}`}
+                href={post.path}
+                className="group block overflow-hidden rounded-[1.8rem] border border-slate-200 bg-white shadow-[0_14px_35px_rgba(15,23,42,0.08)] transition duration-300  hover:shadow-[0_20px_42px_rgba(15,23,42,0.14)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300"
+              >
+                <div className="relative overflow-hidden bg-linear-to-br from-slate-100 via-white to-blue-50 p-3">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="h-48 w-full rounded-2xl border border-white bg-white object-contain p-2 transition duration-500"
+                  />
+                  <span className="absolute left-5 top-5 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-bold uppercase tracking-wide text-emerald-700 backdrop-blur">
+                    {post.tag}
+                  </span>
+                </div>
+                <div className="space-y-4 p-5">
+                  <h3 className="font-['Trebuchet_MS','Segoe_UI',sans-serif] text-lg font-bold leading-snug text-slate-900">
+                    {post.title}
+                  </h3>
+                  <p className="text-sm leading-6 text-slate-600">{post.summary}</p>
+                  <span className="inline-flex items-center gap-2 rounded-xl bg-emerald-500 px-4 py-2 text-sm font-semibold text-white transition group-hover:bg-emerald-400">
+                    Read Post
+                    <ArrowUpRight size={16} />
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      </div>
+    </main>
   );
 };
 
