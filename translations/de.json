@@ -1,0 +1,403 @@
+{
+  "common": {
+    "appName": "Best Free Keylogger",
+    "home": "Startseite",
+    "features": "Funktionen",
+    "buyNow": "Jetzt kaufen",
+    "support": "Unterstützung",
+    "download": "Herunterladen",
+    "blog": "Blog",
+    "downloadBtn": "Kostenlos Herunterladen",
+    "getProBtn": "Pro Herunterladen",
+    "buyNowBtn": "Jetzt Kaufen",
+    "learnBtn": "Mehr über PRO erfahren",
+    "freeLabel": "Kostenlos",
+    "proLabel": "Pro",
+    "popular": "BELIEBT",
+    "notSatisfied": "Nicht zufrieden?",
+    "readMore": "Weiterlesen"
+  },
+  "navigation": {
+    "home": "Startseite",
+    "features": "Funktionen",
+    "buyNow": "Jetzt kaufen",
+    "support": "Unterstützung",
+    "download": "Herunterladen",
+    "blog": "Blog"
+  },
+  "hero": {
+    "badge": "Vertrauenswürdige Überwachungslösungen",
+    "heading1": "Best Free",
+    "heading2": "Keylogger",
+    "description": "Eine leistungsstarke, diskrete Lösung zur Überwachung in Echtzeit, was Ihre Kinder oder Mitarbeiter an ihren Computern tun.",
+    "compatibility": "Windows Vista / 7 / 8 / 10 / 11",
+    "features": {
+      "feature1Title": "100% Unsichtbar",
+      "feature1Desc": "Vollständig verborgen vor dem Task-Manager und der Startupslist.",
+      "feature2Title": "Fernberichte",
+      "feature2Desc": "Erhalten Sie Protokolle direkt an Ihre E-Mail oder Ihren FTP-Server.",
+      "feature3Title": "Sicher & Geschützt",
+      "feature3Desc": "Verschlüsselte Protokolle stellen sicher, dass nur Sie die erfassten Daten sehen können."
+    }
+  },
+  "features": {
+    "tabs": {
+      "keystrokes": "Tastenanschläge",
+      "clipboard": "Zwischenablage",
+      "screenshots": "Bildschirmfotos",
+      "internet": "Internet",
+      "applications": "Anwendungen"
+    }
+  },
+  "mainFeatures": {
+    "badge": "Sicherheitsübersicht",
+    "heading": "Leistungsstarke Überwachungsfunktionen",
+    "description": "Eine umfassende Toolbox für nahtlose, unsichtbare Hintergrundverfolgung und digitale Sicherheit.",
+    "featureList": {
+      "recordKeystrokes": "Tastenanschläge Erfassen",
+      "monitorClipboard": "Zwischenablage Überwachen",
+      "captureScreenshots": "Bildschirmfotos Erfassen",
+      "internetActivities": "Internetaktivitäten",
+      "appMonitoring": "Anwendungsüberwachung",
+      "smartReadFilter": "\"Smart Read\" Filter",
+      "htmlReports": "HTML-Berichte",
+      "userAccessControl": "Benutzer-Zugriffskontrolle",
+      "scheduledMonitoring": "Geplante Überwachung"
+    },
+    "cards": {
+      "card1Title": "Alles überwachen",
+      "card1Desc": "Best Free Keylogger kann alle Tastenanschläge, Internetaktivitäten, Zwischenablageaktivitäten und die lokale Anwendungsnutzung aufzeichnen und gleichzeitig Screenshots der laufenden Aktivitäten auf dem Zielcomputer in festgelegten Intervallen erfassen.",
+      "card2Title": "Benutzerfreundlicher Report-Viewer",
+      "card2Desc": "Best Free Keylogger ist mit einem benutzerfreundlichen, aber äußerst leistungsstarken Report-Viewer und Screenshot-Viewer ausgestattet. Mit der einzigartigen \"Smart-Read\"-Funktion in Best Free Keylogger werden Tastenanschlag-Reports sehr benutzerfreundlich und leicht zu lesen.",
+      "card3Title": "Mehrere Liefermethoden",
+      "card3Desc": "Von Best Free Keylogger generierte Berichte können per E-Mail oder auf einen FTP-Server Ihrer Wahl hochgeladen werden. Sie können Best Free Keylogger auch so konfigurieren, dass Berichte an einen Computer im selben LAN gesendet oder Protokolle automatisch auf eine USB-Laufwerk kopiert werden, wenn dieses angeschlossen wird.",
+      "card4Title": "Konfigurierbar",
+      "card4Intro": "Best Free Keylogger kann:",
+      "card4Item1": "Sich selbst automatisch deinstallieren",
+      "card4Item2": "Nach Zeitplan überwachen",
+      "card4Item3": "Protokolle automatisch löschen",
+      "card4Item4": "Benutzer und Anwendungen filtern",
+      "card4Item5": "und mehr..."
+    }
+  },
+  "testimonials": {
+    "badge": "Sicherheitsübersicht",
+    "heading": "Was sagen Benutzer über den Best Free Keylogger?",
+    "description": "Eine umfassende Toolbox für nahtlose, unsichtbare Hintergrundverfolgung und digitale Sicherheit.",
+    "audiences": {
+      "title": "Für wen ist es?",
+      "items": [
+        "Systemadministratoren",
+        "Unternehmen",
+        "Eltern",
+        "Schulen",
+        "Internetcafés",
+        "Persönlicher Datenschutz"
+      ]
+    },
+    "legal": {
+      "title": "Rechtliche Einhaltung",
+      "badge": "Verschlüsselung Datenschutz an Erster Stelle",
+      "text": "Die Nutzung ist legal, sofern Sie der **autorisierte Eigentümer** des Geräts sind oder **ausdrückliche Zustimmung des Administrators** haben."
+    },
+    "reviews": [
+      {
+        "author": "Asheley",
+        "date": "Juni 2018",
+        "role": "Eltern",
+        "text": "Ich nutze Best Free Keylogger, um das Internetverhalten meines Kindes zu überwachen. Jetzt weiß ich genau, was er im Internet tut. Es stellt sicher, dass meine Kinder aus Schwierigkeiten herausbleiben und vor Raubtieren geschützt sind."
+      },
+      {
+        "author": "Jayden",
+        "date": "Juli 2018",
+        "role": "Power User",
+        "text": "Nach dem Ausprobieren mehrerer Produkte habe ich mich für dieses entschieden. Es ist unglaublich einfach zu installieren und funktioniert in allen Browsern, einschließlich Chrome und Firefox. Ausgezeichneter Kundenservice."
+      }
+    ]
+  },
+  "footer": {
+    "sections": {
+      "product": "Produkt",
+      "company": "Unternehmen",
+      "legal": "Rechtlich",
+      "support": "Unterstützung"
+    },
+    "links": {
+      "product": [
+        "Funktionen",
+        "Preise",
+        "Dokumentation",
+        "Herunterladen"
+      ],
+      "company": [
+        "Über Uns",
+        "Kontakt",
+        "Blog",
+        "Karriere"
+      ],
+      "legal": [
+        "Datenschutzrichtlinie",
+        "Nutzungsbedingungen",
+        "Legale Verwendung",
+        "Rückgaberichtlinie"
+      ],
+      "support": [
+        "Hilfezentrum",
+        "Gemeinschaft",
+        "Status",
+        "API"
+      ]
+    },
+    "description": "Überwachungsarchitektur der nächsten Generation. Für das moderne Web mit Sicherheit im Kern.",
+    "status": "SYSTEME BETRIEBSBEREIT",
+    "security": "AES-256",
+    "copyright": "© 2026 Bestx Software Inc.",
+    "bottomLinks": {
+      "privacy": "Datenschutz",
+      "terms": "Bedingungen"
+    }
+  },
+  "blog": {
+    "badge": "Frische Lesestoff",
+    "heading": "Willkommen bei Bestxsoftware Blog!",
+    "description": "Wählen Sie einen Beitrag, um Einrichtungstipps, Troubleshooting-Tricks und praktische Anleitungen zu erhalten.",
+    "featured": "Hervorgehobene Beiträge",
+    "posts": [
+      {
+        "title": "Top 10 kostenlose Keylogger-Software",
+        "tag": "Zusammenfassung",
+        "summary": "Ein schneller Vergleich kostenloser Optionen, Stärken und Kompromisse."
+      },
+      {
+        "title": "So fügen Sie eine Antivirens-Ausnahme hinzu",
+        "tag": "Anleitung",
+        "summary": "Schritt-für-Schritt-Anleitung zur sicheren Reduzierung von Falsch-Positiven."
+      },
+      {
+        "title": "E-Mail-Zustellungs-Konfigurationsleitfaden",
+        "tag": "Einrichtung",
+        "summary": "Konfigurieren Sie E-Mail-Berichte korrekt und stellen Sie sicher, dass sie rechtzeitig ankommen."
+      }
+    ]
+  },
+  "faq": {
+    "mainHeading": "Häufig Gestellte Fragen",
+    "productFaq": "Produkt-FAQ",
+    "orderingFaq": "Bestellungs-FAQ",
+    "readMore": "Mehr auf unserem Blog erfahren",
+    "faqTopics": "FAQ-Themen",
+    "guides": "Anleitungen",
+    "productQuestions": [
+      "Wie setzt man das Anmeldekennwort zurück",
+      "Wie richtet man E-Mail-Zustellung ein",
+      "Wie richtet man FTP-Zustellung ein",
+      "Wie verbirgt man Best Free Keylogger",
+      "Wie importiert und zeigt man Protokolle an",
+      "Wie lädt man Berichte",
+      "Kann ich denselben Produktschlüssel wiederverwenden?",
+      "Welche Windows-Versionen sind kompatibel?",
+      "Kann ich Best Free Keylogger auf einem Remote-Computer installieren?",
+      "Ist Best Free Keylogger vollständig unerkannt?",
+      "Sammelt Best Free Keylogger Benutzerinformationen?",
+      "Funktioniert BFK mit anderen Anwendungen als Webbrowsern?",
+      "Kann ich mit BFK aufgezeichnete Informationen als rechtliche Evidenz verwenden?",
+      "Ich kann Best Free Keylogger nicht auf meinem Computer finden"
+    ],
+    "orderingQuestions": [
+      "Wie ruft man einen verlorenen Lizenzschlüssel ab",
+      "Wie kauft man Best Free Keylogger",
+      "Wie erhält man den Lizenzschlüssel",
+      "Wie kauft man für mehrere Computer",
+      "Gibt es sich wiederholende Gebühren?"
+    ],
+    "blogPosts": [
+      "Wie installiert man Best Free Keylogger",
+      "Anleitung für den Einstieg",
+      "Wie lädt man Berichte",
+      "E-Mail-Zustellungs-Konfigurationsleitfaden",
+      "Wie aktiviert man die Pro-Version",
+      "Was sind Falsche Malware-Alarme",
+      "So fügen Sie eine Antivirens-Ausnahme hinzu",
+      "Top 10 kostenlose Keylogger-Software"
+    ]
+  },
+  "pricing": {
+    "badge": "Preispläne",
+    "heading": "Sie haben die Pro-Version nicht?",
+    "description": "Vergleichen Sie Lite und Pro Editionen und wählen Sie den Plan, der zu Ihren Überwachungsanforderungen passt.",
+    "specialOffer": "Spezialangebot",
+    "table": {
+      "title": "Best Free Keylogger",
+      "subtitle": "Einmalzahlung • Lebenslange Lizenz",
+      "lite": "Lite",
+      "pro": "Pro",
+      "free": "Kostenlos",
+      "forever": "Für Immer",
+      "price": "$39",
+      "getProBtn": "Pro Herunterladen"
+    },
+    "features": [
+      "Alle Überwachungsfunktionen",
+      "Spezifische Programm | Benutzer-Protokollierung",
+      "Automatische Deinstallation",
+      "Automatisches Löschen von Protokollen",
+      "Verschlüsselung von Protokolldateien",
+      "Erweiterte Filterungsoptionen",
+      "Unbegrenzte Screenshots",
+      "Unsichtbarer Modus",
+      "Zustellungsoptionen (E-Mail, FTP, LAN, USB)",
+      "Premium-Kundensupport"
+    ],
+    "featureDetails": {
+      "allFeatures": "Alle Überwachungsfunktionen",
+      "userLogging": "Spezifische Programm | Benutzer-Protokollierung",
+      "autoUninstall": "Automatische Deinstallation",
+      "autoClear": "Automatisches Löschen von Protokollen",
+      "encryption": "Verschlüsselung von Protokolldateien",
+      "filtering": "Erweiterte Filterungsoptionen",
+      "screenshots": "Unbegrenzte Screenshots",
+      "invisibleMode": "Unsichtbarer Modus",
+      "delivery": "Zustellungsoptionen (E-Mail, FTP, LAN, USB)",
+      "support": "Premium-Kundensupport"
+    },
+    "guarantee": {
+      "heading": "100% Geld-Zurück-Garantie",
+      "description": "Nicht zufrieden? Erhalten Sie innerhalb von 30 Tagen eine vollständige Rückerstattung",
+      "link": "Rückgaberichtlinie Lesen →",
+      "button": "Jetzt Kaufen"
+    },
+    "whyChoose": {
+      "heading": "Warum Best Free Keylogger wählen?",
+      "subtitle": "Alles, was Sie in einem leistungsstarken Paket benötigen",
+      "propositions": [
+        {
+          "title": "Prioritätssupport",
+          "description": "Unbegrenzter technischer Support für alle Zeiten"
+        },
+        {
+          "title": "Kostenlose Updates",
+          "description": "Kostenlose Updates bis zur Veröffentlichung der nächsten Hauptversion."
+        },
+        {
+          "title": "Einmaliger Kauf",
+          "description": "Lizenzen sind ein einmaliger Kauf. Sie haben kein Verfallsdatum."
+        },
+        {
+          "title": "Sichere Transaktion",
+          "description": "Unser Online-Bestellsystem wird von einer sicheren E-Commerce-Plattform zum Verkauf von Softwareprodukten betrieben."
+        },
+        {
+          "title": "Sofortige Zustellung",
+          "description": "Registrierungsschlüssel werden sofort nach der Zahlungsübermittlung an Ihre E-Mail gesendet."
+        },
+        {
+          "title": "Wiederherstellbare Schlüssel",
+          "description": "Wenn Sie Ihren Lizenzschlüssel jemals verlieren, stellen wir Ihnen kostenlos einen neuen zur Verfügung."
+        }
+      ]
+    }
+  },
+  "download": {
+    "badge": "Download-Center",
+    "heading": "Best Free Keylogger Herunterladen",
+    "description": "Einfache, sichere und leichte Überwachungssoftware.",
+    "version": "Version:",
+    "versionNum": "8.2.1",
+    "released": "Veröffentlicht:",
+    "releaseDate": "2025-07-15",
+    "fileSize": "Dateigröße:",
+    "fileSizeNum": "6.6 MB",
+    "lite": {
+      "heading": "Lite-Version",
+      "description": "Kostenlose grundlegende Überwachungsfunktionen.",
+      "badge": "Verifizierter sicherer Download",
+      "button": "Herunterladen",
+      "pricing": "Kostenlos",
+      "notes": "keine Lizenz erforderlich"
+    },
+    "pro": {
+      "heading": "Pro-Version",
+      "description": "Erweiterte Verfolgung & vollständige Funktionen.",
+      "badge": "Verifizierter sicherer Download",
+      "popularBadge": "Beliebt",
+      "button": "Herunterladen",
+      "trial": "7-tägige Testversion",
+      "notes": "Kein Schlüssel erforderlich"
+    }
+  },
+  "featuresPage": {
+    "badge": "Sicherheitsfunktionen",
+    "heading": "Leistungsstarke Keylogger-Funktionen.",
+    "description": "Alles, was Sie für fortgeschrittene Überwachung benötigen, in einer sauberen, intuitiven Schnittstelle für maximale Kontrolle.",
+    "columns": {
+      "capture": {
+        "title": "Erfassen",
+        "items": [
+          "Tastenanschlag-Aufzeichnungen",
+          "Zwischenablage-Aufzeichnungen",
+          "Bildschirmfotos",
+          "Internetaktivität",
+          "Anwendungsnutzung",
+          "\"Smart Read\" Filter",
+          "Erweiterte Filterung",
+          "HTML-Berichte"
+        ]
+      },
+      "management": {
+        "title": "Verwaltung",
+        "items": [
+          "Nach Benutzer/Anwendung begrenzen",
+          "Geplante Überwachung",
+          "Verschlüsselte Protokolldateien",
+          "Passwortschutz",
+          "Zustellung per E-Mail & FTP",
+          "Alte Protokolle sichern",
+          "Automatische Protokolllöschung"
+        ]
+      },
+      "security": {
+        "title": "Sicherheit",
+        "items": [
+          "Unsichtbarer Modus",
+          "Automatische Deinstallation",
+          "Kindersicherung",
+          "Webfilterung",
+          "Zeitlimit",
+          "Internet-Blockierung",
+          "Anwendungsblockierung"
+        ]
+      }
+    },
+    "footer": "Erweiterte Funktionen für professionelle Überwachungsumgebungen."
+  },
+  "pages": {
+    "home": {
+      "title": "Best Free Keylogger - Kostenlose Überwachungssoftware",
+      "description": "Best Free Keylogger ist eine leistungsstarke, diskrete Überwachungslösung. Verfolgen Sie Tastenanschläge, Screenshots und Webaktivitäten mit unsichtbarer, verschlüsselter Protokollierung."
+    },
+    "features": {
+      "title": "Funktionen - Best Free Keylogger",
+      "description": "Erkunden Sie alle leistungsstarken Überwachungsfunktionen des Best Free Keylogger, einschließlich Tastenanschlag-Aufzeichnung, Screenshots und erweiterte Filterung."
+    },
+    "download": {
+      "title": "Best Free Keylogger Herunterladen",
+      "description": "Laden Sie die kostenlose Version herunter oder probieren Sie die Pro-Version mit einer 7-tägigen Testversion. Einfache, sichere und leichte Überwachungssoftware."
+    },
+    "pricing": {
+      "title": "Preise - Best Free Keylogger",
+      "description": "Vergleichen Sie Lite und Pro Versionen. Wählen Sie je nach Ihren Überwachungsanforderungen. Einmaliger Kauf mit lebenslanger Lizenz."
+    },
+    "support": {
+      "title": "Unterstützung - Best Free Keylogger",
+      "description": "Holen Sie sich Hilfe bei Installation, Konfiguration und Fehlerbehebung. Durchsuchen Sie unsere FAQ und Dokumentation."
+    },
+    "faq": {
+      "title": "FAQ - Best Free Keylogger",
+      "description": "Finden Sie Antworten auf häufig gestellte Fragen zu Best Free Keylogger, einschließlich Installation, Lizenzierung und Funktionen."
+    },
+    "blog": {
+      "title": "Blog - Best Free Keylogger",
+      "description": "Lesen Sie unseren Blog für Einrichtungstipps, Fehlerbehebungsleitfäden und praktische Anleitungen für Überwachungssoftware."
+    }
+  }
+}

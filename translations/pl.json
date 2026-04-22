@@ -1,0 +1,403 @@
+{
+  "common": {
+    "appName": "Best Free Keylogger",
+    "home": "Strona główna",
+    "features": "Funkcje",
+    "buyNow": "Kup teraz",
+    "support": "Wsparcie",
+    "download": "Pobierz",
+    "blog": "Blog",
+    "downloadBtn": "Bezpłatne pobranie",
+    "getProBtn": "Pobierz Pro",
+    "buyNowBtn": "Kup Teraz",
+    "learnBtn": "Dowiedz się więcej o PRO",
+    "freeLabel": "Bezpłatnie",
+    "proLabel": "Pro",
+    "popular": "POPULARNY",
+    "notSatisfied": "Nie jesteś zadowolony?",
+    "readMore": "Czytaj więcej"
+  },
+  "navigation": {
+    "home": "Strona główna",
+    "features": "Funkcje",
+    "buyNow": "Kup teraz",
+    "support": "Wsparcie",
+    "download": "Pobierz",
+    "blog": "Blog"
+  },
+  "hero": {
+    "badge": "Zaufane rozwiązania monitorowania",
+    "heading1": "Best Free",
+    "heading2": "Keylogger",
+    "description": "Potężne, dyskretne rozwiązanie do monitorowania w czasie rzeczywistym tego, co robią Twoje dzieci lub pracownicy na swoich komputerach.",
+    "compatibility": "Windows Vista / 7 / 8 / 10 / 11",
+    "features": {
+      "feature1Title": "100% Niewidoczny",
+      "feature1Desc": "Całkowicie ukryty przed menedżerem zadań i listą autostartu.",
+      "feature2Title": "Raporty zdalne",
+      "feature2Desc": "Otrzymaj dzienniki wysłane bezpośrednio na Twoją pocztę e-mail lub serwer FTP.",
+      "feature3Title": "Bezpieczny i zabezpieczony",
+      "feature3Desc": "Zaszyfrowane dzienniki gwarantują, że tylko Ty możesz widzieć przechwycone dane."
+    }
+  },
+  "features": {
+    "tabs": {
+      "keystrokes": "Naciśnięcia klawiszy",
+      "clipboard": "Schowek",
+      "screenshots": "Zrzuty ekranu",
+      "internet": "Internet",
+      "applications": "Aplikacje"
+    }
+  },
+  "mainFeatures": {
+    "badge": "Przegląd bezpieczeństwa",
+    "heading": "Potężne funkcje monitorowania",
+    "description": "Kompleksowy zestaw narzędzi zaprojektowanych dla bezproblemowego, niewidocznego śledzenia w tle i bezpieczeństwa cyfrowego.",
+    "featureList": {
+      "recordKeystrokes": "Nagrywaj naciśnięcia klawiszy",
+      "monitorClipboard": "Monitoruj schowek",
+      "captureScreenshots": "Przechwyć zrzuty ekranu",
+      "internetActivities": "Aktywności internetowe",
+      "appMonitoring": "Monitorowanie aplikacji",
+      "smartReadFilter": "Filtr \"Smart Read\"",
+      "htmlReports": "Raporty HTML",
+      "userAccessControl": "Kontrola dostępu użytkownika",
+      "scheduledMonitoring": "Zaplanowane monitorowanie"
+    },
+    "cards": {
+      "card1Title": "Monitoruj wszystko",
+      "card1Desc": "Best Free Keylogger może nagrywać wszystkie naciśnięcia klawiszy, aktywność w Internecie, aktywność schowka i użytkowanie aplikacji lokalnych, jednocześnie przechwytując zrzuty ekranu bieżących czynności na komputerze docelowym w ustalonych odstępach.",
+      "card2Title": "Przyjazna przeglądarka raportu",
+      "card2Desc": "Best Free Keylogger wyposażony w łatwy w użyciu, ale niezwykle potężny przegląd raportu i przeglądarkę zrzutów ekranu. Dzięki unikalnej funkcji \"Smart-Read\" w Best Free Keylogger, raporty naciśnięć klawiszy stają się bardzo przyjazne dla użytkownika i łatwe do odczytania.",
+      "card3Title": "Wiele metod dostarczania",
+      "card3Desc": "Raporty generowane przez Best Free Keylogger można wysłać pocztą elektroniczną lub przesłać na wybrany serwer FTP. Możesz również skonfigurować Best Free Keylogger do wysyłania raportów na komputer w tej samej sieci LAN lub automatycznego kopiowania dzienników na dysk USB po podłączeniu.",
+      "card4Title": "Konfigurowalny",
+      "card4Intro": "Best Free Keylogger może:",
+      "card4Item1": "Samodzielnie dezinstalować się",
+      "card4Item2": "Monitorować według harmonogramu",
+      "card4Item3": "Automatycznie czyszczić dzienniki",
+      "card4Item4": "Filtrować użytkowników i aplikacje",
+      "card4Item5": "i wiele więcej..."
+    }
+  },
+  "testimonials": {
+    "badge": "Przegląd bezpieczeństwa",
+    "heading": "Co mówią użytkownicy o Best Free Keylogger?",
+    "description": "Kompleksowy zestaw narzędzi zaprojektowanych dla bezproblemowego, niewidocznego śledzenia w tle i bezpieczeństwa cyfrowego.",
+    "audiences": {
+      "title": "Dla kogo to jest?",
+      "items": [
+        "Administratorzy systemów",
+        "Firmy",
+        "Rodzice",
+        "Szkoły",
+        "Kafeterie internetowe",
+        "Prywatność osobista"
+      ]
+    },
+    "legal": {
+      "title": "Zgodność z prawem",
+      "badge": "Szyfrowanie Prywatność na Pierwszym Miejscu",
+      "text": "Użycie jest legalne, pod warunkiem że jesteś **autoryzowanym właścicielem** urządzenia lub masz **wyraźną zgodę administracyjną**."
+    },
+    "reviews": [
+      {
+        "author": "Asheley",
+        "date": "Czerwiec 2018",
+        "role": "Rodzic",
+        "text": "Używam Best Free Keylogger do monitorowania zachowania w Internecie mojego dziecka. Teraz wiem dokładnie, co robi w Internecie. Zapewnia, że moje dzieci są bezpieczne i chronione przed drapieżnikami."
+      },
+      {
+        "author": "Jayden",
+        "date": "Lipiec 2018",
+        "role": "Zaawansowany użytkownik",
+        "text": "Po wypróbowaniu kilku produktów wybrałem ten. Jest niesamowicie łatwy do zainstalowania i działa we wszystkich przeglądarkach, w tym Chrome i Firefox. Doskonała obsługa klienta."
+      }
+    ]
+  },
+  "footer": {
+    "sections": {
+      "product": "Produkt",
+      "company": "Firma",
+      "legal": "Prawne",
+      "support": "Wsparcie"
+    },
+    "links": {
+      "product": [
+        "Funkcje",
+        "Ceny",
+        "Dokumentacja",
+        "Pobierz"
+      ],
+      "company": [
+        "O nas",
+        "Kontakt",
+        "Blog",
+        "Kariera"
+      ],
+      "legal": [
+        "Polityka prywatności",
+        "Warunki korzystania",
+        "Legalne użycie",
+        "Polityka zwrotów"
+      ],
+      "support": [
+        "Centrum pomocy",
+        "Społeczność",
+        "Status",
+        "API"
+      ]
+    },
+    "description": "Architektura monitorowania nowej generacji. Zbudowana dla nowoczesnego internetu z bezpieczeństwem w centrum.",
+    "status": "SYSTEMY OPERACYJNE",
+    "security": "AES-256",
+    "copyright": "© 2026 Bestx Software Inc.",
+    "bottomLinks": {
+      "privacy": "Prywatność",
+      "terms": "Warunki"
+    }
+  },
+  "blog": {
+    "badge": "Świeżą lekturę",
+    "heading": "Witaj na blogu Bestxsoftware!",
+    "description": "Wybierz artykuł, aby poznać wskazówki dotyczące konfiguracji, porady dotyczące rozwiązywania problemów i praktyczne wskazówki.",
+    "featured": "Polecane artykuły",
+    "posts": [
+      {
+        "title": "Top 10 bezpłatnego oprogramowania keylogger",
+        "tag": "Przegląd",
+        "summary": "Szybkie porównanie bezpłatnych opcji, mocnych i słabych stron."
+      },
+      {
+        "title": "Jak dodać wyjątek antywirusa",
+        "tag": "Poradnik",
+        "summary": "Instrukcje krok po kroku w celu bezpiecznego zmniejszenia fałszywych alarmów."
+      },
+      {
+        "title": "Przewodnik konfiguracji dostarczania wiadomości e-mail",
+        "tag": "Konfiguracja",
+        "summary": "Prawidłowo skonfiguruj raporty e-mail i sprawdź, czy docierają na czas."
+      }
+    ]
+  },
+  "faq": {
+    "mainHeading": "Często zadawane pytania",
+    "productFaq": "FAQ produktu",
+    "orderingFaq": "FAQ zamówień",
+    "readMore": "Przeczytaj więcej na naszym blogu",
+    "faqTopics": "Tematy FAQ",
+    "guides": "Przewodniki",
+    "productQuestions": [
+      "Jak zresetować hasło logowania",
+      "Jak skonfigurować dostarczanie wiadomości e-mail",
+      "Jak skonfigurować dostarczanie FTP",
+      "Jak ukryć Best Free Keylogger",
+      "Jak importować i wyświetlać dzienniki",
+      "Jak ładować raporty",
+      "Czy mogę ponownie użyć tego samego klucza produktu?",
+      "Jakie wersje systemu Windows są obsługiwane?",
+      "Czy mogę zainstalować Best Free Keylogger na komputerze zdalnym?",
+      "Czy Best Free Keylogger jest całkowicie niewykrywalny?",
+      "Czy Best Free Keylogger zbiera informacje o użytkowniku?",
+      "Czy BFK współpracuje z aplikacjami innymi niż przeglądarki internetowe?",
+      "Czy mogę użyć informacji zarejestrowanych za pomocą BFK jako dowodu prawnego?",
+      "Nie mogę znaleźć Best Free Keylogger na moim komputerze"
+    ],
+    "orderingQuestions": [
+      "Jak odzyskać utracony klucz licencji",
+      "Jak kupić Best Free Keylogger",
+      "Jak uzyskać klucz licencji",
+      "Jak kupić dla wielu komputerów",
+      "Czy są jakieś opłaty cykliczne?"
+    ],
+    "blogPosts": [
+      "Jak zainstalować Best Free Keylogger",
+      "Przewodnik wprowadzający",
+      "Jak ładować raporty",
+      "Przewodnik konfiguracji dostarczania wiadomości e-mail",
+      "Jak aktywować wersję Pro",
+      "Czym są fałszywe alarmy złośliwego oprogramowania",
+      "Jak dodać wyjątek antywirusa",
+      "Top 10 bezpłatnego oprogramowania keylogger"
+    ]
+  },
+  "pricing": {
+    "badge": "Plany cenowe",
+    "heading": "Nie masz wersji Pro?",
+    "description": "Porównaj edycje Lite i Pro i wybierz plan odpowiadający Twoim potrzebom monitorowania.",
+    "specialOffer": "Specjalna oferta",
+    "table": {
+      "title": "Best Free Keylogger",
+      "subtitle": "Jednokrotna płatność • Licencja dożywotnia",
+      "lite": "Lite",
+      "pro": "Pro",
+      "free": "Bezpłatnie",
+      "forever": "Na zawsze",
+      "price": "$39",
+      "getProBtn": "Pobierz Pro"
+    },
+    "features": [
+      "Wszystkie funkcje monitorowania",
+      "Logowanie określonego programu | Użytkownika",
+      "Automatyczne odinstalowanie",
+      "Automatyczne czyszczenie dzienników",
+      "Szyfrowanie pliku dziennika",
+      "Zaawansowane opcje filtrowania",
+      "Nieograniczone zrzuty ekranu",
+      "Tryb niewidoczny",
+      "Opcje dostarczania (e-mail, FTP, LAN, USB)",
+      "Wsparcie techniczne premium"
+    ],
+    "featureDetails": {
+      "allFeatures": "Wszystkie funkcje monitorowania",
+      "userLogging": "Logowanie określonego programu | Użytkownika",
+      "autoUninstall": "Automatyczne odinstalowanie",
+      "autoClear": "Automatyczne czyszczenie dzienników",
+      "encryption": "Szyfrowanie pliku dziennika",
+      "filtering": "Zaawansowane opcje filtrowania",
+      "screenshots": "Nieograniczone zrzuty ekranu",
+      "invisibleMode": "Tryb niewidoczny",
+      "delivery": "Opcje dostarczania (e-mail, FTP, LAN, USB)",
+      "support": "Wsparcie techniczne premium"
+    },
+    "guarantee": {
+      "heading": "100% gwarancja zwrotu pieniędzy",
+      "description": "Nie jesteś zadowolony? Zwrot pełnej kwoty w ciągu 30 dni",
+      "link": "Przeczytaj politykę zwrotów →",
+      "button": "Kup Teraz"
+    },
+    "whyChoose": {
+      "heading": "Dlaczego wybrać Best Free Keylogger?",
+      "subtitle": "Wszystko czego potrzebujesz w jednym potężnym pakiecie",
+      "propositions": [
+        {
+          "title": "Wsparcie priorytetowe",
+          "description": "Nieograniczone wsparcie techniczne na całe życie"
+        },
+        {
+          "title": "Bezpłatne aktualizacje",
+          "description": "Bezpłatne aktualizacje aż do wydania następnej głównej wersji."
+        },
+        {
+          "title": "Jednokrotny zakup",
+          "description": "Licencje to jednokrotny zakup. Nie mają daty wygaśnięcia."
+        },
+        {
+          "title": "Bezpieczny zakup",
+          "description": "Nasz system zamawiania online jest obsługiwany przez bezpieczną platformę e-commerce do sprzedaży produktów oprogramowania."
+        },
+        {
+          "title": "Natychmiastowa dostawa",
+          "description": "Klucze rejestracyjne są dostarczane natychmiast na Twoją wiadomość e-mail po przesłaniu płatności."
+        },
+        {
+          "title": "Odzyskiwalne klucze",
+          "description": "Jeśli kiedykolwiek stracisz klucz licencji, dostarczymy nowy za darmo."
+        }
+      ]
+    }
+  },
+  "download": {
+    "badge": "Centrum pobierania",
+    "heading": "Pobierz Best Free Keylogger",
+    "description": "Proste, bezpieczne i lekkie oprogramowanie do monitorowania.",
+    "version": "Wersja:",
+    "versionNum": "8.2.1",
+    "released": "Wydane:",
+    "releaseDate": "2025-07-15",
+    "fileSize": "Rozmiar pliku:",
+    "fileSizeNum": "6.6 MB",
+    "lite": {
+      "heading": "Wersja Lite",
+      "description": "Bezpłatne podstawowe funkcje monitorowania.",
+      "badge": "Zweryfikowane bezpieczne pobieranie",
+      "button": "Pobierz",
+      "pricing": "Bezpłatnie",
+      "notes": "nie jest wymagana licencja"
+    },
+    "pro": {
+      "heading": "Wersja Pro",
+      "description": "Zaawansowane śledzenie i pełne funkcje.",
+      "badge": "Zweryfikowane bezpieczne pobieranie",
+      "popularBadge": "Popularny",
+      "button": "Pobierz",
+      "trial": "7-dniowy okres próbny",
+      "notes": "klucz nie jest wymagany"
+    }
+  },
+  "featuresPage": {
+    "badge": "Funkcje bezpieczeństwa",
+    "heading": "Potężne możliwości keylooggera.",
+    "description": "Wszystko, czego potrzebujesz do zaawansowanego monitorowania, w czystym, intuicyjnym interfejsie zaprojektowanym dla maksymalnej kontroli.",
+    "columns": {
+      "capture": {
+        "title": "Przechwytywanie",
+        "items": [
+          "Nagrania naciśnięań klawiszy",
+          "Nagrania schowka",
+          "Zrzuty ekranu",
+          "Aktywność internetowa",
+          "Użytkowanie aplikacji",
+          "Filtr \"Smart Read\"",
+          "Zaawansowane filtrowanie",
+          "Raporty HTML"
+        ]
+      },
+      "management": {
+        "title": "Zarządzanie",
+        "items": [
+          "Ogranicz średnikami użytkownika/aplikacji",
+          "Zaplanowane monitorowanie",
+          "Zaszyfrowane pliki dziennika",
+          "Ochrona hasłem",
+          "Dostawa pocztą elektroniczną i FTP",
+          "Kopia zapasowa starych dzienników",
+          "Automatyczne czyszczenie dziennika"
+        ]
+      },
+      "security": {
+        "title": "Bezpieczeństwo",
+        "items": [
+          "Tryb niewidoczny",
+          "Automatyczne odinstalowanie",
+          "Kontrola rodzicielska",
+          "Filtrowanie stron internetowych",
+          "Limity czasu",
+          "Blokowanie internetu",
+          "Blokowanie aplikacji"
+        ]
+      }
+    },
+    "footer": "Zaawansowane funkcje dla profesjonalnych środowisk monitorowania."
+  },
+  "pages": {
+    "home": {
+      "title": "Best Free Keylogger - Bezpłatne oprogramowanie do monitorowania",
+      "description": "Best Free Keylogger to potężne, dyskretne rozwiązanie do monitorowania. Śledź naciśnięcia klawiszy, zrzuty ekranu i aktywność internetową za pomocą niewidocznego, zaszyfrowanego rejestrowania."
+    },
+    "features": {
+      "title": "Funkcje - Best Free Keylogger",
+      "description": "Odkryj wszystkie potężne funkcje monitorowania Best Free Keylogger, w tym nagrywanie naciśnięć klawiszy, zrzuty ekranu i zaawansowane filtrowanie."
+    },
+    "download": {
+      "title": "Pobierz Best Free Keylogger",
+      "description": "Pobierz wersję bezpłatną lub spróbuj wersji Pro z 7-dniowym okresem próbnym. Proste, bezpieczne i lekkie oprogramowanie do monitorowania."
+    },
+    "pricing": {
+      "title": "Ceny - Best Free Keylogger",
+      "description": "Porównaj wersje Lite i Pro. Wybierz na podstawie swoich potrzeb monitorowania. Jednokrotny zakup z dożywotnią licencją."
+    },
+    "support": {
+      "title": "Wsparcie - Best Free Keylogger",
+      "description": "Uzyskaj pomoc w instalacji, konfiguracji i rozwiązywaniu problemów. Przeglądaj nasze FAQ i dokumentację."
+    },
+    "faq": {
+      "title": "FAQ - Best Free Keylogger",
+      "description": "Znajdź odpowiedzi na często zadawane pytania dotyczące Best Free Keylogger, takie jak instalacja, licencjonowanie i funkcje."
+    },
+    "blog": {
+      "title": "Blog - Best Free Keylogger",
+      "description": "Przeczytaj nasz blog, aby uzyskać wskazówki dotyczące konfiguracji, przewodniki dotyczące rozwiązywania problemów i praktyczne wskazówki dotyczące oprogramowania monitorującego."
+    }
+  }
+}

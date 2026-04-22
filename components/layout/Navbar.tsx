@@ -3,10 +3,21 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
+import { useI18n } from '@/lib/i18nContext';
 import LanguageSelector from './LanguageSelector';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useI18n();
+
+  const navItems = [
+    { nameKey: 'navigation.home', path: '/' },
+    { nameKey: 'navigation.features', path: '/features' },
+    { nameKey: 'navigation.buyNow', path: '/buy_now' },
+    { nameKey: 'navigation.support', path: '/support' },
+    { nameKey: 'navigation.download', path: '/download' },
+    { nameKey: 'navigation.blog', path: '/blog' },
+  ];
 
   return (
     <nav
@@ -27,20 +38,13 @@ const Navbar = () => {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8 text-sm font-semibold">
-          {[
-            { name: 'Home', path: '/' },
-            { name: 'Features', path: '/features' },
-            { name: 'Buy now', path: '/buy_now' },
-            { name: 'Support', path: '/support' },
-            { name: 'Download', path: '/download' },
-            { name: 'Blog', path: '/blog' },
-          ].map((item) => (
+          {navItems.map((item) => (
             <Link
-              key={item.name}
+              key={item.path}
               href={item.path}
-              className="text-slate-400  transition-colors"
+              className="text-slate-400"
             >
-              {item.name}
+              {t(item.nameKey)}
             </Link>
           ))}
 
@@ -59,21 +63,14 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden mt-4 flex flex-col gap-4 px-4">
-          {[
-            { name: 'Home', path: '/' },
-            { name: 'Features', path: '/features' },
-            { name: 'Buy now', path: '/buy_now' },
-            { name: 'Support', path: '/support' },
-            { name: 'Download', path: '/download' },
-            { name: 'Blog', path: '/blog' },
-          ].map((item) => (
+          {navItems.map((item) => (
             <Link
-              key={item.name}
+              key={item.path}
               href={item.path}
               className="text-slate-300 hover:text-white"
               onClick={() => setMobileMenuOpen(false)}
             >
-              {item.name}
+              {t(item.nameKey)}
             </Link>
           ))}
           <div className="pt-1">

@@ -1,0 +1,403 @@
+{
+  "common": {
+    "appName": "Mejor Keylogger Gratuito",
+    "home": "Inicio",
+    "features": "Características",
+    "buyNow": "Comprar ahora",
+    "support": "Soporte",
+    "download": "Descargar",
+    "blog": "Blog",
+    "downloadBtn": "Descarga Gratuita",
+    "getProBtn": "Obtener Pro",
+    "buyNowBtn": "Comprar Ahora",
+    "learnBtn": "Aprende más sobre PRO",
+    "freeLabel": "Gratis",
+    "proLabel": "Pro",
+    "popular": "POPULAR",
+    "notSatisfied": "¿No satisfecho?",
+    "readMore": "Leer más"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "features": "Características",
+    "buyNow": "Comprar ahora",
+    "support": "Soporte",
+    "download": "Descargar",
+    "blog": "Blog"
+  },
+  "hero": {
+    "badge": "Soluciones de Monitoreo Confiables",
+    "heading1": "Mejor",
+    "heading2": "Keylogger Gratuito",
+    "description": "Una solución potente y discreta para monitorear en tiempo real lo que tus hijos o empleados hacen en sus computadoras.",
+    "compatibility": "Windows Vista / 7 / 8 / 10 / 11",
+    "features": {
+      "feature1Title": "100% Invisible",
+      "feature1Desc": "Completamente oculto del administrador de tareas y de la lista de inicio.",
+      "feature2Title": "Reportes Remotos",
+      "feature2Desc": "Obtén registros entregados directamente a tu correo electrónico o servidor FTP.",
+      "feature3Title": "Seguro y Confiable",
+      "feature3Desc": "Los registros encriptados aseguran que solo tú puedas ver los datos capturados."
+    }
+  },
+  "features": {
+    "tabs": {
+      "keystrokes": "Pulsaciones",
+      "clipboard": "Portapapeles",
+      "screenshots": "Capturas de Pantalla",
+      "internet": "Internet",
+      "applications": "Aplicaciones"
+    }
+  },
+  "mainFeatures": {
+    "badge": "Descripción General de Seguridad",
+    "heading": "Características Poderosas de Monitoreo",
+    "description": "Un conjunto completo de herramientas diseñadas para seguimiento invisible de fondo sin interrupciones y seguridad digital.",
+    "featureList": {
+      "recordKeystrokes": "Registrar Pulsaciones",
+      "monitorClipboard": "Monitorear Portapapeles",
+      "captureScreenshots": "Capturar Pantallas",
+      "internetActivities": "Actividades de Internet",
+      "appMonitoring": "Monitoreo de Aplicaciones",
+      "smartReadFilter": "Filtro \"Smart Read\"",
+      "htmlReports": "Reportes HTML",
+      "userAccessControl": "Control de Acceso de Usuarios",
+      "scheduledMonitoring": "Monitoreo Programado"
+    },
+    "cards": {
+      "card1Title": "Monitorea todo",
+      "card1Desc": "Mejor Keylogger Gratuito puede registrar todas las pulsaciones de teclado, actividad de internet, actividad de portapapeles y uso de aplicaciones locales mientras captura pantallas de las actividades en curso en la computadora objetivo a intervalos establecidos.",
+      "card2Title": "Visor de reportes amigable",
+      "card2Desc": "Mejor Keylogger Gratuito está equipado con un visor de reportes y visor de capturas de pantalla fácil de usar pero extremadamente potente. Con la función única \"Smart-Read\" en Mejor Keylogger Gratuito, los reportes de pulsaciones se vuelven muy amigables y fáciles de leer.",
+      "card3Title": "Múltiples métodos de entrega",
+      "card3Desc": "Los reportes generados por Mejor Keylogger Gratuito pueden ser enviados por correo electrónico o cargados a un servidor FTP de tu elección. También puedes configurar Mejor Keylogger Gratuito para enviar reportes a una computadora en la misma LAN o copiar registros a una unidad USB automáticamente cuando se conecte.",
+      "card4Title": "Configurable",
+      "card4Intro": "Mejor Keylogger Gratuito puede:",
+      "card4Item1": "Desinstalarse automáticamente",
+      "card4Item2": "Monitorear según un horario",
+      "card4Item3": "Limpiar registros automáticamente",
+      "card4Item4": "Filtrar usuarios y aplicaciones",
+      "card4Item5": "y más..."
+    }
+  },
+  "testimonials": {
+    "badge": "Descripción General de Seguridad",
+    "heading": "¿Qué dicen los usuarios sobre el mejor keylogger gratuito?",
+    "description": "Un conjunto completo de herramientas diseñadas para seguimiento invisible de fondo sin interrupciones y seguridad digital.",
+    "audiences": {
+      "title": "¿Para quién es?",
+      "items": [
+        "Administradores de Sistemas",
+        "Empresas",
+        "Padres",
+        "Escuelas",
+        "Cibercafés",
+        "Privacidad Personal"
+      ]
+    },
+    "legal": {
+      "title": "Cumplimiento Legal",
+      "badge": "Encriptación Privada Primero",
+      "text": "El uso es legal siempre que seas el **propietario autorizado** del dispositivo o tengas **consentimiento administrativo explícito**."
+    },
+    "reviews": [
+      {
+        "author": "Asheley",
+        "date": "Junio 2018",
+        "role": "Padre",
+        "text": "Uso Mejor Keylogger Gratuito para monitorear el comportamiento de internet de mi hijo. Ahora sé exactamente qué está haciendo en internet. Asegura que mis hijos se mantengan fuera de problemas y lejos de depredadores."
+      },
+      {
+        "author": "Jayden",
+        "date": "Julio 2018",
+        "role": "Usuario Avanzado",
+        "text": "Después de probar varios productos, elegí este. Es increíblemente fácil de instalar y funciona en todos los navegadores incluyendo Chrome y Firefox. Excelente servicio al cliente."
+      }
+    ]
+  },
+  "footer": {
+    "sections": {
+      "product": "Producto",
+      "company": "Empresa",
+      "legal": "Legal",
+      "support": "Soporte"
+    },
+    "links": {
+      "product": [
+        "Características",
+        "Precios",
+        "Documentación",
+        "Descargar"
+      ],
+      "company": [
+        "Acerca de Nosotros",
+        "Contacto",
+        "Blog",
+        "Carreras"
+      ],
+      "legal": [
+        "Política de Privacidad",
+        "Términos de Servicio",
+        "Uso Legal",
+        "Política de Reembolso"
+      ],
+      "support": [
+        "Centro de Ayuda",
+        "Comunidad",
+        "Estado",
+        "API"
+      ]
+    },
+    "description": "Arquitectura de monitoreo de próxima generación. Construido para la web moderna con seguridad en su núcleo.",
+    "status": "SISTEMAS OPERATIVOS",
+    "security": "AES-256",
+    "copyright": "© 2026 Bestx Software Inc.",
+    "bottomLinks": {
+      "privacy": "Privacidad",
+      "terms": "Términos"
+    }
+  },
+  "blog": {
+    "badge": "Lecturas Frescas",
+    "heading": "¡Bienvenido al Blog de Bestxsoftware!",
+    "description": "Elige un artículo para aprender consejos de configuración, trucos de solución de problemas y tutoriales prácticos.",
+    "featured": "Artículos Destacados",
+    "posts": [
+      {
+        "title": "Top 10 software keylogger gratuito",
+        "tag": "Resumen",
+        "summary": "Una comparación rápida de opciones gratuitas, fortalezas y desventajas."
+      },
+      {
+        "title": "Cómo agregar una Excepción de Antivirus",
+        "tag": "Tutorial",
+        "summary": "Instrucciones paso a paso para reducir falsos positivos de forma segura."
+      },
+      {
+        "title": "Guía de Configuración de Entrega de Correo Electrónico",
+        "tag": "Configuración",
+        "summary": "Configura correctamente los reportes de correo electrónico y verifica que lleguen a tiempo."
+      }
+    ]
+  },
+  "faq": {
+    "mainHeading": "Preguntas Frecuentes",
+    "productFaq": "FAQ del Producto",
+    "orderingFaq": "FAQ de Pedidos",
+    "readMore": "Leer más en nuestro Blog",
+    "faqTopics": "Temas de FAQ",
+    "guides": "Guías",
+    "productQuestions": [
+      "Cómo restablecer la contraseña de inicio de sesión",
+      "Cómo configurar Entrega de Correo Electrónico",
+      "Cómo configurar Entrega FTP",
+      "Cómo ocultar Mejor Keylogger Gratuito",
+      "Cómo importar y ver registros",
+      "Cómo cargar reportes",
+      "¿Puedo reutilizar la misma clave de producto?",
+      "¿Cuáles son las versiones de Windows compatibles?",
+      "¿Puedo instalar Mejor Keylogger Gratuito en una computadora remota?",
+      "¿Es Mejor Keylogger Gratuito completamente indetectable?",
+      "¿Recopila Mejor Keylogger Gratuito información del usuario?",
+      "¿Funciona BFK con aplicaciones distintas a navegadores web?",
+      "¿Puedo usar información registrada con BFK como evidencia legal?",
+      "No puedo encontrar Mejor Keylogger Gratuito en mi computadora"
+    ],
+    "orderingQuestions": [
+      "Cómo recuperar una clave de licencia perdida",
+      "Cómo comprar Mejor Keylogger Gratuito",
+      "Cómo obtener la clave de licencia",
+      "Cómo comprar para múltiples computadoras",
+      "¿Hay cargos recurrentes?"
+    ],
+    "blogPosts": [
+      "Cómo instalar Mejor Keylogger Gratuito",
+      "Guía de Inicio Rápido",
+      "Cómo Cargar Reportes",
+      "Guía de Configuración de Entrega de Correo Electrónico",
+      "Cómo activar la versión Pro",
+      "Qué son las Alarmas Falsas de Malware",
+      "Cómo agregar una Excepción de Antivirus",
+      "Top 10 software keylogger gratuito"
+    ]
+  },
+  "pricing": {
+    "badge": "Planes de Precios",
+    "heading": "¿No tienes la versión Pro?",
+    "description": "Compara las ediciones Lite y Pro y elige el plan que se ajuste a tus necesidades de monitoreo.",
+    "specialOffer": "Oferta Especial",
+    "table": {
+      "title": "Mejor Keylogger Gratuito",
+      "subtitle": "Compra única • Licencia de por vida",
+      "lite": "Lite",
+      "pro": "Pro",
+      "free": "Gratis",
+      "forever": "Por siempre",
+      "price": "$39",
+      "getProBtn": "Obtener Pro"
+    },
+    "features": [
+      "Todas las características de monitoreo",
+      "Registro específico de programa | Usuario",
+      "Desinstalación automática",
+      "Limpieza automática de registros",
+      "Encriptación de archivo de registro",
+      "Opciones de filtrado avanzado",
+      "Capturas de Pantalla Ilimitadas",
+      "Modo Invisible",
+      "Opciones de entrega (correo electrónico, FTP, LAN, USB)",
+      "Soporte técnico premium"
+    ],
+    "featureDetails": {
+      "allFeatures": "Todas las características de monitoreo",
+      "userLogging": "Registro específico de programa | Usuario",
+      "autoUninstall": "Desinstalación automática",
+      "autoClear": "Limpieza automática de registros",
+      "encryption": "Encriptación de archivo de registro",
+      "filtering": "Opciones de filtrado avanzado",
+      "screenshots": "Capturas de Pantalla Ilimitadas",
+      "invisibleMode": "Modo Invisible",
+      "delivery": "Opciones de entrega (correo electrónico, FTP, LAN, USB)",
+      "support": "Soporte técnico premium"
+    },
+    "guarantee": {
+      "heading": "Garantía de Reembolso del 100%",
+      "description": "¿No satisfecho? Obtén un reembolso completo dentro de 30 días",
+      "link": "Leer Política de Reembolso →",
+      "button": "Comprar Ahora"
+    },
+    "whyChoose": {
+      "heading": "¿Por Qué Elegir Mejor Keylogger Gratuito?",
+      "subtitle": "Todo lo que necesitas en un paquete poderoso",
+      "propositions": [
+        {
+          "title": "Soporte Prioritario",
+          "description": "Soporte técnico ilimitado de por vida"
+        },
+        {
+          "title": "Actualizaciones Gratuitas",
+          "description": "Actualizaciones gratuitas hasta el lanzamiento de la siguiente versión principal."
+        },
+        {
+          "title": "Compra Única",
+          "description": "Las licencias son una compra única. No tienen fecha de vencimiento."
+        },
+        {
+          "title": "Compra Segura",
+          "description": "Nuestro sistema de pedidos en línea está impulsado por una plataforma de comercio electrónico segura para vender productos de software."
+        },
+        {
+          "title": "Entrega Instantánea",
+          "description": "Las claves de registro se entregan instantáneamente a tu correo electrónico después del envío del pago."
+        },
+        {
+          "title": "Claves Recuperables",
+          "description": "Si alguna vez pierdes tu clave de licencia, te proporcionaremos una nueva de forma gratuita."
+        }
+      ]
+    }
+  },
+  "download": {
+    "badge": "Centro de Descargas",
+    "heading": "Descargar Mejor Keylogger Gratuito",
+    "description": "Software de monitoreo simple, seguro y ligero.",
+    "version": "Versión:",
+    "versionNum": "8.2.1",
+    "released": "Lanzado:",
+    "releaseDate": "2025-07-15",
+    "fileSize": "Tamaño de archivo:",
+    "fileSizeNum": "6.6 MB",
+    "lite": {
+      "heading": "Versión Lite",
+      "description": "Características básicas de monitoreo gratuito.",
+      "badge": "Descarga Verificada Segura",
+      "button": "Descargar",
+      "pricing": "Gratis",
+      "notes": "sin licencia requerida"
+    },
+    "pro": {
+      "heading": "Versión Pro",
+      "description": "Seguimiento avanzado y todas las características.",
+      "badge": "Descarga Verificada Segura",
+      "popularBadge": "Popular",
+      "button": "Descargar",
+      "trial": "Prueba de 7 días",
+      "notes": "sin clave requerida"
+    }
+  },
+  "featuresPage": {
+    "badge": "Características de Seguridad",
+    "heading": "Capacidades Poderosas de Keylogger.",
+    "description": "Todo lo que necesitas para monitoreo avanzado, envuelto en una interfaz limpia e intuitiva diseñada para control máximo.",
+    "columns": {
+      "capture": {
+        "title": "Capturar",
+        "items": [
+          "Registros de Pulsaciones",
+          "Registros de Portapapeles",
+          "Capturas de Pantalla",
+          "Actividad de Internet",
+          "Uso de Aplicaciones",
+          "Filtro \"Smart Read\"",
+          "Filtrado Avanzado",
+          "Reportes HTML"
+        ]
+      },
+      "management": {
+        "title": "Gestión",
+        "items": [
+          "Limitar por Usuario/Aplicación",
+          "Monitoreo Programado",
+          "Archivos de Registro Encriptados",
+          "Protección con Contraseña",
+          "Entrega vía Correo Electrónico y FTP",
+          "Respaldar Registros Antiguos",
+          "Limpieza Automática de Registros"
+        ]
+      },
+      "security": {
+        "title": "Seguridad",
+        "items": [
+          "Modo Invisible",
+          "Desinstalación Automática",
+          "Controles Parentales",
+          "Filtrado Web",
+          "Limitación de Tiempo",
+          "Bloqueo de Internet",
+          "Bloqueo de Aplicaciones"
+        ]
+      }
+    },
+    "footer": "Características avanzadas para ambientes de monitoreo profesional."
+  },
+  "pages": {
+    "home": {
+      "title": "Mejor Keylogger Gratuito - Software de Monitoreo Gratuito",
+      "description": "Mejor Keylogger Gratuito es una solución de monitoreo potente y discreta. Rastrear pulsaciones, capturas de pantalla y actividad web con registro invisible y encriptado."
+    },
+    "features": {
+      "title": "Características - Mejor Keylogger Gratuito",
+      "description": "Explora todas las características poderosas de monitoreo de Mejor Keylogger Gratuito incluyendo grabación de pulsaciones, capturas de pantalla y filtrado avanzado."
+    },
+    "download": {
+      "title": "Descargar Mejor Keylogger Gratuito",
+      "description": "Descarga la versión gratuita o prueba la versión Pro con una prueba de 7 días. Software de monitoreo simple, seguro y ligero."
+    },
+    "pricing": {
+      "title": "Precios - Mejor Keylogger Gratuito",
+      "description": "Compara las versiones Lite y Pro. Elige según tus necesidades de monitoreo. Compra única con licencia de por vida."
+    },
+    "support": {
+      "title": "Soporte - Mejor Keylogger Gratuito",
+      "description": "Obtén ayuda con instalación, configuración y solución de problemas. Explora nuestras preguntas frecuentes y documentación."
+    },
+    "faq": {
+      "title": "FAQ - Mejor Keylogger Gratuito",
+      "description": "Encuentra respuestas a preguntas frecuentes sobre Mejor Keylogger Gratuito, incluyendo instalación, licencias y características."
+    },
+    "blog": {
+      "title": "Blog - Mejor Keylogger Gratuito",
+      "description": "Lee nuestro blog para consejos de configuración, guías de solución de problemas y tutoriales prácticos para software de monitoreo."
+    }
+  }
+}

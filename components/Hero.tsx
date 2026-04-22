@@ -2,11 +2,13 @@
 
 import React, { useState, useEffect } from 'react';
 import { Monitor, Download, ChevronRight, Menu, X } from 'lucide-react';
+import { useI18n } from '@/lib/i18nContext';
 import Navbar from '@/components/layout/Navbar';
 
 const ModernHero = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useI18n();
 
   // Handle navbar background change on scroll
   useEffect(() => {
@@ -35,31 +37,30 @@ const ModernHero = () => {
       <main className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-6 pt-20">
         <div className="max-w-4xl mx-auto">
           <div className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wide text-blue-400 uppercase bg-blue-400/10 rounded-full border border-blue-400/20">
-            Trusted Monitoring Solutions
+            {t('hero.badge')}
           </div>
 
           <h1 className="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
-            Best Free <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Keylogger</span>
+            {t('hero.heading1')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">{t('hero.heading2')}</span>
           </h1>
 
           <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-            A powerful, discreet solution to monitor what your children or
-            employees are doing on their computers in real-time.
+            {t('hero.description')}
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <div className="flex flex-col items-center">
               <button className="flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-white font-bold py-4 px-8 rounded-xl shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all transform hover:-translate-y-1 active:scale-95 group">
                 <Download size={20} className="group-hover:animate-bounce" />
-                Free Download
+                {t('common.downloadBtn')}
               </button>
               <span className="mt-2 text-[10px] text-slate-400 uppercase tracking-widest">
-                Windows Vista / 7 / 8 / 10 / 11
+                {t('hero.compatibility')}
               </span>
             </div>
 
             <button className="flex items-center gap-1 text-white hover:text-blue-400 font-semibold py-4 px-8 transition-colors group">
-              Learn about PRO
+              {t('common.learnBtn')}
               <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
@@ -68,16 +69,16 @@ const ModernHero = () => {
         {/* Feature Pill (Modern touch) */}
         <div className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl w-full text-left bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
           <div>
-            <h3 className="font-bold text-emerald-400 mb-2">100% Invisible</h3>
-            <p className="text-sm text-slate-400">Completely hidden from the task manager and startup list.</p>
+            <h3 className="font-bold text-emerald-400 mb-2">{t('hero.features.feature1Title')}</h3>
+            <p className="text-sm text-slate-400">{t('hero.features.feature1Desc')}</p>
           </div>
           <div>
-            <h3 className="font-bold text-blue-400 mb-2">Remote Reports</h3>
-            <p className="text-sm text-slate-400">Get logs delivered straight to your email or FTP server.</p>
+            <h3 className="font-bold text-blue-400 mb-2">{t('hero.features.feature2Title')}</h3>
+            <p className="text-sm text-slate-400">{t('hero.features.feature2Desc')}</p>
           </div>
           <div>
-            <h3 className="font-bold text-purple-400 mb-2">Safe & Secure</h3>
-            <p className="text-sm text-slate-400">Encrypted logs ensure only you can see the captured data.</p>
+            <h3 className="font-bold text-purple-400 mb-2">{t('hero.features.feature3Title')}</h3>
+            <p className="text-sm text-slate-400">{t('hero.features.feature3Desc')}</p>
           </div>
         </div>
       </main>

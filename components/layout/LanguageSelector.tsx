@@ -1,81 +1,14 @@
 'use client';
 
-import React, { useEffect, useMemo, useState } from 'react';
-
-declare global {
-  interface Window {
-    google?: {
-      translate?: {
-        TranslateElement: new (
-          options: {
-            pageLanguage: string;
-            includedLanguages: string;
-            autoDisplay: boolean;
-            layout?: number;
-          },
-          elementId: string
-        ) => unknown;
-      };
-    };
-    googleTranslateElementInit?: () => void;
-  }
-}
-
-type LanguageOption = {
-  code: string;
-  label: string;
-};
-
-const OPTIONS: LanguageOption[] = [
-  { code: 'en', label: 'English' },
-  { code: 'es', label: 'Español' },
-  { code: 'de', label: 'Deutsch' },
-  { code: 'ru', label: 'Русский' },
-  { code: 'pl', label: 'Polski' },
-];
-
-const STORAGE_KEY = 'site-language';
+import React from 'react';
+import { LANGUAGE_OPTIONS } from '@/lib/i18n';
+import { useI18n } from '@/lib/i18nContext';
 
 const LanguageSelector = () => {
-  const [selected, setSelected] = useState('en');
+  const { language, setLanguage } = useI18n();
 
-  const validCodes = useMemo(() => new Set(OPTIONS.map((item) => item.code)), []);
-
-  useEffect(() => {
-    const saved = window.localStorage.getItem(STORAGE_KEY);
-    if (saved && validCodes.has(saved)) {
-      setSelected(saved);
-    }
-  }, [validCodes]);
-
-  useEffect(() => {
-    const syncTranslator = () => {
-      const combo = document.querySelector('.goog-te-combo') as HTMLSelectElement | null;
-      if (!combo) return false;
-
-      if (combo.value !== selected) {
-        combo.value = selected;
-        combo.dispatchEvent(new Event('change'));
-      }
-
-      return true;
-    };
-
-    if (syncTranslator()) return;
-
-    const intervalId = window.setInterval(() => {
-      if (syncTranslator()) {
-        window.clearInterval(intervalId);
-      }
-    }, 250);
-
-    return () => window.clearInterval(intervalId);
-  }, [selected]);
-
-  const onChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    const nextLanguage = event.target.value;
-    setSelected(nextLanguage);
-    window.localStorage.setItem(STORAGE_KEY, nextLanguage);
+  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setLanguage(event.target.value as any);
   };
 
   return (
@@ -83,11 +16,11 @@ const LanguageSelector = () => {
       <span className="sr-only">Select language</span>
       <select
         aria-label="Select language"
-        value={selected}
-        onChange={onChange}
+        value={language}
+        onChange={handleChange}
         className="bg-transparent text-sm outline-none"
       >
-        {OPTIONS.map((option) => (
+        {LANGUAGE_OPTIONS.map((option) => (
           <option key={option.code} value={option.code} className="text-slate-900">
             {option.label}
           </option>
