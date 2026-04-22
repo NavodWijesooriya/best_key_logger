@@ -5,17 +5,17 @@ import { Download, ShieldCheck } from 'lucide-react';
 
 const KeyloggerDownloadPage = () => {
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-6 font-sans text-gray-700 pt-24">
+    <div className="min-h-screen bg-slate-50 flex flex-col items-center justify-center p-6 font-sans text-slate-900 pt-24">
 
       {/* Header */}
       <header className="max-w-6xl mx-auto text-center mb-20">
-        <div className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-blue-600 uppercase bg-blue-50 rounded-full">
+        <div className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-emerald-600 uppercase bg-emerald-50 rounded-full border border-emerald-200">
           Download Center
         </div>
         <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4 font-family-roboto">
           Download Best Free Keylogger
         </h2>
-        <p className="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
           Simple, secure, and lightweight monitoring software.
         </p>
       </header>
@@ -24,7 +24,7 @@ const KeyloggerDownloadPage = () => {
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-3 gap-10 items-stretch">
 
         {/* Branding Card */}
-        <div className="bg-white p-6 inline-flex flex-col items-center">
+        <div className="bg-white p-6 inline-flex flex-col items-center rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-shadow">
           {/* Icon Container with Overlap */}
           <div className="relative mb-6">
             {/* Main Blue Key Icon */}
@@ -35,7 +35,7 @@ const KeyloggerDownloadPage = () => {
             />
 
             {/* Windows 11 Compatibility Badge (Overlaid) */}
-            <div className="absolute -bottom-2 -right-2 bg-white p-0.5 shadow-sm border border-gray-100 rounded-sm">
+            <div className="absolute -bottom-2 -right-2 bg-white p-0.5 shadow-sm border border-slate-200 rounded-sm">
               <img
                 src="/assets/download/logo.png"
                 alt="Windows 11 Compatible"
@@ -45,59 +45,59 @@ const KeyloggerDownloadPage = () => {
           </div>
 
           {/* Metadata Text */}
-          <div className="text-[15px] text-gray-600 leading-tight space-y-0.5 text-center">
+          <div className="text-[15px] text-slate-700 leading-tight space-y-0.5 text-center">
             <p>
-              Version: <span className="text-gray-500">8.2.1</span>
+              Version: <span className="text-slate-600">8.2.1</span>
             </p>
             <p>
-              Released: <span className="text-gray-500">2025-07-15</span>
+              Released: <span className="text-slate-600">2025-07-15</span>
             </p>
             <p>
-              File-size: <span className="text-gray-500">6.6 MB</span>
+              File-size: <span className="text-slate-600">6.6 MB</span>
             </p>
           </div>
         </div>
 
         {/* Lite Card */}
-        <div className="bg-white rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition flex flex-col justify-between">
+        <div className="bg-white rounded-2xl shadow-sm p-6 border border-slate-200 hover:shadow-lg hover:border-emerald-200 transition-all flex flex-col justify-between">
           <div>
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">Lite Version</h2>
-            <p className="text-sm text-gray-500 mb-6">Free basic monitoring features.</p>
+            <h2 className="text-2xl font-semibold text-slate-900 mb-2">Lite Version</h2>
+            <p className="text-sm text-slate-600 mb-6">Free basic monitoring features.</p>
 
-            <div className="flex items-center gap-2 text-sm text-green-600 mb-4">
+            <div className="flex items-center gap-2 text-sm text-emerald-600 mb-4">
               <ShieldCheck className="w-4 h-4" /> Verified Safe Download
             </div>
           </div>
 
           <div>
-            <button className="w-full bg-emerald-500 hover:bg-emerald-400 text-white flex items-center justify-center gap-3 py-3 rounded-xl text-lg font-semibold shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all">
+            <button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center gap-3 py-3 rounded-xl text-lg font-semibold shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all">
               <Download className="w-5 h-5" /> Download
             </button>
 
-            <p className="text-sm text-gray-500 mt-3 text-center">
-              <span className="font-semibold text-gray-700">Free</span>, no license required
+            <p className="text-sm text-slate-600 mt-3 text-center">
+              <span className="font-semibold text-slate-900">Free</span>, no license required
             </p>
           </div>
         </div>
 
         {/* Pro Card */}
-        <div className="bg-white rounded-2xl shadow-sm p-6 border border-gray-100 hover:shadow-md transition flex flex-col justify-between relative overflow-hidden">
+        <div className="bg-white rounded-2xl shadow-sm p-6 border border-slate-200 hover:shadow-lg hover:border-emerald-200 transition-all flex flex-col justify-between relative overflow-hidden">
 
-          <div className="absolute top-4 right-4 bg-blue-600 text-white text-xs px-3 py-1 rounded-full">
+          <div className="absolute top-4 right-4 bg-emerald-600 text-white text-xs px-3 py-1 rounded-full">
             Popular
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">Pro Version</h2>
-            <p className="text-sm text-gray-500 mb-6">Advanced tracking & full features.</p>
+            <h2 className="text-2xl font-semibold text-slate-900 mb-2">Pro Version</h2>
+            <p className="text-sm text-slate-600 mb-6">Advanced tracking & full features.</p>
 
-            <div className="flex items-center gap-2 text-sm text-green-600 mb-4">
+            <div className="flex items-center gap-2 text-sm text-emerald-600 mb-4">
               <ShieldCheck className="w-4 h-4" /> Verified Safe Download
             </div>
           </div>
 
           <div>
-            <button className="w-full bg-emerald-500 hover:bg-emerald-400 text-white flex items-center justify-center gap-3 py-3 rounded-xl text-lg font-semibold shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all">
+            <button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center gap-3 py-3 rounded-xl text-lg font-semibold shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all">
               <Download className="w-5 h-5" /> Download
             </button>
 

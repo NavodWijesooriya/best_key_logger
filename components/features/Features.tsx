@@ -62,17 +62,17 @@ const KeyloggerFeatures = () => {
   return (
     <>
       <Navbar />
-      <section className="relative py-24 pt-36 px-6 bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
+      <section className="relative py-24 pt-36 px-6 bg-gradient-to-br from-slate-50 to-slate-100 min-h-screen">
 
         {/* Header Section */}
         <div className="max-w-6xl mx-auto text-center mb-20">
-          <div className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-emerald-500 uppercase bg-emerald-500/10 rounded-full border border-emerald-500/20">
+          <div className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-emerald-600 uppercase bg-emerald-50 rounded-full border border-emerald-200">
             Security Features
           </div>
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4 font-family-roboto">
             Powerful Keylogger Capabilities.
           </h2>
-          <p className="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
             Everything you need for advanced monitoring, wrapped in a clean,
             intuitive interface designed for maximum control.
           </p>
@@ -80,7 +80,7 @@ const KeyloggerFeatures = () => {
 
         {/* Main Features Card */}
         <div className="max-w-7xl mx-auto">
-          <div className="backdrop-blur-2xl bg-white/40 border border-white/60 shadow-[0_32px_64px_-12px_rgba(0,0,0,0.08)] rounded-[2.5rem] p-8 md:p-12 lg:p-16">
+          <div className="backdrop-blur-2xl bg-white/60 border border-white/80 shadow-lg rounded-3xl p-8 md:p-12 lg:p-16">
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
 
@@ -118,7 +118,7 @@ const KeyloggerFeatures = () => {
           </div>
 
           {/* Subtle footer hint */}
-          <p className="text-center mt-12 text-slate-400 text-sm">
+          <p className="text-center mt-12 text-slate-500 text-sm">
             Advanced features for professional monitoring environments.
           </p>
         </div>

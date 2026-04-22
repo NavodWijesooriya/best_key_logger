@@ -65,10 +65,10 @@ const ModernKeyloggerUI = () => {
             </div>
 
             {/* Legal Card */}
-            <div className="bg-slate-900 rounded-3xl p-8 text-white shadow-xl shadow-blue-500/5 group relative overflow-hidden">
+            <div className="bg-slate-900 rounded-3xl p-8 text-white shadow-lg group relative overflow-hidden">
               <div className="relative z-10">
                 <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                  <Scale size={24} className="text-blue-300" />
+                  <Scale size={24} className="text-emerald-400" />
                   Legal Compliance
                 </h3>
                 <p className="text-slate-300 leading-relaxed text-sm">

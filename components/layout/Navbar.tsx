@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
 import { useI18n } from '@/lib/i18nContext';
@@ -8,6 +8,8 @@ import LanguageSelector from './LanguageSelector';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isDarkPage, setIsDarkPage] = useState(false);
   const { t } = useI18n();
 
   const navItems = [
@@ -19,9 +21,37 @@ const Navbar = () => {
     { nameKey: 'navigation.blog', path: '/blog' },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+
+      // Detect if we're on a dark page (like hero)
+      const heroElement = document.querySelector('[data-dark-nav]');
+      setIsDarkPage(!!heroElement && window.scrollY < 200);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Check initial page state
+    const heroElement = document.querySelector('[data-dark-nav]');
+    setIsDarkPage(!!heroElement);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const navbarStyles = isDarkPage && !isScrolled
+    ? 'bg-transparent hover:bg-white/10'
+    : 'bg-white/80 backdrop-blur-md shadow-sm border-b border-slate-200';
+
+  const textColor = isDarkPage && !isScrolled
+    ? 'text-slate-300 hover:text-white'
+    : 'text-slate-700 hover:text-emerald-600';
+
+  const iconColor = isDarkPage && !isScrolled ? 'text-slate-300' : 'text-slate-900';
+
   return (
     <nav
-      className="fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 py-4 bg-transparent shadow-md shadow-black/25"
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 py-4 ${navbarStyles}`}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
 
@@ -42,7 +72,7 @@ const Navbar = () => {
             <Link
               key={item.path}
               href={item.path}
-              className="text-slate-400"
+              className={`transition-colors ${textColor}`}
             >
               {t(item.nameKey)}
             </Link>
@@ -53,7 +83,7 @@ const Navbar = () => {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden"
+          className={`md:hidden ${iconColor}`}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X /> : <Menu />}
@@ -62,12 +92,12 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden mt-4 flex flex-col gap-4 px-4">
+        <div className={`md:hidden mt-4 flex flex-col gap-4 px-4 ${isDarkPage && !isScrolled ? 'bg-slate-800/90 backdrop-blur-md' : 'bg-white'} rounded-lg p-4 border ${isDarkPage && !isScrolled ? 'border-slate-700' : 'border-slate-200'}`}>
           {navItems.map((item) => (
             <Link
               key={item.path}
               href={item.path}
-              className="text-slate-300 hover:text-white"
+              className={`transition-colors ${isDarkPage && !isScrolled ? 'text-slate-300 hover:text-white' : 'text-slate-700 hover:text-emerald-600'}`}
               onClick={() => setMobileMenuOpen(false)}
             >
               {t(item.nameKey)}

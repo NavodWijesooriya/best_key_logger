@@ -61,16 +61,16 @@ const ProductPage = () => {
   ];
 
   return (
-    <div className="relative py-16 md:py-20 px-4 md:px-6 bg-linear-to-br from-gray-50 to-gray-100 min-h-screen flex flex-col items-center gap-16 font-sans">
+    <div className="relative py-16 md:py-20 px-4 md:px-6 bg-linear-to-br from-slate-50 to-slate-100 min-h-screen flex flex-col items-center gap-16 font-sans">
 
       <div className="max-w-6xl mx-auto text-center">
-        <div className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-blue-600 uppercase bg-blue-50 rounded-full">
+        <div className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-emerald-600 uppercase bg-emerald-50 rounded-full border border-emerald-200">
           Pricing Plans
         </div>
         <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4 font-family-roboto">
           Don&apos;t have Pro version
         </h2>
-        <p className="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
           Compare Lite and Pro editions and choose the plan that fits your monitoring needs.
         </p>
       </div>
@@ -88,30 +88,30 @@ const ProductPage = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+        <div className="bg-white rounded-3xl shadow-lg border border-slate-200 overflow-hidden hover:shadow-xl transition-shadow">
           <table className="w-full border-collapse">
             <thead>
-              <tr className="border-b border-gray-100 bg-gradient-to-br from-gray-50 to-white">
+              <tr className="border-b border-slate-200 bg-gradient-to-br from-slate-50 to-white">
                 <th className="p-8 text-left align-bottom">
-                  <h1 className="text-2xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
+                  <h1 className="text-2xl font-bold bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
                     Best Free Keylogger
                   </h1>
-                  <p className="text-sm text-gray-400 font-normal mt-1">One-time payment • Lifetime license</p>
+                  <p className="text-sm text-slate-500 font-normal mt-1">One-time payment • Lifetime license</p>
                 </th>
                 <th className="w-36 p-6 text-center">
-                  <div className="text-lg font-semibold text-gray-700">Lite</div>
-                  <div className="text-2xl font-bold text-gray-900 mt-2">Free</div>
-                  <div className="text-xs text-gray-400 mt-1">Forever</div>
+                  <div className="text-lg font-semibold text-slate-700">Lite</div>
+                  <div className="text-2xl font-bold text-slate-900 mt-2">Free</div>
+                  <div className="text-xs text-slate-500 mt-1">Forever</div>
                 </th>
-                <th className="w-44 p-6 text-center bg-gradient-to-b from-gray-50 to-white relative">
+                <th className="w-44 p-6 text-center bg-gradient-to-b from-emerald-50 to-white relative">
                   <div className="absolute -top-2 left-1/2 -translate-x-1/2">
-                    <div className="bg-gradient-to-r from-amber-400 to-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                    <div className="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
                       POPULAR
                     </div>
                   </div>
-                  <div className="text-lg font-semibold text-gray-700">Pro</div>
-                  <div className="text-3xl font-bold text-gray-900 mt-2">$39</div>
-                  <button className="mt-4 bg-emerald-500 hover:bg-emerald-400 text-white font-semibold py-2.5 px-6 rounded-xl shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all duration-200 text-sm w-full">
+                  <div className="text-lg font-semibold text-slate-700">Pro</div>
+                  <div className="text-3xl font-bold text-slate-900 mt-2">$39</div>
+                  <button className="mt-4 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-2.5 px-6 rounded-xl shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all duration-200 text-sm w-full">
                     Get Pro
                   </button>
                 </th>
@@ -119,22 +119,22 @@ const ProductPage = () => {
             </thead>
             <tbody>
               {pricingFeatures.map((f, i) => (
-                <tr key={i} className="border-b border-gray-50 hover:bg-gray-50/50 transition-colors">
-                  <td className="px-8 py-4 text-gray-600 text-sm font-medium">{f.name}</td>
+                <tr key={i} className="border-b border-slate-100 hover:bg-slate-50/50 transition-colors">
+                  <td className="px-8 py-4 text-slate-700 text-sm font-medium">{f.name}</td>
                   <td className="px-6 py-4 text-center">
                     {f.lite === true ?
-                      <div className="inline-flex items-center justify-center w-6 h-6 bg-green-100 rounded-full">
-                        <Check className="text-green-600" size={14} />
+                      <div className="inline-flex items-center justify-center w-6 h-6 bg-emerald-100 rounded-full">
+                        <Check className="text-emerald-600" size={14} />
                       </div> :
-                      <span className="text-xs text-gray-400">{f.lite}</span>
+                      <span className="text-xs text-slate-500">{f.lite}</span>
                     }
                   </td>
-                  <td className="px-6 py-4 text-center bg-gray-50/30">
+                  <td className="px-6 py-4 text-center bg-emerald-50/20">
                     {f.pro && f.pro !== true ?
-                      <span className="text-xs text-gray-500">{f.pro}</span> :
+                      <span className="text-xs text-slate-600">{f.pro}</span> :
                       f.pro &&
-                      <div className="inline-flex items-center justify-center w-6 h-6 bg-green-100 rounded-full">
-                        <Check className="text-green-600" size={14} />
+                      <div className="inline-flex items-center justify-center w-6 h-6 bg-emerald-100 rounded-full">
+                        <Check className="text-emerald-600" size={14} />
                       </div>
                     }
                   </td>

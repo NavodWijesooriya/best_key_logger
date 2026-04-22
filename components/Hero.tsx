@@ -20,7 +20,7 @@ const ModernHero = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen w-full bg-slate-900 text-white font-sans overflow-hidden">
+    <div className="relative min-h-screen w-full bg-slate-900 text-white font-sans overflow-hidden" data-dark-nav>
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img

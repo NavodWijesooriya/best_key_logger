@@ -12,11 +12,11 @@ interface SupportCardProps {
 
 const SupportCard: React.FC<SupportCardProps> = ({ icon, title, description, badge, path }) => {
   return (
-    <Link href={path} className="group relative flex flex-col items-center p-8 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-gray-200 hover:-translate-y-1">
+    <Link href={path} className="group relative flex flex-col items-center p-8 bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 hover:border-emerald-200 hover:-translate-y-1">
       {/* Badge */}
       {badge && (
         <div className="absolute -top-3 left-6">
-          <div className="bg-linear-to-r from-blue-500 to-emerald-500 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md">
+          <div className="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md">
             {badge}
           </div>
         </div>
@@ -24,24 +24,24 @@ const SupportCard: React.FC<SupportCardProps> = ({ icon, title, description, bad
 
       {/* Icon Container with Animation */}
       <div className="mb-6 relative">
-        <div className="absolute inset-0 bg-linear-to-br from-gray-50 to-white rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-110"></div>
-        <div className="relative text-gray-400 group-hover:text-slate-700 transition-all duration-300 group-hover:scale-110">
+        <div className="absolute inset-0 bg-linear-to-br from-emerald-50 to-emerald-100 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 scale-110"></div>
+        <div className="relative text-slate-400 group-hover:text-emerald-700 transition-all duration-300 group-hover:scale-110">
           {icon}
         </div>
       </div>
 
       {/* Title */}
-      <h2 className="text-slate-800 text-xl font-semibold mb-3 group-hover:text-slate-900 transition-colors">
+      <h2 className="text-slate-900 text-xl font-semibold mb-3 group-hover:text-slate-900 transition-colors">
         {title}
       </h2>
 
       {/* Description */}
-      <p className="text-gray-400 text-center text-sm leading-relaxed mb-4">
+      <p className="text-slate-500 text-center text-sm leading-relaxed mb-4">
         {description}
       </p>
 
       {/* Learn More Link */}
-      <div className="flex items-center gap-1 bg-emerald-500 text-white text-sm font-semibold px-4 py-2 rounded-lg shadow-[0_0_16px_rgba(16,185,129,0.25)] opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 group-hover:bg-emerald-400">
+      <div className="flex items-center gap-1 bg-emerald-500 text-white text-sm font-semibold px-4 py-2 rounded-lg shadow-[0_0_16px_rgba(16,185,129,0.25)] opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 group-hover:bg-emerald-600">
         <span>Learn More</span>
         <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
       </div>
@@ -51,13 +51,13 @@ const SupportCard: React.FC<SupportCardProps> = ({ icon, title, description, bad
 
 export const SupportCenter: React.FC = () => {
   return (
-    <div className="bg-white min-h-screen py-12 px-4 flex flex-col items-center gap-16 font-sans pt-24">
+    <div className="bg-slate-50 min-h-screen py-12 px-4 flex flex-col items-center gap-16 font-sans pt-24">
       {/* Hero Section */}
       <div className="text-center max-w-3xl">
         {/* Decorative Element */}
-        <div className="inline-flex items-center gap-2 bg-linear-to-r from-gray-50 to-white px-4 py-2 rounded-full shadow-sm mb-6 border border-gray-100">
-          <Headphones size={16} className="text-slate-600" />
-          <span className="text-sm text-gray-500 font-medium">24/7 Support Available</span>
+        <div className="inline-flex items-center gap-2 bg-linear-to-r from-emerald-50 to-emerald-100 px-4 py-2 rounded-full shadow-sm mb-6 border border-emerald-200">
+          <Headphones size={16} className="text-emerald-600" />
+          <span className="text-sm text-emerald-700 font-medium">24/7 Support Available</span>
         </div>
 
         {/* Main Title */}
@@ -67,7 +67,7 @@ export const SupportCenter: React.FC = () => {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+        <p className="text-slate-600 text-lg max-w-2xl mx-auto">
           Get the help you need, when you need it. Our support team is here to assist you 24/7.
         </p>
       </div>

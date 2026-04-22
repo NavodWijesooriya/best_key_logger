@@ -57,7 +57,7 @@ const BestFreeKeyloggerUI = () => {
               <Activity size={120} />
             </div>
             <div className="relative z-10">
-              <div className="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg shadow-blue-200">
+              <div className="w-12 h-12 bg-emerald-600 rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg shadow-emerald-200">
                 <Shield size={24} />
               </div>
               <h3 className="text-2xl font-bold mb-4">Monitor everything</h3>

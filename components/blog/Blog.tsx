@@ -64,14 +64,14 @@ const BestxsoftwareBlog = () => {
         <img
           src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80"
           alt="Modern workspace"
-          className="h-full w-full object-cover opacity-12"
+          className="h-full w-full object-cover opacity-8"
         />
-        <div className="absolute inset-0 bg-linear-to-b from-white/60 via-slate-50/85 to-slate-50" />
+        <div className="absolute inset-0 bg-linear-to-b from-slate-50/60 via-slate-50/85 to-slate-50" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-6xl px-4 pb-16 pt-28 sm:px-6 lg:px-8">
-        <section className="mb-12 rounded-4xl border border-slate-200 bg-white/85 p-6 text-center shadow-[0_20px_50px_rgba(15,23,42,0.08)] backdrop-blur-md sm:p-10">
-          <div className="mx-auto mb-3 flex w-fit items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700 backdrop-blur">
+        <section className="mb-12 rounded-3xl border border-slate-200 bg-white/95 p-6 text-center shadow-sm backdrop-blur-sm sm:p-10">
+          <div className="mx-auto mb-3 flex w-fit items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700 backdrop-blur">
             <Sparkles size={16} />
             Fresh Reads
           </div>
@@ -92,7 +92,7 @@ const BestxsoftwareBlog = () => {
               <Link
                 key={`${post.title}-${index}`}
                 href={post.path}
-                className="group block overflow-hidden rounded-[1.8rem] border border-slate-200 bg-white shadow-[0_14px_35px_rgba(15,23,42,0.08)] transition duration-300  hover:shadow-[0_20px_42px_rgba(15,23,42,0.14)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300"
+                className="group block overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg hover:border-emerald-200 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300"
               >
                 <div className="relative overflow-hidden bg-linear-to-br from-slate-100 via-white to-blue-50 p-3">
                   <img
