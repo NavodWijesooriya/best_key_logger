@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/Footer'
 import {
+  Download,
   Keyboard,
   Clipboard,
   Camera,
@@ -27,6 +28,7 @@ import {
   LucideIcon,
   Monitor,
   ClipboardList,
+  Eye,
 } from 'lucide-react'
 
 type FeatureItemProps = {
@@ -208,6 +210,84 @@ const delivary = [
 
 ]
 
+const extraFeatures = [
+  {
+    icon: Download,
+    title: 'Back Up Old Logs',
+    description:
+      'You can back up old log files created by Best Free Keylogger as encrypted files or HTML reports. When you export old logs as encrypted files, they can be imported and viewed on the report viewer at a later time.',
+  },
+  {
+    icon: Trash2,
+    title: 'Automatic Log Clearance',
+    description:
+      'Best Free Keylogger can be configured to get rid of old and redundant logs automatically either when total size of old logs reaches a user-specific limit or after they have been delivered. This saves you the effort of manually removing old logs.',
+  },
+  {
+    icon: Eye,
+    title: 'Invisible Mode',
+    description:
+      'Once Best Free Keylogger is installed on the computer, it starts running in the background. It does not create a desktop shortcut or start menu icon; its interface can be called only using the hotkey or the keyword configured by the administrator.',
+  },
+  {
+    icon: Power,
+    title: 'Automatic Uninstallation',
+    description:
+      'You can schedule Best Free Keylogger to uninstall itself automatically on a particular date. When configured, the software will be automatically uninstalled from the computer without being detected by the current user.',
+  },
+]
+
+const parental = [
+  {
+    title: '"Parental Controls"',
+    image: '/assets/images/best-free-keylogger-parental-features.png',
+    alt: 'Parental Controls',
+    description:
+      '"Parents concerned about their children’s online safety are offered several Parental control features by Best Free Keylogger.',
+  },
+
+]
+
+const web = [
+  {
+    title: 'Web Filtering',
+    icon: Monitor,
+    image: '/assets/images/best-free-keylogger-parental-features-web-filtering.png',
+    alt: 'Web Filtering',
+    reverse: false,
+    description:
+      'Best Free Keylogger is web-filtering feature can block or allow access to websites based on the textual content on those sites. There are content-specific filters to filter out websites with inappropriate content such as pornography, weapons, violence, drugs, alcohol, tobacco, gambling and profanity. It is also possible to block social-networking sites and video-sharing sites using Best Free Keylogger if they do not align with your views or company policies.',
+  },
+  {
+    title: 'Time Limiting Internet Access',
+    icon: ClipboardList,
+    image: '/assets/images/best-free-keylogger-parental-features-time-limiting.png',
+    alt: 'Time Limiting Internet Access',
+    reverse: true,
+    description:
+      'Parental controls on Best Free Keylogger can be configured to run only during specific hours. This setting helps you to schedule parental controls to run from a particular time until a defined time on certain days of the week.',
+  },
+]
+
+
+const internet = [
+  {
+    title: '"Internet Blocking',
+    image: '/assets/images/best-free-keylogger-parental-features-internet-blocking (1).png',
+    alt: 'Internet Blocking',
+    description:
+      '"Blocking specific websites or allowing only a defined list of websites is straightforward with Best Free Keylogger. You can add a list of websites to the block list if you wish to block in order to prevent users from visiting them, and in the same way, you can add a list of websites if you wish to allow access only to those websites.',
+  },
+  {
+    title: 'Application Blocking',
+    image: '/assets/images/best-free-keylogger-parental-features-application-blocking.png',
+    alt: 'Application Blocking',
+    description:
+      'You can prevent your children from using certain applications installed on your computer by configuring "Application blocking" on Best Free Keylogger. When configured, users will not be able to run any of the applications listed in the list.',
+  },
+]
+
+
 const FeaturesPage = () => {
   return (
     <div className="min-h-screen bg-slate-50">
@@ -335,6 +415,100 @@ const FeaturesPage = () => {
             >
               <h2 className="text-center text-2xl font-bold text-slate-900">{feature.title}</h2>
               <div className="mx-auto mt-6 w-full max-w-lg overflow-hidden rounded-xl">
+                <img src={feature.image} alt={feature.alt} className="w-full" />
+              </div>
+              <p className="mt-6 text-center text-sm leading-relaxed text-slate-600">
+                {feature.description}
+              </p>
+            </article>
+          ))}
+        </section>
+
+        <section
+          className="mb-20 rounded-3xl  sm:p-8 lg:p-10 m-12 p-12"
+          aria-labelledby="additional-features-heading"
+          id="additional-features"
+        >
+          <h2 id="additional-features-heading" className="sr-only">
+            Additional Features
+          </h2>
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
+            {extraFeatures.map((feature) => {
+              const Icon = feature.icon
+
+              return (
+                <div key={feature.title} className="flex flex-col items-center text-center p-6">
+                  <div className="mb-6 rounded-full  p-4 shadow-sm ring-1 ring-slate-200">
+                    <Icon className="h-12 w-12 text-blue-500" />
+                  </div>
+                  <h3 className="text-2xl font-semibold text-slate-800 mb-4">
+                    {feature.title}
+                  </h3>
+                  <p className="max-w-lg leading-relaxed text-slate-600">
+                    {feature.description}
+                  </p>
+                </div>
+              )
+            })}
+          </div>
+        </section>
+
+        <section className='center-'>
+          {parental.map((feature) => (
+            <article
+              key={feature.title}
+              className="flex h-full flex-col rounded-3xl "
+            >
+              <h2 className="text-center text-2xl font-bold text-slate-900">{feature.title}</h2>
+              <div className="mx-auto mt-6 w-full max-w-lg overflow-hidden rounded-xl">
+                <img src={feature.image} alt={feature.alt} className="w-full" />
+              </div>
+              <p className="mt-6 text-center text-sm leading-relaxed text-slate-600">
+                {feature.description}
+              </p>
+            </article>
+          ))}
+        </section>
+
+        <section className="mt-20 space-y-8">
+          {web.map((section) => {
+            const Icon = section.icon
+
+            return (
+              <div
+                key={section.title}
+                className={`flex flex-col items-center gap-12 rounded-3xl   lg:p-8 ${section.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}
+              >
+                <div className="flex flex-1 justify-center">
+                  <img
+                    src={section.image}
+                    alt={section.alt}
+                    className="w-full max-w-md rounded-xl border "
+                  />
+                </div>
+
+                <div className="flex-1 max-w-md">
+                  <div className="mb-4 flex items-center gap-2">
+                    <Icon className="text-emerald-600" size={24} />
+                    <h2 className="text-2xl font-bold tracking-tight text-slate-900">
+                      {section.title}
+                    </h2>
+                  </div>
+                  <p className="leading-relaxed text-slate-600">{section.description}</p>
+                </div>
+              </div>
+            )
+          })}
+        </section>
+
+        <section className="mb-30 grid gap-12 md:grid-cols-2 md:gap-18 m-12 p-12">
+          {internet.map((feature) => (
+            <article
+              key={feature.title}
+              className="flex h-full flex-col rounded-3xl "
+            >
+              <h2 className="text-center text-2xl font-bold text-slate-900">{feature.title}</h2>
+              <div className="mx-auto mt-6 w-full max-w-xs overflow-hidden rounded-xl">
                 <img src={feature.image} alt={feature.alt} className="w-full" />
               </div>
               <p className="mt-6 text-center text-sm leading-relaxed text-slate-600">
