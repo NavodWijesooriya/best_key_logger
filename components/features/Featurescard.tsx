@@ -1,151 +1,91 @@
-"use client";
+'use client';
 
 import React from 'react';
 import { Monitor, ClipboardList } from 'lucide-react';
 
 const KeystrokeDashboard: React.FC = () => {
+  const featureBlocks = [
+    {
+      icon: Monitor,
+      title: 'Keystroke Records',
+      image: '/assets/images/keystroke-records.png',
+      alt: 'Keystroke Records Dashboard',
+      description:
+        'See what was typed in each application and keep track of when, where, and by whom each entry was recorded.',
+      accent: 'bg-emerald-500',
+    },
+    {
+      icon: ClipboardList,
+      title: 'Clipboard Records',
+      image: '/assets/images/best-free-keylogger-applications (3).png',
+      alt: 'Clipboard Records Dashboard',
+      description:
+        'Capture copied and cut content, including text and files, with the same clean card styling used throughout the site.',
+      accent: 'bg-blue-500',
+    },
+
+    {
+      icon: ClipboardList,
+      title: 'Clipboard Records',
+      image: '/assets/images/best-free-keylogger-applications (3).png',
+      alt: 'Clipboard Records Dashboard',
+      description:
+        'Capture copied and cut content, including text and files, with the same clean card styling used throughout the site.',
+      accent: 'bg-blue-500',
+    },
+
+    {
+      icon: ClipboardList,
+      title: 'Clipboard Records',
+      image: '/assets/images/best-free-keylogger-applications (3).png',
+      alt: 'Clipboard Records Dashboard',
+      description:
+        'Capture copied and cut content, including text and files, with the same clean card styling used throughout the site.',
+      accent: 'bg-blue-500',
+    },
+  ];
+
   return (
-    <div className="flex flex-col min-h-screen bg-slate-50 p-12 gap-24 items-center justify-center">
-
-      {/* Section 1: Keystroke Records (Image Left, Text Right) */}
-      <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl w-full">
-        <div className="flex-1">
-          <img
-            src="/assets/images/keystroke-records.png"
-            alt="Keystroke Records Dashboard"
-            className="w-full rounded-lg shadow-sm border border-slate-200 hover:shadow-lg transition-shadow"
-          />
+    <section className="max-w-6xl mx-auto px-6 py-16">
+      <div className="text-center mb-12">
+        <div className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-emerald-600">
+          Feature Highlights
         </div>
-
-        <div className="flex-1 max-w-md">
-          <div className="flex items-center gap-2 mb-4">
-            <Monitor className="text-emerald-600" size={24} />
-            <h2 className="text-2xl font-bold text-slate-900 tracking-tight">Keystroke Records</h2>
-          </div>
-          <p className="text-slate-600 leading-relaxed">
-            Best Free Keylogger gives you the power to see what was typed on each application by
-            recording all keystrokes entered on each of them. It keeps track of where the keystroke
-            was entered, the user who typed, and the date and time of the record. You just have to
-            click "Load Report" and all the past records for the selected date are loaded.
-          </p>
-        </div>
+        <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+          Detailed Monitoring Views
+        </h2>
+        <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
+          These cards now share the same spacing, contrast, and rounded surfaces as the homepage.
+        </p>
       </div>
 
-      {/* Section 2: Clipboard Records (Text Left, Image Right) */}
-      <div className="flex flex-col lg:flex-row-reverse items-center gap-12 max-w-6xl w-full">
-        <div className="flex-1">
-          <img
-            src="/assets/images/best-free-keylogger-applications (3).png"
-            alt="Clipboard Records Dashboard"
-            className="w-full rounded-lg shadow-sm border border-slate-200 hover:shadow-lg transition-shadow"
-          />
-        </div>
+      <div className="grid gap-8 md:grid-cols-2">
+        {featureBlocks.map((feature) => {
+          const Icon = feature.icon;
 
-        <div className="flex-1 max-w-md">
-          <div className="flex items-center gap-2 mb-4">
-            <ClipboardList className="text-emerald-600" size={24} />
-            <h2 className="text-2xl font-bold text-slate-900 tracking-tight">Clipboard Records</h2>
-          </div>
-          <p className="text-slate-600 leading-relaxed">
-            Best Free Keylogger can watch the clipboard, and it can record what was cut or copied.
-            In addition, Best Free Keylogger can also identify the content by type: text or files.
-          </p>
-        </div>
+          return (
+            <article
+              key={feature.title}
+              className="group relative p-px rounded-3xl bg-linear-to-br from-slate-200/40 to-slate-300/40 transition-all duration-500 hover:from-blue-400/40 hover:to-indigo-400/40"
+            >
+              <div className="relative h-full rounded-3xl bg-white/80 backdrop-blur-xl border border-white/40 p-6 shadow-lg transition-all duration-500 group-hover:-translate-y-1 group-hover:shadow-xl sm:p-8">
+                <div className={`mb-5 flex h-12 w-12 items-center justify-center rounded-2xl ${feature.accent} text-white shadow-lg`}>
+                  <Icon className="h-6 w-6" />
+                </div>
+
+                <h3 className="text-2xl font-bold tracking-tight text-slate-900">{feature.title}</h3>
+
+                <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
+                  <img src={feature.image} alt={feature.alt} className="w-full object-cover" />
+                </div>
+
+                <p className="mt-6 text-sm leading-relaxed text-slate-600">{feature.description}</p>
+              </div>
+            </article>
+          );
+        })}
       </div>
-
-      <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl w-full">
-        <div className="flex-1">
-          <img
-            src="/assets/images/keystroke-records.png"
-            alt="Keystroke Records Dashboard"
-            className="w-full rounded-lg shadow-sm border border-gray-200"
-          />
-        </div>
-
-        <div className="flex-1 max-w-md">
-          <div className="flex items-center gap-2 mb-4">
-            <Monitor className="text-gray-800" size={24} />
-            <h2 className="text-2xl font-bold text-gray-800 tracking-tight">Keystroke Records</h2>
-          </div>
-          <p className="text-gray-600 leading-relaxed">
-            Best Free Keylogger gives you the power to see what was typed on each application by
-            recording all keystrokes entered on each of them. It keeps track of where the keystroke
-            was entered, the user who typed, and the date and time of the record. You just have to
-            click "Load Report" and all the past records for the selected date are loaded.
-          </p>
-        </div>
-      </div>
-
-      <div className="flex flex-col lg:flex-row-reverse items-center gap-12 max-w-6xl w-full">
-        <div className="flex-1">
-          <img
-            src="/assets/images/best-free-keylogger-applications (3).png"
-            alt="Clipboard Records Dashboard"
-            className="w-full rounded-lg shadow-sm border border-gray-200"
-          />
-        </div>
-
-        <div className="flex-1 max-w-md">
-          <div className="flex items-center gap-2 mb-4">
-            <ClipboardList className="text-gray-800" size={24} />
-            <h2 className="text-2xl font-bold text-gray-800 tracking-tight">Clipboard Records</h2>
-          </div>
-          <p className="text-gray-600 leading-relaxed">
-            Best Free Keylogger can watch the clipboard, and it can record what was cut or copied.
-            In addition, Best Free Keylogger can also identify the content by type: text or files.
-          </p>
-        </div>
-      </div>
-
-
-      <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl w-full">
-        <div className="flex-1">
-          <img
-            src="/assets/images/keystroke-records.png"
-            alt="Keystroke Records Dashboard"
-            className="w-full rounded-lg shadow-sm border border-gray-200"
-          />
-        </div>
-
-        <div className="flex-1 max-w-md">
-          <div className="flex items-center gap-2 mb-4">
-            <Monitor className="text-gray-800" size={24} />
-            <h2 className="text-2xl font-bold text-gray-800 tracking-tight">Keystroke Records</h2>
-          </div>
-          <p className="text-gray-600 leading-relaxed">
-            Best Free Keylogger gives you the power to see what was typed on each application by
-            recording all keystrokes entered on each of them. It keeps track of where the keystroke
-            was entered, the user who typed, and the date and time of the record. You just have to
-            click "Load Report" and all the past records for the selected date are loaded.
-          </p>
-        </div>
-      </div>
-
-
-      <div className="flex flex-col lg:flex-row-reverse items-center gap-12 max-w-6xl w-full">
-        <div className="flex-1">
-          <img
-            src="/assets/images/best-free-keylogger-applications (3).png"
-            alt="Clipboard Records Dashboard"
-            className="w-full rounded-lg shadow-sm border border-gray-200"
-          />
-        </div>
-
-        <div className="flex-1 max-w-md">
-          <div className="flex items-center gap-2 mb-4">
-            <ClipboardList className="text-gray-800" size={24} />
-            <h2 className="text-2xl font-bold text-gray-800 tracking-tight">Clipboard Records</h2>
-          </div>
-          <p className="text-gray-600 leading-relaxed">
-            Best Free Keylogger can watch the clipboard, and it can record what was cut or copied.
-            In addition, Best Free Keylogger can also identify the content by type: text or files.
-          </p>
-        </div>
-      </div>
-
-
-
-    </div>
+    </section>
   );
 };
 

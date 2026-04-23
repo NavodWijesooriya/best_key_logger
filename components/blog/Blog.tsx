@@ -70,18 +70,17 @@ const BestxsoftwareBlog = () => {
       </div>
 
       <div className="relative z-10 mx-auto max-w-6xl px-4 pb-16 pt-28 sm:px-6 lg:px-8">
-        <section className="mb-12 rounded-3xl border border-slate-200 bg-white/95 p-6 text-center shadow-sm backdrop-blur-sm sm:p-10">
-          <div className="mx-auto mb-3 flex w-fit items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700 backdrop-blur">
-            <Sparkles size={16} />
+        <div className="text-center mb-12">
+          <div className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-emerald-600">
             Fresh Reads
           </div>
-          <h1 className="font-['Trebuchet_MS','Segoe_UI',sans-serif] text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+          <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
             Welcome to Bestxsoftware Blog!
-          </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-sm text-slate-600 sm:text-base">
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
             Pick a post to learn setup tips, troubleshooting tricks, and practical walkthroughs.
           </p>
-        </section>
+        </div>
 
         <section>
           <h2 className="mb-6 font-['Trebuchet_MS','Segoe_UI',sans-serif] text-2xl font-bold text-slate-900 sm:text-3xl">

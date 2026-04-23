@@ -7,7 +7,7 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <main className="pt-16 md:pt-20">
+      <main className="pt-12 md:pt-8">
         <BuyNow />
       </main>
       <Footer />

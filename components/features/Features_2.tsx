@@ -5,42 +5,63 @@ import React from 'react';
 const KeyloggerUI = () => {
   const featureBlocks = [
     {
-      title: '"Smart Read" Filter',
+      title: 'Smart Read Filter',
       image: '/assets/images/smart-read.png',
       alt: 'Smart Read Feature',
       description:
-        '"Smart-Read" is a unique feature on Best Free Keylogger that massively improves readability of keystroke reports. "Smart-Read" can clear the clutter of keystrokes by cleverly analyzing the records and filtering out unimportant keystrokes such as backspace and delete to show only the final string of characters. This feature can be switched on or off with just one click.',
+        'Smart Read improves readability by filtering out clutter and showing only the final string of characters in keystroke reports.',
     },
     {
       title: 'Advanced Filtering',
       image: '/assets/images/advanced-filtering.png',
       alt: 'Advanced Filtering Feature',
       description:
-        'Best Free Keylogger report viewer is equipped with filters that can filter the records by user, date, text content, application, URL etc. This feature helps you find what you are looking for without having to strain your eyes scanning the whole report.',
+        'Advanced filtering helps you sort records by user, date, text content, application, or URL without scanning the entire report.',
     },
   ];
 
   return (
-    <section className="bg-slate-50 py-16 sm:py-20">
-      <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 font-sans text-slate-900">
-        <div className="grid gap-8 md:grid-cols-2 md:gap-10">
-          {featureBlocks.map((feature) => (
+    <section className="max-w-6xl mx-auto px-6 py-16">
+      <div className="text-center mb-12">
+        <div className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-emerald-600">
+          Report Experience
+        </div>
+        <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+          Smart Filtering Tools
+        </h2>
+        <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">
+          Review activity with the same rounded cards, soft shadows, and subtle contrast used on the homepage.
+        </p>
+      </div>
+
+      <div className="grid gap-8 md:grid-cols-2 md:gap-10">
+        {featureBlocks.map((feature, index) => {
+          const featured = index === 0;
+
+          return (
             <article
               key={feature.title}
-              className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-lg transition-all sm:p-8"
+              className="group relative p-px rounded-3xl bg-linear-to-br from-slate-200/40 to-slate-300/40 transition-all duration-500 hover:from-blue-400/40 hover:to-indigo-400/40"
             >
-              <h2 className="text-center text-2xl font-bold text-slate-900">{feature.title}</h2>
+              <div
+                className={`relative flex h-full flex-col rounded-3xl p-6 sm:p-8 backdrop-blur-xl border shadow-lg transition-all duration-500 group-hover:-translate-y-1 ${featured ? 'bg-slate-900 text-white border-white/10' : 'bg-white/80 border-white/40'
+                  }`}
+              >
+                <h3 className={`text-center text-2xl font-bold ${featured ? 'text-white' : 'text-slate-900'}`}>
+                  {feature.title}
+                </h3>
 
-              <div className="mt-6 overflow-hidden rounded-lg border border-slate-200">
-                <img src={feature.image} alt={feature.alt} className="w-full" />
+                <div className={`mt-6 overflow-hidden rounded-2xl border ${featured ? 'border-white/10' : 'border-slate-200'}`}>
+                  <img src={feature.image} alt={feature.alt} className="w-full object-cover" />
+                </div>
+
+                <p className={`mt-6 text-center text-sm leading-relaxed ${featured ? 'text-slate-300' : 'text-slate-600'}`}>
+                  {feature.description}
+                </p>
               </div>
-
-              <p className="mt-6 text-center text-sm leading-relaxed text-slate-600">
-                {feature.description}
-              </p>
             </article>
-          ))}
-        </div>
+          );
+        })}
       </div>
     </section>
   );
