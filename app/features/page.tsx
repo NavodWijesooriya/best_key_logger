@@ -85,28 +85,13 @@ const sectionData = [
   },
 ]
 
-const highlights = [
-  {
-    title: '"Smart Read" Filter',
-    image: '/assets/images/smart-read.png',
-    alt: 'Smart Read feature',
-    description:
-      '"Smart-Read" improves readability of keystroke reports by filtering unimportant keystrokes such as backspace and delete to show only the final string of characters. It can be switched on or off with just one click.',
-  },
-  {
-    title: 'Advanced Filtering',
-    image: '/assets/images/advanced-filtering.png',
-    alt: 'Advanced Filtering feature',
-    description:
-      'The report viewer includes filters for user, date, text content, application, URL, and more, making it easier to find what you need without scanning the whole report.',
-  },
-]
+
 
 const dashboardSections = [
   {
     title: 'Keystroke Records',
     icon: Monitor,
-    image: '/assets/images/keystroke-records.png',
+    image: '/assets/features/best-free-keylogger-features-keystroke.png',
     alt: 'Keystroke Records dashboard',
     reverse: false,
     description:
@@ -115,12 +100,112 @@ const dashboardSections = [
   {
     title: 'Clipboard Records',
     icon: ClipboardList,
-    image: '/assets/images/best-free-keylogger-applications (3).png',
+    image: '/assets/features/best-free-keylogger-features-clipboard.png',
     alt: 'Clipboard Records dashboard',
     reverse: true,
     description:
       'The clipboard monitor records copied or cut content and identifies whether the content is text or files.',
   },
+
+  {
+    title: 'Screenshots',
+    icon: Monitor,
+    image: '/assets/features/best-free-keylogger-features-screenshots.png',
+    alt: 'Screenshots dashboard',
+    reverse: false,
+    description:
+      'With Best Free Keylogger, screenshots of ongoing activities can be captured automatically at set intervals. These screenshots are stored along with other records, and they can be included in reports and backups.',
+  },
+
+  {
+    title: 'Internet Activity',
+    icon: ClipboardList,
+    image: '/assets/features/best-free-keylogger-features-internet-activity.png',
+    alt: 'Clipboard Records dashboard',
+    reverse: true,
+    description:
+      'You can get information regarding websites that were visited using the web-browser on the computer using Best Free Keylogger. The URL, user, date and time are recorded for each internet activity. This feature on Best Free Keylogger works with all major web browsers.',
+  },
+
+  {
+    title: 'Application Usage',
+    icon: Monitor,
+    image: '/assets/features/best-free-keylogger-features-applications.png',
+    alt: 'Keystroke Records dashboard',
+    reverse: false,
+    description:
+      'You can get records about all the applications used on the computer using application monitoring on Best Free Keylogger. This gives you information about the user, when the application was launched and closed etc.',
+  },
+
+
+]
+
+
+const highlights = [
+  {
+    title: '"Smart Read" Filter',
+    image: '/assets/images/best-free-keylogger-features-smart-read.png',
+    alt: 'Smart Read feature',
+    description:
+      '"Smart-Read" improves readability of keystroke reports by filtering unimportant keystrokes such as backspace and delete to show only the final string of characters. It can be switched on or off with just one click.',
+  },
+  {
+    title: 'Advanced Filtering',
+    image: '/assets/images/best-free-keylogger-features-filter.png',
+    alt: 'Advanced Filtering feature',
+    description:
+      'The report viewer includes filters for user, date, text content, application, URL, and more, making it easier to find what you need without scanning the whole report.',
+  },
+]
+
+const html = [
+  {
+    title: '"HTML Reports"',
+    image: '/assets/images/best-free-keylogger-features-html-report.png',
+    alt: 'HTML Reports feature',
+    description:
+      '"With Best Free Keylogger, you can create reports as portable HTML files, which can be viewed in the web browser without having to install any other additional software.',
+  },
+
+]
+
+
+const limit = [
+  {
+    title: '"Limit by User/Application',
+    image: '/assets/images/best-free-keylogger-features-limit-by-user.png',
+    alt: 'Limit By User/Application',
+    description:
+      '"Sometimes you do not need to monitor all the users or all the applications.Monitoring features on Best Free Keylogger can be configured to enable monitoring only specific users or applications.',
+  },
+
+  {
+    title: 'Encrypted Log Files',
+    image: '/assets/images/best-free-keylogger-features-encrypted.png',
+    alt: 'Encrypted Log Files',
+    description:
+      'You can configure Best Free Keylogger reports to be encrypted with a secure private key of your choice. Then the private key has to be given every time those reports are imported to the report viewer. This prevents any unwanted parties from being able to exploit your records.',
+  },
+
+  {
+    title: 'Password Protection',
+    image: '/assets/images/best-free-keylogger-features-password.png',
+    alt: 'Password Protection',
+    description:
+      'Best Free Keylogger is protected using a login password which can be configured at installation. This password can be changed only by using the interface. Every time the interface is called to unhide using the hotkey or the keyword, the login password is requested, and you cannot proceed without proper authentication.',
+  },
+]
+
+
+const delivary = [
+  {
+    title: '"Delivery via Email, FTP, LAN, USB"',
+    image: '/assets/images/best-free-keylogger-features-report-delivery.png',
+    alt: 'Delivery via Email, FTP, LAN, USB',
+    description:
+      '"Reports generated by Best Free Keylogger can be delivered via multiple delivery methods. You can configure Best Free Keylogger to send you the reports to your email or upload them to an FTP server. It is also possible to copy the reports from your computer to another computer on the same LAN at given intervals or to a USB drive when plugged-in automatically.',
+  },
+
 ]
 
 const FeaturesPage = () => {
@@ -159,37 +244,20 @@ const FeaturesPage = () => {
           </div>
         </section>
 
-        <section className="mb-20 grid gap-8 md:grid-cols-2 md:gap-10">
-          {highlights.map((feature) => (
-            <article
-              key={feature.title}
-              className="flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:shadow-lg sm:p-8"
-            >
-              <h2 className="text-center text-2xl font-bold text-slate-900">{feature.title}</h2>
-              <div className="mt-6 overflow-hidden rounded-xl border border-slate-200">
-                <img src={feature.image} alt={feature.alt} className="w-full" />
-              </div>
-              <p className="mt-6 text-center text-sm leading-relaxed text-slate-600">
-                {feature.description}
-              </p>
-            </article>
-          ))}
-        </section>
-
-        <section className="space-y-8">
+        <section className="mt-20 space-y-8">
           {dashboardSections.map((section) => {
             const Icon = section.icon
 
             return (
               <div
                 key={section.title}
-                className={`flex flex-col items-center gap-12 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm lg:p-8 ${section.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}
+                className={`flex flex-col items-center gap-12 rounded-3xl   lg:p-8 ${section.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}
               >
-                <div className="flex-1">
+                <div className="flex flex-1 justify-center">
                   <img
                     src={section.image}
                     alt={section.alt}
-                    className="w-full rounded-xl border border-slate-200 shadow-sm transition-shadow hover:shadow-lg"
+                    className="w-full max-w-md rounded-xl border "
                   />
                 </div>
 
@@ -207,9 +275,75 @@ const FeaturesPage = () => {
           })}
         </section>
 
-        <p className="mt-12 text-center text-sm text-slate-500">
-          Advanced features for professional monitoring environments.
-        </p>
+        <section className="mb-30 grid gap-12 md:grid-cols-2 md:gap-18 m-12 p-12">
+          {highlights.map((feature) => (
+            <article
+              key={feature.title}
+              className="flex h-full flex-col rounded-3xl "
+            >
+              <h2 className="text-center text-2xl font-bold text-slate-900">{feature.title}</h2>
+              <div className="mx-auto mt-6 w-full max-w-xs overflow-hidden rounded-xl">
+                <img src={feature.image} alt={feature.alt} className="w-full" />
+              </div>
+              <p className="mt-6 text-center text-sm leading-relaxed text-slate-600">
+                {feature.description}
+              </p>
+            </article>
+          ))}
+        </section>
+
+        <section className='center-'>
+          {html.map((feature) => (
+            <article
+              key={feature.title}
+              className="flex h-full flex-col rounded-3xl "
+            >
+              <h2 className="text-center text-2xl font-bold text-slate-900">{feature.title}</h2>
+              <div className="mx-auto mt-6 w-full max-w-lg overflow-hidden rounded-xl">
+                <img src={feature.image} alt={feature.alt} className="w-full" />
+              </div>
+              <p className="mt-6 text-center text-sm leading-relaxed text-slate-600">
+                {feature.description}
+              </p>
+            </article>
+          ))}
+        </section>
+
+
+        <section className="mb-30 grid gap-12 md:grid-cols-2 md:gap-18 m-12 p-12">
+          {limit.map((feature) => (
+            <article
+              key={feature.title}
+              className="flex h-full flex-col rounded-3xl "
+            >
+              <h2 className="text-center text-2xl font-bold text-slate-900">{feature.title}</h2>
+              <div className="mx-auto mt-6 w-full max-w-xs overflow-hidden rounded-xl">
+                <img src={feature.image} alt={feature.alt} className="w-full" />
+              </div>
+              <p className="mt-6 text-center text-sm leading-relaxed text-slate-600">
+                {feature.description}
+              </p>
+            </article>
+          ))}
+        </section>
+
+        <section className='center-'>
+          {delivary.map((feature) => (
+            <article
+              key={feature.title}
+              className="flex h-full flex-col rounded-3xl "
+            >
+              <h2 className="text-center text-2xl font-bold text-slate-900">{feature.title}</h2>
+              <div className="mx-auto mt-6 w-full max-w-lg overflow-hidden rounded-xl">
+                <img src={feature.image} alt={feature.alt} className="w-full" />
+              </div>
+              <p className="mt-6 text-center text-sm leading-relaxed text-slate-600">
+                {feature.description}
+              </p>
+            </article>
+          ))}
+        </section>
+
       </main>
 
       <Footer />
