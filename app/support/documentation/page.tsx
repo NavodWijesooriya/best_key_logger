@@ -123,19 +123,27 @@ const UpgradeToProPage = () => {
         content: (
           <div className="text-gray-700 leading-relaxed space-y-6">
             <p>1. Run the installation setup (installer_free.exe or installer_trial.exe).</p>
-            <img src="/assets/support/documentation/best-free-keylogger-advanced.png" alt="Installation Steps" className="max-w-full rounded-md border border-gray-200" />
-            <p>Select the package you need to install.</p>
-            <p>Select the destination to install Best Free Keylogger
+            <img src="/assets/support/documentation/best-free-keylogger-setup.png" alt="Installation Steps" className="max-w-full rounded-md border border-gray-200" />
+            <p>2.Read thoroughly and understand the End User License Agreement. Installation of Best Free Keylogger requires you to accept the agreement. Proceed if you do.</p>
+            <p>3.Select the package you need to install.</p>
+            <img src="/assets/support/documentation/best-free-keylogger-installation-type.png" alt="Package Selection" className="max-w-full rounded-md border border-gray-200" />
+            <p>4.Select the destination to install Best Free Keylogger
 
               Note: It is recommended that you use the default location
               (C:\Program Files\Best Free Keylogger)</p>
-            <p>Add Best Free Keylogger folder to the list of exceptions/exclusions on your antivirus software.
+            <p>5.Add Best Free Keylogger folder to the list of exceptions/exclusions on your antivirus software.
 
             </p>
-            <p>Click Install and wait for the installation to finish. Note: The setup automatically downloads and installs the latest version of the software. Therefore, you need to be connected to the internet for the installation to succeed.</p>
-            <p>Click Finish to close the setup wizard.</p>
-            <p>You will see Unhide Instructions message box once the installation is successful. Use the default hotkey Ctrl + Alt + Shift + K to run Best Free Keylogger for the first time.</p>
-            <p>When Best Free Keylogger is run for the first time, it is required to set up your password to log in to the application. Click Save after entering a secure password you can remember.</p>
+            <p>6.Click Install and wait for the installation to finish. Note: The setup automatically downloads and installs the latest version of the software. Therefore, you need to be connected to the internet for the installation to succeed.
+
+            </p>
+            <p>7.Click Finish to close the setup wizard.</p>
+            <p>8.You will see Unhide Instructions message box once the installation is successful. Use the default hotkey Ctrl + Alt + Shift + K to run Best Free Keylogger for the first time.</p>
+
+            <img src="/assets/support/documentation/best-free-keylogger-unhide-instructions.png" alt="Unhide Instructions" className="max-w-full rounded-md border border-gray-200" />
+
+            <p>9. When Best Free Keylogger is run for the first time, it is required to set up your password to log in to the application. Click Save after entering a secure password you can remember.</p>
+            <img src="/assets/support/documentation/best-free-keylogger-set-password (1).png" alt="Set Password" className="max-w-full rounded-md border border-gray-200" />
 
           </div>
         ),
@@ -176,11 +184,10 @@ const UpgradeToProPage = () => {
         content: (
           <div className="text-gray-700 leading-relaxed space-y-6">
             <p>
-              After you purchase the Pro version of Best Free Keylogger, you will be
-              emailed a license key for the product
-              <a href="#" className="text-blue-500 hover:underline ml-1">(get license key)</a>.
-              When you receive the license key,
+              After you purchase the Pro version of Best Free Keylogger, you will be emailed a license key for the product(get license key). When you receive the license key,
             </p>
+            <p>1.Unhide Best Free Keylogger user interface and click Upgrade to Pro on the main toolbar.</p>
+            <img src="/assets/support/documentation/best-free-keylogger-upgrade-to-pro01.png" alt="Upgrade Toolbar" className="max-w-full rounded-md border border-gray-200" />
 
             <div>
               <p className="font-semibold text-gray-800 mb-3">1. Unhide Best Free Keylogger user interface and click Upgrade to Pro on the main toolbar.</p>
