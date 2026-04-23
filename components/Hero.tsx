@@ -1,85 +1,129 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { Monitor, Download, ChevronRight, Menu, X } from 'lucide-react';
+import React from 'react';
+import Link from 'next/link';
+import { Download, ChevronRight } from 'lucide-react';
 import { useI18n } from '@/lib/i18nContext';
 import Navbar from '@/components/layout/Navbar';
 
 const ModernHero = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { t } = useI18n();
 
-  // Handle navbar background change on scroll
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <div className="relative min-h-screen w-full bg-slate-900 text-white font-sans overflow-hidden" data-dark-nav>
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
+    <div className="relative w-full overflow-hidden bg-slate-950 text-white">
+
+      {/* ===== Background (Image More Visible) ===== */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+
+        {/* Image */}
         <img
           src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80"
           alt="Modern workspace"
-          className="w-full h-full object-cover opacity-40"
+          className="h-full w-full scale-105 object-cover opacity-25"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/40 to-slate-900"></div>
+
+        {/* Dark Gradient Overlay */}
+        <div className="absolute inset-0 bg-linear-to-br from-slate-950/95 via-slate-950/85 to-slate-900/90"></div>
+
+        {/* Subtle Blur */}
+        <div className="absolute inset-0 backdrop-blur-[2px]"></div>
+
+        {/* Soft Glow Effects */}
+        <div className="absolute -top-32 -left-32 h-87.5 w-87.5 rounded-full bg-cyan-500/10 blur-3xl"></div>
+        <div className="absolute -bottom-32 -right-32 h-87.5 w-87.5 rounded-full bg-emerald-500/10 blur-3xl"></div>
       </div>
 
       <Navbar />
 
-      {/* Hero Content */}
-      <main className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-6 pt-20">
+      {/* ===== Hero Content ===== */}
+      <main className="relative z-10 px-6 pt-32 pb-20 text-center">
         <div className="max-w-4xl mx-auto">
-          <div className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wide text-blue-400 uppercase bg-blue-400/10 rounded-full border border-blue-400/20">
-            {t('hero.badge')}
+
+          {/* Badge */}
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/70 px-5 py-2 text-xs font-semibold uppercase tracking-wider text-cyan-300 shadow-sm backdrop-blur-md">
+            ✨ {t('hero.badge')}
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
-            {t('hero.heading1')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">{t('hero.heading2')}</span>
+          {/* Heading */}
+          <h1 className="mb-6 text-4xl md:text-6xl font-extrabold tracking-tight leading-tight drop-shadow-sm">
+            <span className="text-white">
+              {t('hero.heading1')}
+            </span>{' '}
+            <span className="bg-linear-to-r from-emerald-400 via-cyan-300 to-white bg-clip-text text-transparent">
+              {t('hero.heading2')}
+            </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+          {/* Description */}
+          <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-slate-300 drop-shadow-sm md:text-xl">
             {t('hero.description')}
           </p>
 
+          {/* Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+
+            {/* Primary CTA */}
             <div className="flex flex-col items-center">
-              <button className="flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-white font-bold py-4 px-8 rounded-xl shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all transform hover:-translate-y-1 active:scale-95 group">
+              <Link
+                href="/download"
+                className="group flex items-center gap-2 rounded-2xl border border-slate-700 bg-slate-900 px-8 py-4 font-semibold text-white shadow-xl shadow-cyan-950/30 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-slate-800"
+              >
                 <Download size={20} className="group-hover:animate-bounce" />
                 {t('common.downloadBtn')}
-              </button>
-              <span className="mt-2 text-[10px] text-slate-400 uppercase tracking-widest">
+              </Link>
+
+              <span className="mt-2 text-[10px] uppercase tracking-widest text-slate-400">
                 {t('hero.compatibility')}
               </span>
             </div>
 
-            <button className="flex items-center gap-1 text-white hover:text-blue-400 font-semibold py-4 px-8 transition-colors group">
+            {/* Secondary CTA */}
+            <Link
+              href="/features"
+              className="group flex items-center gap-2 rounded-2xl border border-slate-700 bg-slate-900/60 px-8 py-4 font-medium text-slate-200 shadow-md backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-slate-500 hover:bg-slate-800 hover:text-white hover:shadow-lg"
+            >
               {t('common.learnBtn')}
-              <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
-            </button>
+              <ChevronRight
+                size={18}
+                className="transition-transform group-hover:translate-x-1"
+              />
+            </Link>
           </div>
         </div>
 
-        {/* Feature Pill (Modern touch) */}
-        <div className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl w-full text-left bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
-          <div>
-            <h3 className="font-bold text-emerald-400 mb-2">{t('hero.features.feature1Title')}</h3>
-            <p className="text-sm text-slate-400">{t('hero.features.feature1Desc')}</p>
+        {/* ===== Feature Cards ===== */}
+        <div className="mx-auto mt-20 grid max-w-6xl grid-cols-1 md:grid-cols-3 gap-6">
+
+          {/* Card 1 */}
+          <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6 shadow-lg backdrop-blur-lg transition hover:border-slate-700 hover:shadow-xl">
+            <h3 className="mb-2 text-lg font-semibold text-emerald-300">
+              {t('hero.features.feature1Title')}
+            </h3>
+            <p className="text-sm leading-relaxed text-slate-300">
+              {t('hero.features.feature1Desc')}
+            </p>
           </div>
-          <div>
-            <h3 className="font-bold text-blue-400 mb-2">{t('hero.features.feature2Title')}</h3>
-            <p className="text-sm text-slate-400">{t('hero.features.feature2Desc')}</p>
+
+          {/* Card 2 */}
+          <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6 shadow-lg backdrop-blur-lg transition hover:border-slate-700 hover:shadow-xl">
+            <h3 className="mb-2 text-lg font-semibold text-cyan-300">
+              {t('hero.features.feature2Title')}
+            </h3>
+            <p className="text-sm leading-relaxed text-slate-300">
+              {t('hero.features.feature2Desc')}
+            </p>
           </div>
-          <div>
-            <h3 className="font-bold text-purple-400 mb-2">{t('hero.features.feature3Title')}</h3>
-            <p className="text-sm text-slate-400">{t('hero.features.feature3Desc')}</p>
+
+          {/* Card 3 */}
+          <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6 shadow-lg backdrop-blur-lg transition hover:border-slate-700 hover:shadow-xl">
+            <h3 className="mb-2 text-lg font-semibold text-sky-300">
+              {t('hero.features.feature3Title')}
+            </h3>
+            <p className="text-sm leading-relaxed text-slate-300">
+              {t('hero.features.feature3Desc')}
+            </p>
           </div>
+
         </div>
       </main>
     </div>

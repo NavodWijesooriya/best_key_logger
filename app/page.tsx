@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="w-full min-h-screen overflow-x-hidden">
+    <div id="top" className="w-full min-h-screen overflow-x-hidden">
       <Hero />
       <HomePage />
       <Footer />
