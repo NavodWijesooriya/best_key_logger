@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="mt-20 border-t border-slate-800 bg-slate-950 text-white">
+    <footer className="mt-20 border-t 0 bg-slate-900 text-white">
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-6 py-12 md:grid-cols-3">
 
         {/* Explore Section */}
@@ -32,11 +32,11 @@ const Footer = () => {
         {/* Branding & Socials */}
         <div className="space-y-3 md:justify-self-end md:text-right">
           <div className="mb-1 flex items-center gap-2 md:justify-end">
-            <div className="h-8 w-8 rounded bg-linear-to-br from-emerald-500 to-cyan-500"></div>
-            <h2 className="text-2xl font-bold">Bestxsoftware</h2>
+
+            <img src="assets/images/company_logo180.png" alt="Bestxsoftware Logo" className="h-12 w-auto object-contain md:h-14" />
           </div>
           <p className="text-sm text-gray-400">© 2012 - 2026 All Rights Reserved</p>
-          <Link href="/support" className="block text-sm text-gray-400 transition hover:text-white">Privacy Policy</Link>
+          <Link href="/privacy_policy" className="block text-sm text-gray-400 transition hover:text-white">Privacy Policy</Link>
 
           <div className="flex gap-4 text-sm text-slate-300 md:justify-end">
             <a href="#" className="transition hover:text-cyan-300">Vimeo</a>
