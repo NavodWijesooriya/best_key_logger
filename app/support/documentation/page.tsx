@@ -292,8 +292,17 @@ const UpgradeToProPage = () => {
         linkLabel: 'Security',
         content: (
           <div className="text-gray-700 leading-relaxed space-y-6">
-            <p>Use the Security page to protect the application with your password and access controls.</p>
-            <p>Choose a strong password and keep it in a secure place so only authorized users can open the app.</p>
+            <img src="/assets/support/documentation/best-free-keylogger-security.png" alt="Security Settings" className="max-w-full rounded-md border border-gray-200" />
+
+            <p>1.Change Login Password</p>
+            <p>In order to change your login password, click Change
+              Enter a password, confirm by typing it again.</p>
+
+            <p>2.Change Unhide Keyword</p>
+            <p>In order to change the Unhide Keyword which you enter in the Run dialog box, enter a new keyword in the input field.</p>
+
+            <p>3.Change Unhide Hotkey</p>
+            <p>In order to change the Unhide Hotkey, configure a custom key combination by toggling the relevant keys on or off and selecting a custom character key.</p>
           </div>
         ),
       },
@@ -302,8 +311,27 @@ const UpgradeToProPage = () => {
         linkLabel: 'Remove Logs',
         content: (
           <div className="text-gray-700 leading-relaxed space-y-6">
-            <p>Use Remove Logs to clear stored activity records from the dashboard.</p>
-            <p>Confirm the action carefully before deleting logs, because removed data cannot be restored.</p>
+            <img src="/assets/support/documentation/best-free-keylogger-remove-logs.png" alt="Remove Logs" className="max-w-full rounded-md border border-gray-200" />
+
+            <p>1. Automatically clear older logs
+
+              By default, Best Free Keylogger is configured to stop monitoring when the total size of logs reaches 10 GB. You can change this setting by increasing or decreasing the Maximum Log Size or by configuring the application to clear old logs.
+
+            </p>
+
+            <p>2.Remove logs after delivering
+
+              By default, Best Free Keylogger does not delete log files after sending them. You can configure it to do so by enabling this setting.
+
+              Note: When enabled, logs that have been sent in a report will be deleted from the computer the application is running on.
+
+            </p>
+
+            <p>3.Remove all logs
+
+              In order to manually remove all logs from the storage of the computer the application is running on, click Remove all logs.
+
+              Note: This action cannot be undone</p>
           </div>
         ),
       },
@@ -312,8 +340,22 @@ const UpgradeToProPage = () => {
         linkLabel: 'Uninstall',
         content: (
           <div className="text-gray-700 leading-relaxed space-y-6">
-            <p>Open the uninstall instructions if you want to remove the software from your device.</p>
-            <p>Follow the on-screen prompts to complete removal and restart the system if prompted.</p>
+            <img src="/assets/support/documentation/best-free-keylogger-uninstall.png" alt="Uninstall" className="max-w-full rounded-md border border-gray-200" />
+            <p>1.Auto Uninstall
+
+              Select a future date to configure Best Free Keylogger to uninstall itself automatically.
+
+            </p>
+
+            <p>2.Give us feedback
+
+              If you run into any difficulties or issues while using Best Free Keylogger or if you have any comments or suggestions regarding the software, click Feedback to send a message to the developers.
+
+            </p>
+
+            <p>3.Uninstall Immediately
+
+              In order to uninstall Best Free Keylogger immediately, click Uninstall Now.</p>
           </div>
         ),
       },
@@ -322,8 +364,25 @@ const UpgradeToProPage = () => {
         linkLabel: 'Advanced',
         content: (
           <div className="text-gray-700 leading-relaxed space-y-6">
-            <p>The Advanced section contains expert options for configuring behavior, privacy, and app preferences.</p>
-            <p>Adjust these settings only if you are familiar with the impact of each option.</p>
+            <img src="/assets/support/documentation/best-free-keylogger-advanced.png" alt="Advanced Settings" className="max-w-full rounded-md border border-gray-200" />
+
+            <p>Delete web filtering cache
+
+              When Parental Controls on Best Free Keylogger are enabled, the application creates a customized set of records to maximize web filtering efficiency. All these records will be deleted when you delete web filtering cache.</p>
+          </div>
+        ),
+      },
+
+      start: {
+        title: 'Advanced',
+        linkLabel: 'Advanced',
+        content: (
+          <div className="text-gray-700 leading-relaxed space-y-6">
+            <img src="/assets/support/documentation/best-free-keylogger-advanced.png" alt="Advanced Settings" className="max-w-full rounded-md border border-gray-200" />
+
+            <p>Delete web filtering cache
+
+              When Parental Controls on Best Free Keylogger are enabled, the application creates a customized set of records to maximize web filtering efficiency. All these records will be deleted when you delete web filtering cache.</p>
           </div>
         ),
       },
