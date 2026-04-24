@@ -2,6 +2,7 @@
 
 import React, { useEffect, useMemo, useState } from 'react';
 import { FileText, Folder, FolderOpen } from 'lucide-react';
+import Link from 'next/link';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/Footer';
 
@@ -153,8 +154,19 @@ const UpgradeToProPage = () => {
         linkLabel: 'Unhide',
         content: (
           <div className="text-gray-700 leading-relaxed space-y-6">
-            <p>Use the configured hotkey combination to reveal the app interface when it is running in hidden mode.</p>
-            <p>If the hotkey does not work, verify your shortcut settings in the app preferences.</p>
+            <p>You can use either of the following to Unhide Best Free Keylogger user interface.</p>
+            <p>1. Default: Ctrl + Alt + Shift + K
+              Path to Setting: Settings  Security: Unhide Hotkey
+              Method: Press all the keys in the above key combination together.</p>
+
+            <p>2. Unhide Keyword:</p>
+            <p>Default: unhide
+
+              Path to Setting: Settings  Security: Unhide Keyword
+
+              Method: Type in the above keyword in the Run dialog box. Press  + R to open Run dialog box on Windows</p>
+
+            <img src="/assets/support/documentation/best-free-keylogger-unhide-keyword.png" alt="Unhide Keyword" className="max-w-full rounded-md border border-gray-200" />
           </div>
         ),
       },
@@ -163,8 +175,11 @@ const UpgradeToProPage = () => {
         linkLabel: 'Login',
         content: (
           <div className="text-gray-700 leading-relaxed space-y-6">
-            <p>Open the login screen and enter your registered email and password to access your dashboard.</p>
-            <p>Use the password reset option if you cannot sign in.</p>
+            <p>Type in you login password and press enter after unhiding the user interface.</p>
+            <img src="/assets/support/documentation/best-free-keylogger-login.png" alt="Login Screen" className="max-w-full rounded-md border border-gray-200" />
+
+            <p>If it is the first time the application is run, set up your password.</p>
+            <img src="/assets/support/documentation/best-free-keylogger-set-password (1).png" alt="Set Password" className="max-w-full rounded-md border border-gray-200" />
           </div>
         ),
       },
@@ -173,8 +188,83 @@ const UpgradeToProPage = () => {
         linkLabel: 'User Interface',
         content: (
           <div className="text-gray-700 leading-relaxed space-y-6">
-            <p>The main toolbar gives access to logs, settings, and upgrade options from a single place.</p>
-            <p>Hover over icons to see tooltips that explain each action.</p>
+            <img src="/assets/support/documentation/best-free-keylogger-user-interface.png" alt="User Interface" className="max-w-full rounded-md border border-gray-200" />
+
+            <p>1. Main Toolbar</p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li><strong>Settings:</strong> Settings control panel of the application.</li>
+              <li><strong>Logs:</strong> Error logs and process logs of the application.</li>
+              <li><strong>Import:</strong> Import external logs to the application.</li>
+              <li><strong>Help:</strong> Online Support Center for Best Free Keylogger.</li>
+              <li><strong>About:</strong> Information regarding current version of the application.</li>
+              <li><strong>Upgrade to Pro:</strong> Product activation interface.</li>
+            </ul>
+
+            <p>2.Record Categories: Select the relevant category after loading the report to view the records. The number of records loaded is shown in front of each category.</p>
+
+            <p>3.Calendar:Select the date to load the corresponding report. By default, the current date is selected.</p>
+
+            <p>4.Count:
+
+              Click to view the list of dates with monitoring logs available and the number of records available for each date.
+
+            </p>
+
+            <p>5.Filter:
+
+              Click to open Filters window to filter available records by text, user, date, application, URL, window title, or web page title.
+
+            </p>
+
+            <p>6.Load Report:
+
+              Click to load reports available for the date selected in the calendar.
+
+            </p>
+
+            <p>7.Day-wise Record Count:
+
+              shows the number of records available in each category for the date selected in the calendar.
+
+            </p>
+
+            <p>8.Chronological sort:
+
+              Click to toggle order of records between chronological order and reverse-chronological order.
+
+            </p>
+
+            <p>9.Filter by User:
+
+              Select a user from Users to filter records by user.
+
+            </p>
+
+            <p>10.Filter by App:
+
+              Select an application from Apps to filter records by application.
+
+            </p>
+
+            <p>11.Smart Read:
+
+              Switch on Smart Read to enable Best Free Keylogger to process keystroke records internally by removing irrelevant keystrokes, such as “backspace”, and making the records more readable.
+
+            </p>
+
+            <p>12.Zoom Controls:
+
+              Zoom in or Zoom out the contents in the report viewer.</p>
+
+            <p>13.Report Viewer:
+
+              Reports are loaded into this pane.</p>
+
+            <p>14.Total local logs size:
+
+              Total size of the log files saved in the local computer.</p>
+
+
           </div>
         ),
       },
@@ -189,19 +279,11 @@ const UpgradeToProPage = () => {
             <p>1.Unhide Best Free Keylogger user interface and click Upgrade to Pro on the main toolbar.</p>
             <img src="/assets/support/documentation/best-free-keylogger-upgrade-to-pro01.png" alt="Upgrade Toolbar" className="max-w-full rounded-md border border-gray-200" />
 
-            <div>
-              <p className="font-semibold text-gray-800 mb-3">1. Unhide Best Free Keylogger user interface and click Upgrade to Pro on the main toolbar.</p>
-              <div className="bg-gray-50 p-4 border border-gray-200 inline-block">
-                <img src="/path-to-toolbar-image.png" alt="Toolbar" className="max-w-full" />
-              </div>
-            </div>
+            <p>2.Enter the license key and click Upgrade.</p>
+            <img src="/assets/support/documentation/best-free-keylogger-upgrade-to-pro02.png" alt="Upgrade Modal" className="max-w-full rounded-md border border-gray-200" />
 
-            <div>
-              <p className="font-semibold text-gray-800 mb-3">2. Enter the license key and click Upgrade.</p>
-              <div className="border border-gray-200 p-4 w-fit">
-                <img src="/path-to-modal-image.png" alt="Upgrade Modal" className="max-w-full" />
-              </div>
-            </div>
+            <p>If you run into any issues while trying to activate the Pro version, please <Link href="/support" className="text-blue-600">contact our support team</Link>.</p>
+
           </div>
         ),
       },
@@ -333,7 +415,6 @@ const UpgradeToProPage = () => {
           {/* Main Content Card */}
           <main className="flex-1 bg-white p-8 border border-gray-200 shadow-sm rounded-sm">
             <h1 className="text-3xl font-bold text-gray-700 mb-3">{activeContent.title}</h1>
-            <p className="text-sm text-gray-500 mb-6">Current link: #{activeContent.linkLabel.toLowerCase().replace(/\s+/g, '-')}</p>
 
             {activeContent.content}
           </main>
