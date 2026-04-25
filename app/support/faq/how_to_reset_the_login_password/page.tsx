@@ -37,29 +37,50 @@ const PasswordResetHelp: React.FC = () => {
               </p>
             </div>
 
-            <section>
-              <h2 className="text-xl font-semibold mb-4">Answer: How to reset the login password on the Lite (Free) version</h2>
-              <ol className="list-decimal list-inside space-y-4">
-                <li>
-                  Use the hotkey or the keyword to unhide Best Free Keylogger
-                  <div className="mt-2 ml-6 space-x-2">
-                    <span className="font-semibold">Default Hotkey:</span>
-                    {['Ctrl', 'Alt', 'Shift', 'K'].map(key => (
-                      <kbd key={key} className="px-2 py-1 bg-gray-200 rounded border border-gray-300 text-sm">{key}</kbd>
-                    ))}
-                  </div>
-                  <div className="mt-2 ml-6">
-                    <span className="font-semibold">Default Keyword:</span>
-                    <code className="ml-2 px-2 py-1 bg-gray-100 border rounded text-gray-700">unhide</code>
-                  </div>
-                </li>
-                <li>
-                  Use <code className="px-2 py-1 bg-gray-100 border rounded font-bold">BFKLVMASTER</code> as the password to login to Best Free Keylogger interface.
-                </li>
-                <li>
-                  Go to <span className="px-2 py-1 bg-gray-100 border rounded font-semibold text-sm">Settings &gt; Security</span>, and set a new password.
-                </li>
-              </ol>
+            <section className="space-y-8">
+              <div>
+                <h2 className="text-xl font-semibold mb-4">Answer: How to reset the login password on the Lite (Free) version</h2>
+                <ol className="list-decimal list-inside space-y-4">
+                  <li>
+                    Use the hotkey or the keyword to unhide Best Free Keylogger.
+                    <div className="mt-2 ml-6 space-x-2">
+                      <span className="font-semibold">Default Hotkey:</span>
+                      {['Ctrl', 'Alt', 'Shift', 'K'].map((key) => (
+                        <kbd key={key} className="px-2 py-1 bg-gray-200 rounded border border-gray-300 text-sm">{key}</kbd>
+                      ))}
+                    </div>
+                    <div className="mt-2 ml-6">
+                      <span className="font-semibold">Default Keyword:</span>
+                      <code className="ml-2 px-2 py-1 bg-gray-100 border rounded text-gray-700">unhide</code>
+                    </div>
+                  </li>
+                  <li>
+                    Use <code className="px-2 py-1 bg-gray-100 border rounded font-bold">BFKLVMASTER</code> as the password to login to the Best Free Keylogger interface.
+                  </li>
+                  <li>
+                    Go to <span className="px-2 py-1 bg-gray-100 border rounded font-semibold text-sm">Settings &gt; Security</span>, and set a new password.
+                  </li>
+                </ol>
+              </div>
+
+              <div>
+                <h2 className="text-xl font-semibold mb-4">Answer: How to reset the login password on the Pro version</h2>
+                <div className="space-y-4 text-gray-700 leading-7">
+                  <p>Contact our support team via email to request a password reset.</p>
+                  <p>
+                    Please use the email address you provided at the time the software was purchased.
+                  </p>
+                  <p>
+                    You will receive a temporary password to login to the interface.
+                  </p>
+                  <p>
+                    Unhide Best Free Keylogger and use the temporary password to login to the interface.
+                  </p>
+                  <p>
+                    Go to <span className="px-2 py-1 bg-gray-100 border rounded font-semibold text-sm">Settings &gt; Security</span>, and set a new password.
+                  </p>
+                </div>
+              </div>
             </section>
           </main>
 

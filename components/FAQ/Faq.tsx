@@ -8,6 +8,7 @@ const FAQPage = () => {
     { title: "How to set up Email Delivery", path: "/support/faq/how_to_set_up_email_delivery" },
     { title: "How to set up FTP Delivery", path: "/support/faq/how-to-set-up-ftp-delivery" },
     { title: "How to unhide Best Free Keylogger", path: "/support/faq/how_to_unhide_best_free_keylogger" },
+    { title: "How to uninstall Best Free Keylogger", path: "/support/faq/how_to_uninstall_best_free_keylogger" },
     { title: "How to import and view logs", path: "/support/faq/how_toimport_and_view_logs" },
     { title: "How to load reports", path: "/support/faq/how-to-load-reports" },
     { title: "Can I reuse the same product key?", path: "/support/faq/can-i-use-the-same-product-key-on-a-different-computer" },

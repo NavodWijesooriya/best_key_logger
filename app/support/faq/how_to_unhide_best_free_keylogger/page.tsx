@@ -4,11 +4,17 @@ const Page = () => {
   return (
     <FaqAnswerPage
       title="How to unhide Best Free Keylogger"
-      question="How do I open the hidden interface?"
+      question="I installed Best Free Keylogger, and I opened the interface just after installing the program. I restarted my computer, and now I cannot remember how to unhide the interface."
       answer={[
-        'Use the configured hotkey or keyword to reveal the app window.',
-        'If the shortcut was changed and no longer works, check your notes or reinstall with new credentials.',
-        'This is placeholder unhide guidance and can be replaced with full troubleshooting steps.'
+        'Use the Hotkey or the Keyword to unhide Best Free Keylogger interface.',
+        'Hotkey',
+        'Default: Ctrl + Alt + Shift + K',
+        'How to use: Press the key combination together.',
+        'Keyword',
+        'Default: unhide',
+        'How to use: Invoke the Run dialog box on Windows using Windows + R and type in the unhide keyword. You do not need to press Enter.',
+        'You can change the default hotkey and the default keyword in Settings > Security.',
+        'If neither of the above methods work for you, download and run this file: BFK Unhider.exe.'
       ]}
     />
   );

@@ -15,7 +15,24 @@ type SectionKey =
   | 'security'
   | 'remove-logs'
   | 'uninstall'
-  | 'advanced';
+  | 'advanced'
+  | 'start/stop-monitoring'
+  | 'schedule'
+  | 'limit-monitoring'
+  | 'screenshot-settings'
+  | 'delivery-methods'
+  | 'email-delivery'
+  | 'lan-delivery'
+  | 'ftp-delivery'
+  | 'usb-delivery'
+  | 'load-reports'
+  | 'import-reports'
+  | 'view-reports'
+  | 'filter-reports'
+  | 'web-filtering-blocking'
+  | 'application-blocking'
+  | 'time-limiting'
+  | 'exclusions';
 
 type SectionGroup = {
   title: string;
@@ -56,10 +73,10 @@ const SECTION_GROUPS: SectionGroup[] = [
     title: 'Monitoring Settings',
     key: 'monitoring-settings',
     items: [
-      { key: 'security', label: 'Start/Stop Monitoring' },
-      { key: 'remove-logs', label: 'Schedule Monitoring' },
-      { key: 'uninstall', label: 'Limit Monitoring' },
-      { key: 'advanced', label: 'Screenshot Settings' },
+      { key: 'start/stop-monitoring', label: 'Start/Stop Monitoring' },
+      { key: 'schedule', label: 'Schedule Monitoring' },
+      { key: 'limit-monitoring', label: 'Limit Monitoring' },
+      { key: 'screenshot-settings', label: 'Screenshot Settings' },
     ],
   },
 
@@ -67,11 +84,11 @@ const SECTION_GROUPS: SectionGroup[] = [
     title: 'Delivery Settings',
     key: 'delivery-settings',
     items: [
-      { key: 'security', label: 'Delivery Methods' },
-      { key: 'remove-logs', label: 'Email Delivery' },
-      { key: 'uninstall', label: 'Lan Delivery' },
-      { key: 'advanced', label: 'FTP Delivery' },
-      { key: 'advanced', label: 'USB Delivery' },
+      { key: 'delivery-methods', label: 'Delivery Methods' },
+      { key: 'email-delivery', label: 'Email Delivery' },
+      { key: 'lan-delivery', label: 'LAN Delivery' },
+      { key: 'ftp-delivery', label: 'FTP Delivery' },
+      { key: 'usb-delivery', label: 'USB Delivery' },
     ],
   },
 
@@ -79,10 +96,10 @@ const SECTION_GROUPS: SectionGroup[] = [
     title: 'Reports',
     key: 'reports',
     items: [
-      { key: 'security', label: 'Load Reports' },
-      { key: 'remove-logs', label: 'import Reports' },
-      { key: 'uninstall', label: 'View Reports' },
-      { key: 'advanced', label: 'Filter Reports' },
+      { key: 'load-reports', label: 'Load Reports' },
+      { key: 'import-reports', label: 'Import Reports' },
+      { key: 'view-reports', label: 'View Reports' },
+      { key: 'filter-reports', label: 'Filter Reports' },
     ],
   },
 
@@ -90,10 +107,10 @@ const SECTION_GROUPS: SectionGroup[] = [
     title: 'Parental Controls',
     key: 'parental-controls',
     items: [
-      { key: 'security', label: 'Web Filtering & Blocking' },
-      { key: 'remove-logs', label: 'Application Blocking' },
-      { key: 'uninstall', label: 'Time Limiting' },
-      { key: 'advanced', label: 'Exclusions' },
+      { key: 'web-filtering-blocking', label: 'Web Filtering & Blocking' },
+      { key: 'application-blocking', label: 'Application Blocking' },
+      { key: 'time-limiting', label: 'Time Limiting' },
+      { key: 'exclusions', label: 'Exclusions' },
     ],
   },
 ];
@@ -102,9 +119,9 @@ const getSectionGroupKey = (sectionKey: SectionKey) =>
   SECTION_GROUPS.find((group) => group.items.some((item) => item.key === sectionKey))?.key ??
   SECTION_GROUPS[0].key;
 
-const UpgradeToProPage = () => {
-  const [activeSection, setActiveSection] = useState<SectionKey>('upgrade-to-pro');
-  const [openGroups, setOpenGroups] = useState<string[]>([getSectionGroupKey('upgrade-to-pro')]);
+const DocumentationPage = () => {
+  const [activeSection, setActiveSection] = useState<SectionKey>('installation');
+  const [openGroups, setOpenGroups] = useState<string[]>([getSectionGroupKey('installation')]);
 
   useEffect(() => {
     const hash = window.location.hash.replace('#', '') as SectionKey;
@@ -373,16 +390,200 @@ const UpgradeToProPage = () => {
         ),
       },
 
-      start: {
-        title: 'Advanced',
-        linkLabel: 'Advanced',
+      'start/stop-monitoring': {
+        title: 'Start/Stop Monitoring',
+        linkLabel: 'Start/Stop Monitoring',
         content: (
           <div className="text-gray-700 leading-relaxed space-y-6">
-            <img src="/assets/support/documentation/best-free-keylogger-advanced.png" alt="Advanced Settings" className="max-w-full rounded-md border border-gray-200" />
+            <p>Use the monitoring controls to start or pause activity logging as needed.</p>
+            <p>Only enable monitoring where you have the required permission to collect data.</p>
+          </div>
+        ),
+      },
 
-            <p>Delete web filtering cache
+      schedule: {
+        title: 'Schedule Monitoring',
+        linkLabel: 'Schedule Monitoring',
+        content: (
+          <div className="text-gray-700 leading-relaxed space-y-6">
+            <p>Set a schedule to automatically start or stop monitoring at specific times.</p>
+            <p>This helps keep monitoring aligned with your operating hours or policy requirements.</p>
+          </div>
+        ),
+      },
 
-              When Parental Controls on Best Free Keylogger are enabled, the application creates a customized set of records to maximize web filtering efficiency. All these records will be deleted when you delete web filtering cache.</p>
+      'limit-monitoring': {
+        title: 'Limit Monitoring',
+        linkLabel: 'Limit Monitoring',
+        content: (
+          <div className="text-gray-700 leading-relaxed space-y-6">
+            <p>Configure limits to control how much data is collected or stored.</p>
+            <p>Adjust retention and storage settings according to your usage needs.</p>
+          </div>
+        ),
+      },
+
+      'screenshot-settings': {
+        title: 'Screenshot Settings',
+        linkLabel: 'Screenshot Settings',
+        content: (
+          <div className="text-gray-700 leading-relaxed space-y-6">
+            <p>Choose when screenshots are captured and how often they are saved.</p>
+            <p>Use conservative intervals if storage space is limited.</p>
+          </div>
+        ),
+      },
+
+      'delivery-methods': {
+        title: 'Delivery Methods',
+        linkLabel: 'Delivery Methods',
+        content: (
+          <div className="text-gray-700 leading-relaxed space-y-6">
+            <p>Select one or more delivery methods for sending logs and reports.</p>
+            <p>Available options can include email, LAN, FTP, and USB delivery.</p>
+          </div>
+        ),
+      },
+
+      'email-delivery': {
+        title: 'Email Delivery',
+        linkLabel: 'Email Delivery',
+        content: (
+          <div className="text-gray-700 leading-relaxed space-y-6">
+            <p>Configure email delivery to send reports automatically to a trusted mailbox.</p>
+            <p>Verify the sender and recipient settings before enabling automatic delivery.</p>
+          </div>
+        ),
+      },
+
+      'lan-delivery': {
+        title: 'LAN Delivery',
+        linkLabel: 'LAN Delivery',
+        content: (
+          <div className="text-gray-700 leading-relaxed space-y-6">
+            <p>Use LAN delivery to move reports to another machine on the local network.</p>
+            <p>Confirm network permissions and destination availability before saving settings.</p>
+          </div>
+        ),
+      },
+
+      'ftp-delivery': {
+        title: 'FTP Delivery',
+        linkLabel: 'FTP Delivery',
+        content: (
+          <div className="text-gray-700 leading-relaxed space-y-6">
+            <p>Enter the FTP server details to upload reports to a remote server.</p>
+            <p>Use secure credentials and test the connection before enabling uploads.</p>
+          </div>
+        ),
+      },
+
+      'usb-delivery': {
+        title: 'USB Delivery',
+        linkLabel: 'USB Delivery',
+        content: (
+          <div className="text-gray-700 leading-relaxed space-y-6">
+            <p>Set up USB delivery if you want to export reports to removable storage.</p>
+            <p>Make sure the USB device is connected when the export action runs.</p>
+          </div>
+        ),
+      },
+
+      'load-reports': {
+        title: 'Load Reports',
+        linkLabel: 'Load Reports',
+        content: (
+          <div className="text-gray-700 leading-relaxed space-y-6">
+            <p>Load a saved report to review captured activity for a selected date.</p>
+            <p>Choose the appropriate category before reviewing the available entries.</p>
+          </div>
+        ),
+      },
+
+      'import-reports': {
+        title: 'Import Reports',
+        linkLabel: 'Import Reports',
+        content: (
+          <div className="text-gray-700 leading-relaxed space-y-6">
+            <p>Import reports from supported files to review previously exported data.</p>
+            <p>Check file compatibility before importing to avoid incomplete results.</p>
+          </div>
+        ),
+      },
+
+      'view-reports': {
+        title: 'View Reports',
+        linkLabel: 'View Reports',
+        content: (
+          <div className="text-gray-700 leading-relaxed space-y-6">
+            <p>Use the report viewer to inspect captured records in chronological order.</p>
+            <p>Apply filters to narrow down the information you need.</p>
+          </div>
+        ),
+      },
+
+      'filter-reports': {
+        title: 'Filter Reports',
+        linkLabel: 'Filter Reports',
+        content: (
+          <div className="text-gray-700 leading-relaxed space-y-6">
+            <p>Filter reports by text, date, user, application, or page title.</p>
+            <p>Filtering makes it easier to find specific activity within large log sets.</p>
+          </div>
+        ),
+      },
+
+      'web-filtering-blocking': {
+        title: 'Web Filtering & Blocking',
+        linkLabel: 'Web Filtering & Blocking',
+        content: (
+          <div className="text-gray-700 leading-relaxed space-y-6">
+            <p>Configure web filtering rules to block or allow specific websites.</p>
+            <p>Review exclusions carefully before enforcing restrictions.</p>
+          </div>
+        ),
+      },
+
+      'application-blocking': {
+        title: 'Application Blocking',
+        linkLabel: 'Application Blocking',
+        content: (
+          <div className="text-gray-700 leading-relaxed space-y-6">
+            <p>Prevent selected applications from running on the monitored device.</p>
+            <p>Use blocking rules only where you have administrative authority.</p>
+          </div>
+        ),
+      },
+
+      'time-limiting': {
+        title: 'Time Limiting',
+        linkLabel: 'Time Limiting',
+        content: (
+          <div className="text-gray-700 leading-relaxed space-y-6">
+            <p>Define time limits to control when monitoring or usage restrictions apply.</p>
+            <p>Schedule limits around business rules or device policies.</p>
+          </div>
+        ),
+      },
+
+      exclusions: {
+        title: 'Exclusions',
+        linkLabel: 'Exclusions',
+        content: (
+          <div className="text-gray-700 leading-relaxed space-y-6">
+            <p>Add trusted applications or paths to exclusions so they are not affected by rules.</p>
+            <p>Keep exclusions as narrow as possible to preserve the intended behavior.</p>
+          </div>
+        ),
+      },
+
+      'start/stop-monitoring': {
+        title: 'Start/Stop Monitoring',
+        linkLabel: 'Start/Stop Monitoring',
+        content: (
+          <div className="text-gray-700 leading-relaxed space-y-6">
+            <p>Use the monitoring controls to start or pause activity logging as needed.</p>
+            <p>Only enable monitoring where you have the required permission to collect data.</p>
           </div>
         ),
       },
@@ -390,7 +591,7 @@ const UpgradeToProPage = () => {
     []
   );
 
-  const activeContent = sectionContent[activeSection];
+  const activeContent = sectionContent[activeSection] ?? sectionContent.installation;
 
   const handleSectionClick = (section: SectionKey) => {
     setActiveSection(section);
@@ -485,4 +686,4 @@ const UpgradeToProPage = () => {
   );
 };
 
-export default UpgradeToProPage;
+export default DocumentationPage;

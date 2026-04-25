@@ -4,11 +4,17 @@ const Page = () => {
   return (
     <FaqAnswerPage
       title="How to set up FTP Delivery"
-      question="How can I upload logs automatically to an FTP server?"
+      question="I need to upload logs and all screenshots recorded by Best Free Keylogger on one computer to an FTP host. How can I configure the program to upload the reports via FTP?"
       answer={[
-        'Enable FTP delivery in settings and enter the host, port, username, password, and target folder.',
-        'Run a connection test before enabling schedule-based uploads to verify credentials and permissions.',
-        'This is placeholder FTP configuration content and can be replaced with exact field-level instructions.'
+        'Go to Settings > Report Delivery > Delivery.',
+        'Select your preferred Delivery Method: Encrypted File or HTML File.',
+        'Go to Settings > Report Delivery > FTP.',
+        'Switch on Enable FTP Uploading.',
+        'Enter the FTP Host address.',
+        'Enter the name of the directory to receive logs.',
+        'Enter the Username to access the FTP Host.',
+        'Enter the Password to access the FTP Host.',
+        'Click Test. If you run into any issues, contact our support team.'
       ]}
     />
   );
