@@ -1,135 +1,265 @@
 import React from 'react'
+import Image from 'next/image'
 import Link from 'next/link';
+
+type SoftwareEntry = {
+  rank: number;
+  name: string;
+  image: string;
+  imageAlt: string;
+  website: string;
+  websiteLabel: string;
+  summary: string;
+  bestFor: string;
+  highlights: string[];
+};
+
+const softwareList: SoftwareEntry[] = [
+  {
+    rank: 1,
+    name: 'Kidlogger',
+    image: '/assets/blog/top_10/kidlogger-interface.png',
+    imageAlt: 'Kidlogger interface',
+    website: 'https://kidlogger.net/',
+    websiteLabel: 'Visit Kidlogger',
+    summary:
+      'Kidlogger offers a free tier with keystroke logs, screenshots, and app tracking. It also supports cloud-based report viewing for quick remote access.',
+    bestFor: 'Parents who want straightforward cloud reports with a no-cost starting plan.',
+    highlights: ['Keystrokes and screenshots', 'Web portal report access', 'CSV/JSON export options'],
+  },
+  {
+    rank: 2,
+    name: 'Best Free Keylogger',
+    image: '/assets/blog/top_10/best-free-keylogger-interface.png',
+    imageAlt: 'Best Free Keylogger interface',
+    website: 'https://bestxsoftware.com/best-free-keylogger',
+    websiteLabel: 'Visit Best Free Keylogger',
+    summary:
+      'Best Free Keylogger combines activity tracking with practical controls such as app restrictions and web filtering, packaged in a user-friendly report viewer.',
+    bestFor: 'Users who need both monitoring and lightweight parental control in one app.',
+    highlights: ['Smart Read for cleaner logs', 'Filtering by app/date/user/text', 'One-click web and app restrictions'],
+  },
+  {
+    rank: 3,
+    name: 'Windows Keylogger',
+    image: '/assets/blog/top_10/windows-keylogger-interface.png',
+    imageAlt: 'Windows Keylogger interface',
+    website: 'https://www.hugedomains.com/domain_profile.cfm?d=winthread.com',
+    websiteLabel: 'Visit Winthread Software',
+    summary:
+      'A Windows-focused option with clear local reporting and a calendar-style activity view. Screenshot and delivery features are mainly available in paid tiers.',
+    bestFor: 'Simple local viewing when advanced automation is not required.',
+    highlights: ['Clear date-based log navigation', 'Application icons in logs', 'Free local report viewing'],
+  },
+  {
+    rank: 4,
+    name: 'Refog Personal Monitor',
+    image: '/assets/blog/top_10/refog-personal-monitor-interface.png',
+    imageAlt: 'Refog Personal Monitor interface',
+    website: 'https://www.refog.com/',
+    websiteLabel: 'Visit Refog',
+    summary:
+      'Refog Personal Monitor includes keystrokes, screenshots, internet activity, and file monitoring with a polished desktop UI.',
+    bestFor: 'Users comparing trial-based tools with broad monitoring coverage.',
+    highlights: ['Keystrokes and screenshots', 'Internet and app monitoring', 'File activity tracking'],
+  },
+  {
+    rank: 5,
+    name: 'All In One Keylogger',
+    image: '/assets/blog/top_10/all-in-one-keylogger-interface.png',
+    imageAlt: 'All In One Keylogger interface',
+    website: 'https://www.tucows.com/preview/405170/All-In-One-Keylogger',
+    websiteLabel: 'Download All In One Keylogger',
+    summary:
+      'All In One Keylogger offers broad functionality and a trial model, but its interface feels older compared with newer tools in this list.',
+    bestFor: 'Users prioritizing core logging features over modern UI polish.',
+    highlights: ['7-day trial model', 'Chats, web, and screenshot logs', 'Comprehensive baseline monitoring'],
+  },
+  {
+    rank: 6,
+    name: 'Iwantsoft Free Keylogger',
+    image: '/assets/blog/top_10/iwantsoft-free-keylogger-interface.png',
+    imageAlt: 'Iwantsoft Free Keylogger interface',
+    website: 'https://www.best-free-keylogger.com/',
+    websiteLabel: 'Visit Iwantsoft',
+    summary:
+      'Iwantsoft includes a custom installer builder and practical restriction controls. Some advanced reporting and screenshot capabilities are gated by paid plans.',
+    bestFor: 'Users who value configurable deployment and basic web/app blocking.',
+    highlights: ['Custom installer builder', 'Web and app restrictions', 'Solid keystroke and clipboard capture'],
+  },
+  {
+    rank: 7,
+    name: 'HomeGuard Activity Monitor',
+    image: '/assets/blog/top_10/homeguard-activity-monitor-interface.png',
+    imageAlt: 'HomeGuard Activity Monitor interface',
+    website: 'https://veridium.net/homeguard-activity-monitor/',
+    websiteLabel: 'Visit HomeGuard Activity Monitor',
+    summary:
+      'HomeGuard focuses on parental control and productivity with web filtering, screenshots, and scheduled restrictions, plus optional remote monitoring tools.',
+    bestFor: 'Families and teams that need stronger policy controls in addition to logs.',
+    highlights: ['Content and Safe Search filtering', 'Time limits for apps/programs', 'Detailed reports and notifications'],
+  },
+  {
+    rank: 8,
+    name: 'Spyrix Free Keylogger',
+    image: '/assets/blog/top_10/spyrix-free-keylogger-interface.png',
+    imageAlt: 'Spyrix Free Keylogger interface',
+    website: 'https://www.spyrix.com/',
+    websiteLabel: 'Visit Spyrix',
+    summary:
+      'Spyrix Free Keylogger provides core capture features and a notable live-view experience through its online account dashboard.',
+    bestFor: 'Users who want web-based visibility and are fine with free-tier limits.',
+    highlights: ['Live View through web dashboard', 'Keystroke and screenshot tracking', 'Paid upgrade path for delivery features'],
+  },
+  {
+    rank: 9,
+    name: 'Real PC Spy',
+    image: '/assets/blog/top_10/real-pc-spy-interface.png',
+    imageAlt: 'Real PC Spy interface',
+    website: 'https://www.realspysoftware.com/',
+    websiteLabel: 'Visit Real PC Spy',
+    summary:
+      'Real PC Spy includes major tracking categories and report delivery with a straightforward interface. Stealth behavior is tied to licensing.',
+    bestFor: 'Users who prefer simple operation and table-style report layouts.',
+    highlights: ['Covers major monitoring categories', 'Email and FTP report delivery', 'Expandable report records'],
+  },
+  {
+    rank: 10,
+    name: 'Actual Keylogger',
+    image: '/assets/blog/top_10/actual-keylogger-interface.png',
+    imageAlt: 'Actual Keylogger interface',
+    website: 'https://www.actualkeylogger.com/',
+    websiteLabel: 'Visit Actual Keylogger',
+    summary:
+      'Actual Keylogger includes keystroke, clipboard, app, and internet tracking with optional website blocking and a paid feature model.',
+    bestFor: 'Users evaluating established tools with standard feature coverage.',
+    highlights: ['Keystrokes and clipboard logs', 'Internet and app activity capture', 'Website blocking support'],
+  },
+];
 
 const Page = () => {
   return (
     <main className="relative overflow-hidden bg-linear-to-b from-slate-50 via-white to-emerald-50/40 py-10 sm:py-14">
-      <div className="mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8">
-        <article className="rounded-2xl border border-slate-200 bg-white/90 p-6 shadow-sm backdrop-blur-sm sm:p-10">
-          <header className="mb-8 border-b border-slate-200 pb-6">
-            <span className="inline-flex rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold tracking-wide text-emerald-700">
-              Software Comparison
-            </span>
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-[radial-gradient(ellipse_at_top,rgba(16,185,129,0.16),transparent_60%)]" />
 
-            <h1 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              Top 10 Free Keylogger Software
+      <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+        <article className="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm backdrop-blur-sm sm:p-10">
+          <header className="border-b border-slate-200 pb-8">
+            <div className="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-wide text-slate-600">
+              <span className="rounded-full bg-emerald-100 px-3 py-1 text-emerald-800">Software Comparison</span>
+              <span className="rounded-full bg-slate-100 px-3 py-1">Updated April 2026</span>
+              <span className="rounded-full bg-blue-100 px-3 py-1 text-blue-800">Windows Monitoring</span>
+            </div>
+
+            <h1 className="mt-5 max-w-3xl text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+              Top 10 Free Keylogger Software in 2026
             </h1>
 
-            <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-slate-600">
-              <p className="rounded-md bg-slate-100 px-3 py-1">
-                <strong className="font-semibold text-slate-800">James Miller</strong>
-              </p>
-              <p className="rounded-md bg-slate-100 px-3 py-1">2025-8-1</p>
-              <p className="rounded-md bg-blue-50 px-3 py-1 font-medium text-blue-700">
-                keyloggermonitoring
-              </p>
+            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
+              This guide compares ten popular tools based on usability, tracking coverage, and practical value.
+              Instead of long raw descriptions, each entry includes a concise summary, who it is best for, and key
+              highlights to speed up decision-making.
+            </p>
+
+            <div className="mt-5 flex flex-wrap items-center gap-3 text-sm text-slate-600">
+              <span className="rounded-md bg-slate-100 px-3 py-1">
+                By <strong className="font-semibold text-slate-800">James Miller</strong>
+              </span>
+              <span className="rounded-md bg-slate-100 px-3 py-1">10 tools reviewed</span>
+              <span className="rounded-md bg-slate-100 px-3 py-1">Focus: ease of use + feature depth</span>
             </div>
           </header>
 
-          <div className="space-y-5 text-[15px] leading-7 text-slate-700 sm:text-base sm:leading-8">
-            <p>
-              Sometime ago, keyloggers used to be hardware that had been designed to record
-              what keystrokes were typed on particular system. Eventually software-based
-              solutions became more popular than the hardware counterpart due to their easier
-              implementation and greater availability. Today&apos;s so-called keylogger programs are
-              capable of much more than recording keystrokes.
+          <section className="mt-8 rounded-2xl border border-emerald-200 bg-emerald-50/70 p-5 sm:p-6">
+            <h2 className="text-xl font-semibold text-emerald-900">Quick Take</h2>
+            <p className="mt-3 text-sm leading-7 text-emerald-900 sm:text-base">
+              Most free tools capture keystrokes and app activity, but the biggest difference is report quality,
+              filtering controls, and whether remote viewing is available in the free plan. If you want a cleaner
+              daily workflow, prioritize tools with strong log organization instead of only feature count.
             </p>
+          </section>
 
-            <h4 className="pt-2 text-xl font-semibold text-slate-900">
-              What is a keylogger used for?
-            </h4>
-            <p>
-              Generally, a keylogger is a piece of software that records what keystrokes were
-              typed on the computer. Despite the name, most keylogger software today are
-              actually user activity monitoring applications, which can measure productivity and
-              analyze behavior of either your employees or your children. This is due to their
-              ability to record the clipboard, capture screenshots, monitor internet activity and
-              log application usage.
-            </p>
+          <section className="mt-8 grid gap-6">
+            {softwareList.map((software) => (
+              <section
+                key={software.rank}
+                className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-colors hover:border-emerald-300"
+              >
+                <div className="grid gap-0 md:grid-cols-[1.15fr_0.85fr]">
+                  <div className="p-5 sm:p-6">
+                    <div className="flex flex-wrap items-center gap-3">
+                      <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-slate-900 text-sm font-bold text-white">
+                        {software.rank}
+                      </span>
+                      <h2 className="text-2xl font-bold tracking-tight text-slate-900">{software.name}</h2>
+                    </div>
 
-            <h4 className="pt-2 text-xl font-semibold text-slate-900">
-              What is the best free keylogger?
-            </h4>
-            <p>
-              Most free keylogger software today offer keystroke recording, clipboard
-              monitoring, internet activity and application logs in addition to screenshot
-              capturing, and it is not an easy task to pick the best free keylogger software. It
-              all depends on how easily users can get their work done using the software.
-            </p>
+                    <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-base">{software.summary}</p>
 
-            <p>
-              At Bestxsoftware, we produce applications that help users get their tasks done in
-              best quality, and we regularly test and compare our software to keep up with the
-              latest technology and improve quality. We compared Best Free Keylogger with 9
-              other similar software, and here are the results. Have a look at these 10 free
-              keylogger software that are available in 2026 so that you can pick the one that
-              best suits your requirement.
-            </p>
+                    <p className="mt-4 rounded-lg border border-slate-200 bg-slate-50 p-3 text-sm text-slate-700">
+                      <span className="font-semibold text-slate-900">Best for:</span> {software.bestFor}
+                    </p>
 
-            <p className="rounded-lg border border-emerald-200 bg-emerald-50/60 p-4 font-medium text-emerald-900">
-              Here are the best free keylogger applications you can download in 2026.
-            </p>
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {software.highlights.map((feature) => (
+                        <span
+                          key={feature}
+                          className="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-800 sm:text-sm"
+                        >
+                          {feature}
+                        </span>
+                      ))}
+                    </div>
 
-            <section className="pt-2">
-              <h2 className="text-2xl font-bold text-slate-900">1. Kidlogger</h2>
-              <div className="mt-4 mx-auto w-full max-w-xl overflow-hidden rounded-xl border border-slate-200 bg-slate-50 p-2 shadow-sm">
-                <img
-                  src="/assets/blog/top_10/kidlogger-interface.png"
-                  alt="Kidlogger"
-                  className="mx-auto w-full rounded-lg object-cover"
-                />
+                    <Link
+                      href={software.website}
+                      className="mt-5 inline-flex items-center rounded-lg bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-700"
+                    >
+                      {software.websiteLabel}
+                    </Link>
+                  </div>
 
-              </div>
-
-              <p>KidLogger offers a free version, a “Basic account” in their words, and two other subscription-based plans: “Standard” and “Professional”. The free records keystrokes, captures screenshots at set intervals, and logs application usage so that you can learn what was typed on the computer and what was seen on the screen as well as what applications were used by your child.
-
-                Like most other free keylogger software, KidLogger offers reports as HTML files. It can also produce logs in CSV and JSON formats. However, the specialty of this free keylogger is that it allows you to view the reports via its web portal, which you can set up with your email address. KidLogger uploads the logs to the 9MB disk space you have been allocated on their servers and stores your data for 9 days.</p>
-              <Link href="https://kidlogger.net/" className="text-emerald-600 hover:text-emerald-700 hover:underline">Visit Kidlogger</Link>
-
-              <h2 className="text-2xl font-bold text-slate-900">2. Best Free Keylogger</h2>
-              <img src="/assets/blog/top_10/best-free-keylogger-interface.png" alt="Best Free Keylogger" className="mt-4 mx-auto w-full rounded-xl border border-slate-200 bg-slate-50 p-2 shadow-sm object-cover" />
-
-              <p>Best Free Keylogger is capable of recording keystrokes, clipboard, screenshots, internet activities, and applications; it can also be the parental control software of your choice. It can filter web content based on their text content or category if they fall into an inappropriate category like pornography, drugs, gambling etc. Moreover, it is capable of setting restrictions on applications, and you can allow internet access only during a certain time period. Enabling these filters takes only one click, and even somebody without much experience with monitoring software can use them. Therefore, Best Free Keylogger can be used in households as well as workplaces alike.
-
-                The user interface of Best Free Keylogger is very intuitive and user friendly with many useful settings at hand. For instance, when viewing keystroke records, you have the option “Smart Read”, which enables intelligent filtering out of keystrokes like Backspace, Enter etc. In addition to Smart Read, you can filter records by date, user, application, text etc. or sort logs by date in ascending or descending order. These simple yet powerful tools and how the records are presented in the report viewer in appropriate colors and icons make it easier to read and understand than table views seen in most other free keylogger software.
-
-                Best Free Keylogger with its powerful features behind its simple and attractive interface is a popular choice among parents as well as system administrators, who prefer applications that are easy to use.</p>
-
-              <div className="rounded-xl border border-emerald-200 bg-linear-to-r from-emerald-50 to-teal-50 p-4 sm:p-5">
-                <p className="text-sm font-semibold uppercase tracking-wide text-emerald-800">
-                  Explore Best Free Keylogger
-                </p>
-                <div className="mt-3 flex flex-col gap-3 sm:flex-row">
-                  <Link
-                    href="https://bestxsoftware.com/best-free-keylogger"
-                    className="inline-flex items-center justify-center rounded-lg bg-emerald-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-700"
-                  >
-                    Visit Best Free Keylogger
-                  </Link>
-                  <Link
-                    href="https://bestxsoftware.com/best-free-keylogger/download"
-                    className="inline-flex items-center justify-center rounded-lg border border-emerald-300 bg-white px-4 py-2.5 text-sm font-semibold text-emerald-700 transition-colors hover:border-emerald-400 hover:bg-emerald-100"
-                  >
-                    Download Best Free Keylogger
-                  </Link>
+                  <div className="border-t border-slate-200 bg-slate-50 p-4 md:border-t-0 md:border-l">
+                    <div className="relative h-56 overflow-hidden rounded-xl border border-slate-200 bg-white sm:h-64 md:h-full md:min-h-64">
+                      <Image
+                        src={software.image}
+                        alt={software.imageAlt}
+                        fill
+                        className="object-contain p-2"
+                        sizes="(max-width: 768px) 100vw, 38vw"
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </section>
+            ))}
+          </section>
 
-              <h2 className="text-2xl font-bold text-slate-900">3. Windows Keylogger</h2>
-
-              <img src="/assets/blog/top_10/windows-keylogger-interface.png" alt="Windows Keylogger" className="mt-4 mx-auto w-full rounded-xl border border-slate-200 bg-slate-50 p-2 shadow-sm object-cover" />
-
-              <p>Windows Keylogger, as the name suggests is for computers running on Windows. There’s a free version as well as a paid version of this keylogger software. Windows Keylogger records keystrokes, clipboard, internet activity and application usage with the exception of screenshots, which is a feature available only on the paid version.
-
-                This free keylogger offers you with a sidebar on your right that gives a calendar and the record counts available for each date. This and the addition of relevant application icon before each record make it very easy for users to understand the reports in the report viewer. Report delivery is available only on the paid version of Windows Keylogger. However, if all you need is a free keylogger that records keystrokes to be viewed locally, Windows Keylogger might be the fit for you in this list of best free keyloggers that you can download in 2026.
-
-              </p>
-            </section>
-          </div>
+          <section className="mt-8 rounded-2xl border border-emerald-200 bg-linear-to-r from-emerald-50 to-teal-50 p-5 sm:p-6">
+            <p className="text-sm font-semibold uppercase tracking-wide text-emerald-800">Explore Best Free Keylogger</p>
+            <p className="mt-2 text-sm leading-7 text-emerald-900 sm:text-base">
+              Looking for a balance between report readability and practical control settings? Start with Best Free
+              Keylogger and compare it side-by-side against the tools in this list.
+            </p>
+            <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+              <Link
+                href="https://bestxsoftware.com/best-free-keylogger"
+                className="inline-flex items-center justify-center rounded-lg bg-emerald-700 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-800"
+              >
+                Visit Best Free Keylogger
+              </Link>
+              <Link
+                href="https://bestxsoftware.com/best-free-keylogger/download"
+                className="inline-flex items-center justify-center rounded-lg border border-emerald-300 bg-white px-4 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:border-emerald-400 hover:bg-emerald-100"
+              >
+                Download Best Free Keylogger
+              </Link>
+            </div>
+          </section>
         </article>
       </div>
     </main>
   )
 }
 
-export default Page
+export default Page 
