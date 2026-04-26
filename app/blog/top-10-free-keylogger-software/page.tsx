@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
+import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/Footer';
 
 type SoftwareEntry = {
   rank: number;
@@ -139,126 +141,130 @@ const softwareList: SoftwareEntry[] = [
 
 const Page = () => {
   return (
-    <main className="relative overflow-hidden bg-linear-to-b from-slate-50 via-white to-emerald-50/40 py-10 sm:py-14">
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-[radial-gradient(ellipse_at_top,rgba(16,185,129,0.16),transparent_60%)]" />
+    <>
+      <Navbar />
+      <main className="relative overflow-hidden bg-linear-to-b from-slate-50 via-white to-emerald-50/40 py-10 sm:py-14">
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-[radial-gradient(ellipse_at_top,rgba(16,185,129,0.16),transparent_60%)]" />
 
-      <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
-        <article className="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm backdrop-blur-sm sm:p-10">
-          <header className="border-b border-slate-200 pb-8">
-            <div className="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-wide text-slate-600">
-              <span className="rounded-full bg-emerald-100 px-3 py-1 text-emerald-800">Software Comparison</span>
-              <span className="rounded-full bg-slate-100 px-3 py-1">Updated April 2026</span>
-              <span className="rounded-full bg-blue-100 px-3 py-1 text-blue-800">Windows Monitoring</span>
-            </div>
+        <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+          <article className="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm backdrop-blur-sm sm:p-10">
+            <header className="border-b border-slate-200 pb-8">
+              <div className="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-wide text-slate-600">
+                <span className="rounded-full bg-emerald-100 px-3 py-1 text-emerald-800">Software Comparison</span>
+                <span className="rounded-full bg-slate-100 px-3 py-1">Updated April 2026</span>
+                <span className="rounded-full bg-blue-100 px-3 py-1 text-blue-800">Windows Monitoring</span>
+              </div>
 
-            <h1 className="mt-5 max-w-3xl text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
-              Top 10 Free Keylogger Software in 2026
-            </h1>
+              <h1 className="mt-5 max-w-3xl text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+                Top 10 Free Keylogger Software in 2026
+              </h1>
 
-            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
-              This guide compares ten popular tools based on usability, tracking coverage, and practical value.
-              Instead of long raw descriptions, each entry includes a concise summary, who it is best for, and key
-              highlights to speed up decision-making.
-            </p>
+              <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
+                This guide compares ten popular tools based on usability, tracking coverage, and practical value.
+                Instead of long raw descriptions, each entry includes a concise summary, who it is best for, and key
+                highlights to speed up decision-making.
+              </p>
 
-            <div className="mt-5 flex flex-wrap items-center gap-3 text-sm text-slate-600">
-              <span className="rounded-md bg-slate-100 px-3 py-1">
-                By <strong className="font-semibold text-slate-800">James Miller</strong>
-              </span>
-              <span className="rounded-md bg-slate-100 px-3 py-1">10 tools reviewed</span>
-              <span className="rounded-md bg-slate-100 px-3 py-1">Focus: ease of use + feature depth</span>
-            </div>
-          </header>
+              <div className="mt-5 flex flex-wrap items-center gap-3 text-sm text-slate-600">
+                <span className="rounded-md bg-slate-100 px-3 py-1">
+                  By <strong className="font-semibold text-slate-800">James Miller</strong>
+                </span>
+                <span className="rounded-md bg-slate-100 px-3 py-1">10 tools reviewed</span>
+                <span className="rounded-md bg-slate-100 px-3 py-1">Focus: ease of use + feature depth</span>
+              </div>
+            </header>
 
-          <section className="mt-8 rounded-2xl border border-emerald-200 bg-emerald-50/70 p-5 sm:p-6">
-            <h2 className="text-xl font-semibold text-emerald-900">Quick Take</h2>
-            <p className="mt-3 text-sm leading-7 text-emerald-900 sm:text-base">
-              Most free tools capture keystrokes and app activity, but the biggest difference is report quality,
-              filtering controls, and whether remote viewing is available in the free plan. If you want a cleaner
-              daily workflow, prioritize tools with strong log organization instead of only feature count.
-            </p>
-          </section>
+            <section className="mt-8 rounded-2xl border border-emerald-200 bg-emerald-50/70 p-5 sm:p-6">
+              <h2 className="text-xl font-semibold text-emerald-900">Quick Take</h2>
+              <p className="mt-3 text-sm leading-7 text-emerald-900 sm:text-base">
+                Most free tools capture keystrokes and app activity, but the biggest difference is report quality,
+                filtering controls, and whether remote viewing is available in the free plan. If you want a cleaner
+                daily workflow, prioritize tools with strong log organization instead of only feature count.
+              </p>
+            </section>
 
-          <section className="mt-8 grid gap-6">
-            {softwareList.map((software) => (
-              <section
-                key={software.rank}
-                className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-colors hover:border-emerald-300"
-              >
-                <div className="grid gap-0 md:grid-cols-[1.15fr_0.85fr]">
-                  <div className="p-5 sm:p-6">
-                    <div className="flex flex-wrap items-center gap-3">
-                      <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-slate-900 text-sm font-bold text-white">
-                        {software.rank}
-                      </span>
-                      <h2 className="text-2xl font-bold tracking-tight text-slate-900">{software.name}</h2>
-                    </div>
-
-                    <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-base">{software.summary}</p>
-
-                    <p className="mt-4 rounded-lg border border-slate-200 bg-slate-50 p-3 text-sm text-slate-700">
-                      <span className="font-semibold text-slate-900">Best for:</span> {software.bestFor}
-                    </p>
-
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {software.highlights.map((feature) => (
-                        <span
-                          key={feature}
-                          className="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-800 sm:text-sm"
-                        >
-                          {feature}
+            <section className="mt-8 grid gap-6">
+              {softwareList.map((software) => (
+                <section
+                  key={software.rank}
+                  className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-colors hover:border-emerald-300"
+                >
+                  <div className="grid gap-0 md:grid-cols-[1.15fr_0.85fr]">
+                    <div className="p-5 sm:p-6">
+                      <div className="flex flex-wrap items-center gap-3">
+                        <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-slate-900 text-sm font-bold text-white">
+                          {software.rank}
                         </span>
-                      ))}
+                        <h2 className="text-2xl font-bold tracking-tight text-slate-900">{software.name}</h2>
+                      </div>
+
+                      <p className="mt-4 text-sm leading-7 text-slate-700 sm:text-base">{software.summary}</p>
+
+                      <p className="mt-4 rounded-lg border border-slate-200 bg-slate-50 p-3 text-sm text-slate-700">
+                        <span className="font-semibold text-slate-900">Best for:</span> {software.bestFor}
+                      </p>
+
+                      <div className="mt-4 flex flex-wrap gap-2">
+                        {software.highlights.map((feature) => (
+                          <span
+                            key={feature}
+                            className="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-800 sm:text-sm"
+                          >
+                            {feature}
+                          </span>
+                        ))}
+                      </div>
+
+                      <Link
+                        href={software.website}
+                        className="mt-5 inline-flex items-center rounded-lg bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-700"
+                      >
+                        {software.websiteLabel}
+                      </Link>
                     </div>
 
-                    <Link
-                      href={software.website}
-                      className="mt-5 inline-flex items-center rounded-lg bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-700"
-                    >
-                      {software.websiteLabel}
-                    </Link>
-                  </div>
-
-                  <div className="border-t border-slate-200 bg-slate-50 p-4 md:border-t-0 md:border-l">
-                    <div className="relative h-56 overflow-hidden rounded-xl border border-slate-200 bg-white sm:h-64 md:h-full md:min-h-64">
-                      <Image
-                        src={software.image}
-                        alt={software.imageAlt}
-                        fill
-                        className="object-contain p-2"
-                        sizes="(max-width: 768px) 100vw, 38vw"
-                      />
+                    <div className="border-t border-slate-200 bg-slate-50 p-4 md:border-t-0 md:border-l">
+                      <div className="relative h-56 overflow-hidden rounded-xl border border-slate-200 bg-white sm:h-64 md:h-full md:min-h-64">
+                        <Image
+                          src={software.image}
+                          alt={software.imageAlt}
+                          fill
+                          className="object-contain p-2"
+                          sizes="(max-width: 768px) 100vw, 38vw"
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-              </section>
-            ))}
-          </section>
+                </section>
+              ))}
+            </section>
 
-          <section className="mt-8 rounded-2xl border border-emerald-200 bg-linear-to-r from-emerald-50 to-teal-50 p-5 sm:p-6">
-            <p className="text-sm font-semibold uppercase tracking-wide text-emerald-800">Explore Best Free Keylogger</p>
-            <p className="mt-2 text-sm leading-7 text-emerald-900 sm:text-base">
-              Looking for a balance between report readability and practical control settings? Start with Best Free
-              Keylogger and compare it side-by-side against the tools in this list.
-            </p>
-            <div className="mt-4 flex flex-col gap-3 sm:flex-row">
-              <Link
-                href="https://bestxsoftware.com/best-free-keylogger"
-                className="inline-flex items-center justify-center rounded-lg bg-emerald-700 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-800"
-              >
-                Visit Best Free Keylogger
-              </Link>
-              <Link
-                href="https://bestxsoftware.com/best-free-keylogger/download"
-                className="inline-flex items-center justify-center rounded-lg border border-emerald-300 bg-white px-4 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:border-emerald-400 hover:bg-emerald-100"
-              >
-                Download Best Free Keylogger
-              </Link>
-            </div>
-          </section>
-        </article>
-      </div>
-    </main>
+            <section className="mt-8 rounded-2xl border border-emerald-200 bg-linear-to-r from-emerald-50 to-teal-50 p-5 sm:p-6">
+              <p className="text-sm font-semibold uppercase tracking-wide text-emerald-800">Explore Best Free Keylogger</p>
+              <p className="mt-2 text-sm leading-7 text-emerald-900 sm:text-base">
+                Looking for a balance between report readability and practical control settings? Start with Best Free
+                Keylogger and compare it side-by-side against the tools in this list.
+              </p>
+              <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+                <Link
+                  href="https://bestxsoftware.com/best-free-keylogger"
+                  className="inline-flex items-center justify-center rounded-lg bg-emerald-700 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-800"
+                >
+                  Visit Best Free Keylogger
+                </Link>
+                <Link
+                  href="https://bestxsoftware.com/best-free-keylogger/download"
+                  className="inline-flex items-center justify-center rounded-lg border border-emerald-300 bg-white px-4 py-2.5 text-sm font-semibold text-emerald-800 transition-colors hover:border-emerald-400 hover:bg-emerald-100"
+                >
+                  Download Best Free Keylogger
+                </Link>
+              </div>
+            </section>
+          </article>
+        </div>
+      </main>
+      <Footer />
+    </>
   )
 }
 
