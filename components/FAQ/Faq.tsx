@@ -21,13 +21,13 @@ const FAQPage = () => {
     { title: "I cannot find Best Free Keylogger on my computer", path: "/support/faq/i-cannot-find-best-free-keylogger" }
   ];
 
-  const orderingFAQs = [
-    { title: "How to retrieve a lost license key", path: "/support/faq/how-to-retrieve-a-lost-licence-key" },
-    { title: "How to buy Best Free Keylogger", path: "/support/faq/how-to-buy-best-free-keylogger" },
-    { title: "How to get the license key", path: "/support/faq/how-to-get-the-license-key" },
-    { title: "How to buy for multiple computers", path: "/support/faq/how-to-buy-best-free-keylogger-for-multiple-computers" },
-    { title: "Are there any recurring charges?", path: "/support/faq/are-there-any-recurring-charges-to-use-best-free-keylogger" }
-  ];
+  // const orderingFAQs = [
+  //   { title: "How to retrieve a lost license key", path: "/support/faq/how-to-retrieve-a-lost-licence-key" },
+  //   { title: "How to buy Best Free Keylogger", path: "/support/faq/how-to-buy-best-free-keylogger" },
+  //   { title: "How to get the license key", path: "/support/faq/how-to-get-the-license-key" },
+  //   { title: "How to buy for multiple computers", path: "/support/faq/how-to-buy-best-free-keylogger-for-multiple-computers" },
+  //   { title: "Are there any recurring charges?", path: "/support/faq/are-there-any-recurring-charges-to-use-best-free-keylogger" }
+  // ];
 
   const blogPosts = [
     "How to install Best Free Keylogger",
@@ -40,7 +40,7 @@ const FAQPage = () => {
     "Top 10 free keylogger software"
   ];
 
-  const totalFaqs = productFAQs.length + orderingFAQs.length;
+  // const totalFaqs = productFAQs.length + orderingFAQs.length;
 
   return (
 
@@ -75,7 +75,7 @@ const FAQPage = () => {
             </section>
 
             {/* Ordering FAQ Column */}
-            <section className="mt-2 rounded-md bg-slate-50 p-4 md:mt-0 md:p-5">
+            {/* <section className="mt-2 rounded-md bg-slate-50 p-4 md:mt-0 md:p-5">
               <h2 className="font-bold text-slate-800 tracking-wider mb-4 uppercase text-sm">Ordering FAQ</h2>
               <ul className="space-y-3.5">
                 {orderingFAQs.map((item, idx) => (
@@ -90,7 +90,7 @@ const FAQPage = () => {
                   </li>
                 ))}
               </ul>
-            </section>
+            </section> */}
           </div>
         </div>
 
@@ -111,7 +111,7 @@ const FAQPage = () => {
 
             <div className="mt-6 grid grid-cols-2 gap-3 border-t border-slate-200 pt-5">
               <div className="rounded-lg bg-slate-50 p-3 text-center">
-                <p className="text-xl font-bold text-slate-900">{totalFaqs}</p>
+                {/* <p className="text-xl font-bold text-slate-900">{totalFaqs}</p> */}
                 <p className="text-[11px] uppercase tracking-wide text-slate-500">FAQ Topics</p>
               </div>
               <div className="rounded-lg bg-slate-50 p-3 text-center">

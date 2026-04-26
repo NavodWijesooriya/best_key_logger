@@ -6,9 +6,34 @@ const Page = () => {
       title="What are the compatible Windows versions?"
       question="Which Windows versions are supported?"
       answer={[
-        'The product supports modern Windows versions commonly used on home and business PCs.',
-        'For best compatibility, keep your operating system fully updated and verify architecture requirements before install.',
-        'This is placeholder compatibility content and should be replaced with your exact supported-version matrix.'
+        'Best Free Keylogger is compatible with Windows 7, Windows 8, Windows 8.1, and Windows 10.'
+      ]}
+      relatedArticles={[
+        {
+          category: 'Blog',
+          title: 'How to install Best Free Keylogger',
+          href: '/blog',
+        },
+        {
+          category: 'Blog',
+          title: 'Getting Started with Best Free Keylogger',
+          href: '/blog',
+        },
+        {
+          category: 'Blog',
+          title: 'How to activate Pro version',
+          href: '/blog',
+        },
+        {
+          category: 'FAQ',
+          title: 'Can I install BFK on a remote computer?',
+          href: '/support/faq/can-i-install-on-a-remote-computer',
+        },
+        {
+          category: 'FAQ',
+          title: 'Is Best Free Keylogger completely undetectable',
+          href: '/support/faq/is-best-free-keylogger-undetectable',
+        },
       ]}
     />
   );

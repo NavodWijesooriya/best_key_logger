@@ -6,9 +6,14 @@ type FaqAnswerPageProps = {
   title: string;
   question: string;
   answer: string[];
+  relatedArticles?: Array<{
+    category: 'Blog' | 'FAQ' | 'Documentation';
+    title: string;
+    href: string;
+  }>;
 };
 
-const FaqAnswerPage = ({ title, question, answer }: FaqAnswerPageProps) => {
+const FaqAnswerPage = ({ title, question, answer, relatedArticles }: FaqAnswerPageProps) => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800">
       <Navbar />
@@ -36,6 +41,22 @@ const FaqAnswerPage = ({ title, question, answer }: FaqAnswerPageProps) => {
               </p>
             ))}
           </div>
+
+          {relatedArticles && relatedArticles.length > 0 && (
+            <div className="mt-8 border-t border-gray-200 pt-6">
+              <h2 className="mb-4 text-lg font-semibold text-gray-800">Related articles</h2>
+              <ul className="space-y-3">
+                {relatedArticles.map((article) => (
+                  <li key={`${article.category}-${article.title}`}>
+                    <Link href={article.href} className="text-blue-600 hover:underline">
+                      <span className="mr-1 font-medium">{article.category}</span>
+                      <span>{article.title}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </section>
       </main>
 
