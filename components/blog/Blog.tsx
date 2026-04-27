@@ -29,7 +29,7 @@ const posts = [
     image: '/assets/blog/getting-started-guide.png',
     tag: 'Setup',
     summary: 'Configure email reports correctly and verify they arrive on time.',
-    path: '/blog/email-delivery-configuration-guide',
+    path: '/blog/getting-start-guide',
   },
 
   {
