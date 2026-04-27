@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowUpRight, Sparkles } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 const posts = [
   {
@@ -26,10 +26,18 @@ const posts = [
 
   {
     title: 'Email Delivery Configuration Guide',
-    image: '/assets/blog/email-delivery-configuration-guide.png',
+    image: '/assets/blog/getting-started-guide.png',
     tag: 'Setup',
     summary: 'Configure email reports correctly and verify they arrive on time.',
     path: '/blog/email-delivery-configuration-guide',
+  },
+
+  {
+    title: 'How To Load Reports',
+    image: '/assets/blog/how-to-load-reports.png',
+    tag: 'Setup',
+    summary: 'Configure email reports correctly and verify they arrive on time.',
+    path: '/blog/how-to-load-reports',
   },
 
   {
@@ -37,27 +45,22 @@ const posts = [
     image: '/assets/blog/email-delivery-configuration-guide.png',
     tag: 'Setup',
     summary: 'Configure email reports correctly and verify they arrive on time.',
-    path: '/blog/email-delivery-configuration-guide',
+    path: '/blog/how-to-activate-pro-version.png',
   },
 
   {
-    title: 'Email Delivery Configuration Guide',
-    image: '/assets/blog/email-delivery-configuration-guide.png',
+    title: 'How To Install Best Free Keylogger',
+    image: '/assets/blog/how-to-install-best-free-keylogger.png',
     tag: 'Setup',
     summary: 'Configure email reports correctly and verify they arrive on time.',
-    path: '/blog/email-delivery-configuration-guide',
-  },
-
-  {
-    title: 'Email Delivery Configuration Guide',
-    image: '/assets/blog/email-delivery-configuration-guide.png',
-    tag: 'Setup',
-    summary: 'Configure email reports correctly and verify they arrive on time.',
-    path: '/blog/email-delivery-configuration-guide',
+    path: '/blog/how-to-install-best-free-keylogger',
   },
 ];
 
 const BestxsoftwareBlog = () => {
+  const featuredPosts = posts.slice(0, 3);
+  const popularPosts = posts.slice(3);
+
   return (
     <main className="relative min-h-screen overflow-hidden bg-slate-50 text-slate-900">
       <div className="pointer-events-none absolute inset-0 z-0">
@@ -87,9 +90,9 @@ const BestxsoftwareBlog = () => {
             Featured Posts
           </h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {posts.map((post, index) => (
+            {featuredPosts.map((post, index) => (
               <Link
-                key={`${post.title}-${index}`}
+                key={`featured-${post.title}-${index}`}
                 href={post.path}
                 className="group block overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg hover:border-emerald-200 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300"
               >
@@ -103,6 +106,43 @@ const BestxsoftwareBlog = () => {
                     {post.tag}
                   </span>
                 </div>
+
+
+                <div className="space-y-4 p-5">
+                  <h3 className="font-['Trebuchet_MS','Segoe_UI',sans-serif] text-lg font-bold leading-snug text-slate-900">
+                    {post.title}
+                  </h3>
+                  <p className="text-sm leading-6 text-slate-600">{post.summary}</p>
+                  <span className="inline-flex items-center gap-2 rounded-xl bg-emerald-500 px-4 py-2 text-sm font-semibold text-white transition group-hover:bg-emerald-400">
+                    Read Post
+                    <ArrowUpRight size={16} />
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <h2 className="mb-6 mt-12 font-['Trebuchet_MS','Segoe_UI',sans-serif] text-2xl font-bold text-slate-900 sm:text-3xl">
+            Popular Posts
+          </h2>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {popularPosts.map((post, index) => (
+              <Link
+                key={`popular-${post.title}-${index}`}
+                href={post.path}
+                className="group block overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg hover:border-emerald-200 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300"
+              >
+                <div className="relative overflow-hidden bg-linear-to-br from-slate-100 via-white to-blue-50 p-3">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="h-48 w-full rounded-2xl border border-white bg-white object-contain p-2 transition duration-500"
+                  />
+                  <span className="absolute left-5 top-5 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-bold uppercase tracking-wide text-emerald-700 backdrop-blur">
+                    {post.tag}
+                  </span>
+                </div>
+
                 <div className="space-y-4 p-5">
                   <h3 className="font-['Trebuchet_MS','Segoe_UI',sans-serif] text-lg font-bold leading-snug text-slate-900">
                     {post.title}

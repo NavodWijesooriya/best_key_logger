@@ -216,9 +216,17 @@ const Page = () => {
                 <h2>Invalid SMTP Port</h2>
                 <p>This error could occur when SMTP port is mistyped. It is recommended that you use a preset whenever possible if your mailbox provider is listed on BFK. At the event of this error, please recheck the SMTP port and try again.</p>
 
-                <p>Please don’t hesitate to contact our support team if you need assistance setting up email delivery -- we’re ready to help!</p>
+                <p>Please do not hesitate to contact our support team if you need assistance setting up email delivery -- we are ready to help!</p>
 
-                <link href="https://support.bestfreekeylogger.com/hc/en-us/requests/new">Contact Support</link>
+                <a
+                  href="https://support.bestfreekeylogger.com/hc/en-us/requests/new"
+                  className="inline-flex items-center justify-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Contact Support
+                </a>
+
 
 
               </div>
