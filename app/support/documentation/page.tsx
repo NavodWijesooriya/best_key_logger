@@ -577,16 +577,6 @@ const DocumentationPage = () => {
         ),
       },
 
-      'start/stop-monitoring': {
-        title: 'Start/Stop Monitoring',
-        linkLabel: 'Start/Stop Monitoring',
-        content: (
-          <div className="text-gray-700 leading-relaxed space-y-6">
-            <p>Use the monitoring controls to start or pause activity logging as needed.</p>
-            <p>Only enable monitoring where you have the required permission to collect data.</p>
-          </div>
-        ),
-      },
     }),
     []
   );
