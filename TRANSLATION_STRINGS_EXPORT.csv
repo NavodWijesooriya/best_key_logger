@@ -10,7 +10,6 @@ Hero,components/Hero.tsx,46,Best Free,Heading,9,High,Main heading part 1
 Hero,components/Hero.tsx,47,Keylogger,Heading,9,High,Gradient text
 Hero,components/Hero.tsx,51-54,"A powerful, discreet solution to monitor what your children or employees are doing on their computers in real-time.",Description,166,High,Hero paragraph
 Hero,components/Hero.tsx,59,Free Download,Button,13,High,Primary CTA
-Hero,components/Hero.tsx,61,Windows Vista / 7 / 8 / 10 / 11,Metadata,27,Medium,OS support text
 Hero,components/Hero.tsx,65,Learn about PRO,Button,14,High,Secondary CTA
 Hero,components/Hero.tsx,76,100% Invisible,Feature,12,Medium,Feature title
 Hero,components/Hero.tsx,77,Completely hidden from the task manager and startup list.,Description,54,Medium,Feature description

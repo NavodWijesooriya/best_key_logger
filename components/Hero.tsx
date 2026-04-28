@@ -60,27 +60,23 @@ const ModernHero = () => {
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col items-stretch justify-center gap-4 sm:flex-row sm:items-start sm:justify-center">
 
             {/* Primary CTA */}
-            <div className="flex flex-col items-center">
+            <div className="flex w-full flex-col items-center sm:w-auto">
               <Link
                 href="/download"
-                className="group flex items-center gap-2 rounded-2xl border border-slate-700 bg-slate-900 px-8 py-4 font-semibold text-white shadow-xl shadow-cyan-950/30 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-slate-800"
+                className="group flex h-14 w-full min-w-55 items-center justify-center gap-2 rounded-2xl border border-slate-700 bg-slate-900 px-8 font-semibold text-white shadow-xl shadow-cyan-950/30 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-slate-800 sm:w-55"
               >
                 <Download size={20} className="group-hover:animate-bounce" />
                 {t('common.downloadBtn')}
               </Link>
-
-              <span className="mt-2 text-[10px] uppercase tracking-widest text-slate-400">
-                {t('hero.compatibility')}
-              </span>
             </div>
 
             {/* Secondary CTA */}
             <Link
               href="/features"
-              className="group flex items-center gap-2 rounded-2xl border border-slate-700 bg-slate-900/60 px-8 py-4 font-medium text-slate-200 shadow-md backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-slate-500 hover:bg-slate-800 hover:text-white hover:shadow-lg"
+              className="group flex h-14 w-full min-w-55 items-center justify-center gap-2 rounded-2xl border border-slate-700 bg-slate-900/60 px-8 font-medium text-slate-200 shadow-md backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-slate-500 hover:bg-slate-800 hover:text-white hover:shadow-lg sm:w-55"
             >
               {t('common.learnBtn')}
               <ChevronRight

@@ -37,7 +37,6 @@
 | 47 | Keylogger | Gradient text in heading | Heading |
 | 51-54 | A powerful, discreet solution to monitor what your children or employees are doing on their computers in real-time. | Hero description | Description |
 | 59 | Free Download | Primary CTA button | Button |
-| 61 | Windows Vista / 7 / 8 / 10 / 11 | OS compatibility text | Metadata |
 | 65 | Learn about PRO | Secondary CTA button | Button |
 | 76 | 100% Invisible | Feature pill title | Feature |
 | 77 | Completely hidden from the task manager and startup list. | Feature description | Description |

@@ -88,7 +88,7 @@ const ProductPage = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-3xl shadow-lg border border-slate-200 overflow-hidden hover:shadow-xl transition-shadow">
+        <div className="bg-white rounded-3xl shadow-lg border border-slate-200 overflow-visible hover:shadow-xl transition-shadow">
           <table className="w-full border-collapse">
             <thead>
               <tr className="border-b border-slate-200 bg-gradient-to-br from-slate-50 to-white">
@@ -104,7 +104,7 @@ const ProductPage = () => {
                   <div className="text-xs text-slate-500 mt-1">Forever</div>
                 </th>
                 <th className="w-44 p-6 text-center bg-gradient-to-b from-emerald-50 to-white relative">
-                  <div className="absolute -top-2 left-1/2 -translate-x-1/2">
+                  <div className="absolute -top-2 left-1/2 -translate-x-1/2 z-20">
                     <div className="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
                       POPULAR
                     </div>
