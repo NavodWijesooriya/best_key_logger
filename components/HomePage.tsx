@@ -99,8 +99,8 @@ const HomePage = () => {
               key={feature.name}
               onClick={() => setActiveIndex(index)}
               className={`px-6 py-3 rounded-full text-sm font-semibold transition ${index === activeIndex
-                ? 'bg-slate-900 text-white'
-                : 'bg-white text-slate-600 hover:bg-slate-100'
+                ? 'bg-emerald-500 text-white shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:bg-emerald-600'
+                : 'bg-white text-slate-600 hover:bg-emerald-50 hover:text-emerald-700'
                 }`}
             >
               {feature.icon} {feature.name}
@@ -159,7 +159,7 @@ const HomePage = () => {
           <div className="md:col-span-2 lg:col-span-3 flex justify-center mt-4">
             <Link
               href="/features"
-              className="bg-slate-900 text-white py-3 px-6 rounded-full hover:bg-slate-700 transition"
+              className="bg-emerald-500 text-white py-3 px-6 rounded-full hover:bg-emerald-600 shadow-[0_0_20px_rgba(16,185,129,0.3)] transition"
             >
               Learn More
             </Link>
