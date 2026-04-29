@@ -196,6 +196,14 @@ const limit = [
     description:
       'Best Free Keylogger is protected using a login password which can be configured at installation. This password can be changed only by using the interface. Every time the interface is called to unhide using the hotkey or the keyword, the login password is requested, and you cannot proceed without proper authentication.',
   },
+
+  {
+    title: 'Scheduled Monitoring',
+    image: '/assets/best-free-keylogger-features-schedule-monitoring (1).png',
+    alt: 'Scheduled Monitoring',
+    description:
+      'Monitoring activities on Best Free Keylogger can be configured to run only during specific periods or to be inactive during specific time limits. When configured to monitor only during specific hours, Best Free Keylogger will ignore recording keystrokes, clipboard, internet activity, application usage and capturing screenshots during that time period.',
+  },
 ]
 
 

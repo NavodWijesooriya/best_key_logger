@@ -147,19 +147,24 @@ const ProductPage = () => {
 
       {/* 2. Guarantee & Buy Now Section */}
       <div className="flex flex-col md:flex-row items-center justify-between gap-8 w-full max-w-5xl py-8 px-6 bg-gradient-to-r from-gray-50 to-white rounded-2xl border border-gray-100">
-        {/* Money Back Badge - Modern */}
-        <div className="flex items-center gap-6">
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full blur-xl opacity-30"></div>
-            <div className="relative w-20 h-20 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center shadow-lg">
-              <Award size={36} className="text-white" strokeWidth={1.5} />
+        {/* Money Back Badge - Balanced + Responsive */}
+        <div className="flex items-center gap-6 flex-1">
+          <div className="flex items-center gap-4">
+            <div className="relative flex-shrink-0">
+              <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-r from-yellow-400 to-yellow-500 flex items-center justify-center shadow-md">
+                <div className="absolute inset-0 rounded-full blur-xl opacity-40"></div>
+                <Award size={28} className="text-white relative z-10" />
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-lg md:text-xl font-bold text-gray-800">100% Money Back Guarantee</h3>
+              <p className="text-gray-500 text-sm md:text-base mt-1 max-w-md">Not satisfied? Get a full refund within 30 days.</p>
+              <a href="#" className="text-blue-500 text-sm hover:underline mt-2 inline-flex items-center gap-2">Read Refund Policy →</a>
             </div>
           </div>
-          <div>
-            <h3 className="text-xl font-bold text-gray-800">100% Money Back Guarantee</h3>
-            <p className="text-gray-500 text-sm mt-1">Not satisfied? Get a full refund within 30 days</p>
-            <a href="#" className="text-blue-500 text-sm hover:underline mt-1 inline-block">Read Refund Policy →</a>
-          </div>
+
+          <img src="/assets/MoneyBack.png" alt="Money Back Guarantee" className="w-24 md:w-32 ml-auto hidden sm:block" />
         </div>
 
         {/* Button */}
