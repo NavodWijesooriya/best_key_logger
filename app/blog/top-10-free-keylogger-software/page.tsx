@@ -146,9 +146,9 @@ const Page = () => {
       <main className="relative overflow-hidden bg-linear-to-b from-slate-50 via-white to-emerald-50/40 py-10 sm:py-14">
         <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-[radial-gradient(ellipse_at_top,rgba(16,185,129,0.16),transparent_60%)]" />
 
-        <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
-          <article className="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm backdrop-blur-sm sm:p-10">
-            <header className="border-b border-slate-200 pb-8">
+        <article className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="space-y-10">
+            <header className="border-b border-slate-200 pb-7">
               <div className="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-wide text-slate-600">
                 <span className="rounded-full bg-emerald-100 px-3 py-1 text-emerald-800">Software Comparison</span>
                 <span className="rounded-full bg-slate-100 px-3 py-1">Updated April 2026</span>
@@ -174,7 +174,21 @@ const Page = () => {
               </div>
             </header>
 
-            <section className="mt-8 rounded-2xl border border-emerald-200 bg-emerald-50/70 p-5 sm:p-6">
+            <section className="space-y-5 text-base leading-8 text-slate-700 sm:text-lg">
+              <p>
+                This guide compares ten popular tools based on usability, tracking coverage, and practical value.
+                Instead of long raw descriptions, each entry includes a concise summary, who it is best for, and key
+                highlights to speed up decision-making.
+              </p>
+
+              <p>
+                Most free tools capture keystrokes and app activity, but the biggest difference is report quality,
+                filtering controls, and whether remote viewing is available in the free plan. If you want a cleaner
+                daily workflow, prioritize tools with strong log organization instead of only feature count.
+              </p>
+            </section>
+
+            <section className="rounded-2xl border border-emerald-200 bg-emerald-50/70 p-5 sm:p-6">
               <h2 className="text-xl font-semibold text-emerald-900">Quick Take</h2>
               <p className="mt-3 text-sm leading-7 text-emerald-900 sm:text-base">
                 Most free tools capture keystrokes and app activity, but the biggest difference is report quality,
@@ -183,7 +197,7 @@ const Page = () => {
               </p>
             </section>
 
-            <section className="mt-8 grid gap-6">
+            <section className="grid gap-6">
               {softwareList.map((software) => (
                 <section
                   key={software.rank}
@@ -239,7 +253,7 @@ const Page = () => {
               ))}
             </section>
 
-            <section className="mt-8 rounded-2xl border border-emerald-200 bg-linear-to-r from-emerald-50 to-teal-50 p-5 sm:p-6">
+            <section className="rounded-2xl border border-emerald-200 bg-linear-to-r from-emerald-50 to-teal-50 p-5 sm:p-6">
               <p className="text-sm font-semibold uppercase tracking-wide text-emerald-800">Explore Best Free Keylogger</p>
               <p className="mt-2 text-sm leading-7 text-emerald-900 sm:text-base">
                 Looking for a balance between report readability and practical control settings? Start with Best Free
@@ -260,8 +274,8 @@ const Page = () => {
                 </Link>
               </div>
             </section>
-          </article>
-        </div>
+          </div>
+        </article>
       </main>
       <Footer />
     </>

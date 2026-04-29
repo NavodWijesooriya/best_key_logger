@@ -100,77 +100,120 @@ const page = () => {
       <main className="relative overflow-hidden bg-linear-to-b from-slate-50 via-white to-cyan-50/40 py-10 sm:py-14">
         <div className="pointer-events-none absolute inset-x-0 top-0 h-44 bg-[radial-gradient(ellipse_at_top,rgba(6,182,212,0.14),transparent_62%)]" />
 
-        <article className="relative mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-3xl border border-slate-200 bg-white/95 p-6 shadow-sm backdrop-blur-sm sm:p-10">
-            <header className="border-b border-slate-200 pb-7">
-              <div className="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-wide text-slate-600">
-                <span className="rounded-full bg-cyan-100 px-3 py-1 text-cyan-800">Security Guide</span>
-                <span className="rounded-full bg-slate-100 px-3 py-1">False Positive</span>
+        <article className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <header className="border-b border-slate-200 pb-7">
+            <div className="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-wide text-slate-600">
+              <span className="rounded-full bg-cyan-100 px-3 py-1 text-cyan-800">Security Guide</span>
+              <span className="rounded-full bg-slate-100 px-3 py-1">False Positive</span>
+            </div>
+
+            <h1 className="mt-5 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+              How to Add an Antivirus Exception (False Positive)
+            </h1>
+
+            <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-slate-600">
+              <span className="rounded-md bg-slate-100 px-3 py-1">
+                By <strong className="font-semibold text-slate-800">Liam Jones</strong>
+              </span>
+              <span className="rounded-md bg-slate-100 px-3 py-1">2019-10-16</span>
+            </div>
+          </header>
+
+          <section className="mt-7 space-y-5 text-base leading-8 text-slate-700 sm:text-lg">
+            <p>
+              Different antivirus programs have different user interfaces and component names.
+              Therefore, adding exceptions or exclusions can vary from one product to another.
+            </p>
+
+            <p>
+              Use the guides below to open the exclusion settings for some popular antivirus
+              programs.
+            </p>
+          </section>
+
+          <section className="mt-10 rounded-2xl border border-cyan-200 bg-cyan-50/80 p-5 sm:p-7">
+            <h2 className="text-2xl font-bold tracking-tight text-cyan-950 sm:text-3xl">Before You Start</h2>
+
+            <div className="mt-5 grid gap-4 lg:grid-cols-3">
+              <div className="rounded-xl border border-cyan-200 bg-white p-4 shadow-sm sm:p-5">
+                <div className="flex items-center gap-3">
+                  <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-cyan-100 text-lg font-bold text-cyan-700">
+                    1
+                  </span>
+                  <p className="font-semibold text-slate-900">Confirm the file is trusted</p>
+                </div>
+                <p className="mt-3 text-sm leading-7 text-slate-700 sm:text-base">
+                  Review the exact file path and source before creating an exception in your
+                  antivirus settings.
+                </p>
               </div>
 
-              <h1 className="mt-5 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-                How to Add an Antivirus Exception (False Positive)
-              </h1>
-
-              <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-slate-600">
-                <span className="rounded-md bg-slate-100 px-3 py-1">
-                  By <strong className="font-semibold text-slate-800">Liam Jones</strong>
-                </span>
-                <span className="rounded-md bg-slate-100 px-3 py-1">2019-10-16</span>
+              <div className="rounded-xl border border-cyan-200 bg-white p-4 shadow-sm sm:p-5">
+                <div className="flex items-center gap-3">
+                  <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-cyan-100 text-lg font-bold text-cyan-700">
+                    2
+                  </span>
+                  <p className="font-semibold text-slate-900">Open the exclusions panel</p>
+                </div>
+                <p className="mt-3 text-sm leading-7 text-slate-700 sm:text-base">
+                  Most antivirus apps place exclusions in settings, protection, or advanced
+                  options.
+                </p>
               </div>
-            </header>
 
-            <section className="mt-7 space-y-5 text-base leading-8 text-slate-700 sm:text-lg">
-              <p>
-                Different antivirus programs have different user interfaces and component names.
-                Therefore, adding exceptions/exclusions to different antivirus programs can involve
-                different methods with varying steps.
-              </p>
+              <div className="rounded-xl border border-cyan-200 bg-white p-4 shadow-sm sm:p-5">
+                <div className="flex items-center gap-3">
+                  <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-cyan-100 text-lg font-bold text-cyan-700">
+                    3
+                  </span>
+                  <p className="font-semibold text-slate-900">Add the file or folder</p>
+                </div>
+                <p className="mt-3 text-sm leading-7 text-slate-700 sm:text-base">
+                  Add the application file or folder to the exclusion list and save the change.
+                </p>
+              </div>
+            </div>
+          </section>
 
-              <p>
-                Here&apos;s how you can add an exception/exclusion to some popular antivirus software.
-              </p>
-            </section>
+          <section className="mt-10 rounded-2xl border border-slate-200 bg-slate-50/70 p-5 sm:p-7">
+            <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+              Popular Antivirus Software
+            </h2>
 
-            <section className="mt-8 rounded-2xl border border-cyan-200 bg-cyan-50/80 p-5 sm:p-6">
-              <h2 className="text-lg font-semibold text-cyan-900 sm:text-xl">Before You Start</h2>
-              <p className="mt-2 text-sm leading-7 text-cyan-900 sm:text-base">
-                Add exclusions only for files you trust. Review the exact file path and source before
-                creating an exception in your antivirus settings.
-              </p>
-            </section>
+            <p className="mt-4 text-base leading-7 text-slate-700 sm:text-lg">
+              Select your antivirus below and open its official guide for exclusions.
+            </p>
 
-            <section className="mt-8 rounded-2xl border border-slate-200 bg-slate-50/80 p-5 sm:p-6">
-              <h2 className="text-lg font-semibold text-slate-900 sm:text-xl">Popular Antivirus Software</h2>
-              <p className="mt-2 text-sm leading-7 text-slate-700 sm:text-base">
-                Select your antivirus from the list below and follow its exclusion steps in the settings panel.
-              </p>
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              {antivirusList.map((antivirus) => (
+                <Link
+                  key={antivirus.name}
+                  href={antivirus.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`group block rounded-3xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 focus-visible:ring-offset-2 ${antivirus.cardClassName ?? ''}`}
+                >
+                  <div className="flex items-center gap-4">
+                    <span
+                      className={`inline-flex h-12 min-w-12 items-center justify-center rounded-2xl px-2 text-sm font-bold tracking-wide ${antivirus.iconClassName}`}
+                      aria-hidden="true"
+                    >
+                      {antivirus.iconText}
+                    </span>
 
-              <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {antivirusList.map((antivirus) => (
-                  <Link
-                    key={antivirus.name}
-                    href={antivirus.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`block rounded-3xl border border-slate-200 px-4 py-3 shadow-[0_2px_10px_rgba(15,23,42,0.06)] transition hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 focus-visible:ring-offset-2 ${antivirus.cardClassName ?? 'bg-blue-100/70'}`}
-                  >
-                    <div className="flex items-center gap-3">
-                      <span
-                        className={`inline-flex h-10 min-w-10 items-center justify-center rounded-xl px-2 text-xs font-bold tracking-wide ${antivirus.iconClassName}`}
-                        aria-hidden="true"
-                      >
-                        {antivirus.iconText}
-                      </span>
-                      <p className="text-xl font-semibold tracking-tight text-slate-800 sm:text-2xl">
+                    <div className="min-w-0">
+                      <p className="text-lg font-semibold tracking-tight text-slate-900">
                         {antivirus.name}
                       </p>
+                      <p className="mt-1 text-sm text-slate-600 group-hover:text-slate-700">
+                        Open the official exclusion instructions
+                      </p>
                     </div>
-                  </Link>
-                ))}
-              </div>
-            </section>
-          </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </section>
         </article>
       </main>
       <Footer />

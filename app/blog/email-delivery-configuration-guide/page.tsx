@@ -11,8 +11,8 @@ const Page = () => {
       <main className="relative overflow-hidden bg-linear-to-b from-slate-50 via-white to-sky-50/40 py-10 sm:py-14">
         <div className="pointer-events-none absolute inset-x-0 top-0 h-44 bg-[radial-gradient(ellipse_at_top,rgba(14,165,233,0.14),transparent_62%)]" />
 
-        <article className="relative mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-3xl border border-slate-200 bg-white/95 p-6 shadow-sm backdrop-blur-sm sm:p-10">
+        <article className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-3xl border border-slate-200 bg-white/95 p-6 shadow-sm backdrop-blur-sm sm:p-10 lg:p-12">
             <header className="border-b border-slate-200 pb-7">
               <div className="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-wide text-slate-600">
                 <span className="rounded-full bg-sky-100 px-3 py-1 text-sky-800">Report Delivery</span>
@@ -31,210 +31,324 @@ const Page = () => {
               </div>
             </header>
 
-            <section className="mt-7 space-y-5 text-base leading-8 text-slate-700 sm:text-lg">
-              <p>
-                Best Free Keylogger is a powerful keylogging tool that also provides monitoring,
-                web filtering, and parental controls.
-              </p>
-
-              <p>
-                One of its most useful features is the ability to deliver reports (logs) through
-                Email, LAN, FTP, or USB. If setting up email delivery feels overwhelming, this
-                guide simplifies the process so you can configure it quickly and correctly.
-              </p>
-            </section>
-
-            <section className="mt-8 rounded-2xl border border-sky-200 bg-sky-50/80 p-5 sm:p-6">
-              <h2 className="text-lg font-semibold text-sky-900 sm:text-xl">Before You Begin</h2>
-              <p className="mt-2 text-sm leading-7 text-sky-900 sm:text-base">
-                Enable <strong>Email</strong> as the delivery option in the Best Free Keylogger
-                interface. Open the main window using the Unhide HotKey (default:
-                <strong> Ctrl + Alt + Shift + K</strong>) or the Unhide Keyword (default:
-                <strong> unhide</strong> in the Run dialog).
-              </p>
-            </section>
-
-            <section className="mt-8 rounded-2xl border border-slate-200 bg-slate-50/80 p-5 sm:p-6">
-              <h2 className="text-lg font-semibold text-slate-900 sm:text-xl">Configuration Steps</h2>
-              <p className="mt-2 text-sm leading-7 text-slate-700 sm:text-base">
-                Follow these instructions in order to complete email report delivery setup:
-              </p>
-
-              <ol className="mt-4 list-decimal space-y-3 pl-5 text-sm leading-7 text-slate-700 sm:text-base">
-                <li>Enable email sending.</li>
-                <li>Enter SMTP details.</li>
-                <li>Enter email details.</li>
-                <li>Read about common issues and how to solve them.</li>
-              </ol>
-            </section>
-
-            <h2>1. Enable email sending</h2>
-            <p>1.1. Go to Settings by clicking the button on the toolbar.</p>
-            <img src="/assets/blog/email/best-free-keylogger-toolbar-click-settings (1).png" alt="Enable email sending" className="rounded-lg border border-slate-200" />
-
-            <p>1.2. Click Report Delivery on Settings Window.</p>
-            <img src="/assets/blog/email/best-free-keylogger-settings-click-report-delivery.png" alt="Click Report Delivery" className="rounded-lg border border-slate-200" />
-
-            <p>1.3. Go to Email tab, and click Enable Email Sending switch.</p>
-            <img src="/assets/blog/email/best-free-keylogger-settings-report-delivery-email-enable-email-sending.png" alt="Enable Email Sending" className="rounded-lg border border-slate-200" />
-
-            <p>2. Enter SMTP server details</p>
-
-            <p>Email sending on Best Free Keylogger comes pre-packed with a set of Presets for the most common mailbox providers, such as gmail or yahoo. So, you can click “Presets” to enter SMTP details automatically, (or you can manually type in the SMTP server and port later).</p>
-            <img src="/assets/blog/email/best-free-keylogger-settings-report-delivery-email-presets (1).png" alt="Email Presets" className="rounded-lg border border-slate-200" />
-
-            <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
-              <h3 className="text-base font-semibold text-slate-900 sm:text-lg">
-                SMTP host and port reference
-              </h3>
-              <p className="mt-2 text-sm leading-7 text-slate-700 sm:text-base">
-                If you wish to enter SMTP server details manually, you need to know the SMTP host
-                and SMTP port. The following table contains SMTP host and port information of some
-                popular mailbox providers.
-              </p>
-
-              <div className="mt-5 overflow-hidden rounded-xl border border-slate-200">
-                <table className="min-w-full divide-y divide-slate-200 text-left text-sm sm:text-base">
-                  <thead className="bg-slate-50 text-slate-900">
-                    <tr>
-                      <th className="px-4 py-3 font-semibold">Mailbox Provider</th>
-                      <th className="px-4 py-3 font-semibold">SMTP host</th>
-                      <th className="px-4 py-3 font-semibold">Port</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-slate-200 bg-white text-slate-700">
-                    <tr>
-                      <td className="px-4 py-3 font-medium text-slate-900">Gmail</td>
-                      <td className="px-4 py-3">smtp.gmail.com</td>
-                      <td className="px-4 py-3">587</td>
-                    </tr>
-                    <tr>
-                      <td className="px-4 py-3 font-medium text-slate-900">Yahoo Mail</td>
-                      <td className="px-4 py-3">smtp.mail.yahoo.com</td>
-                      <td className="px-4 py-3">587 or 465</td>
-                    </tr>
-                    <tr>
-                      <td className="px-4 py-3 font-medium text-slate-900">Outlook</td>
-                      <td className="px-4 py-3">smtp.office365.com</td>
-                      <td className="px-4 py-3">587</td>
-                    </tr>
-                    <tr>
-                      <td className="px-4 py-3 font-medium text-slate-900">Live (Hotmail)</td>
-                      <td className="px-4 py-3">smtp.live.com</td>
-                      <td className="px-4 py-3">587</td>
-                    </tr>
-                    <tr>
-                      <td className="px-4 py-3 font-medium text-slate-900">AOL</td>
-                      <td className="px-4 py-3">smtp.aol.com</td>
-                      <td className="px-4 py-3">587</td>
-                    </tr>
-                    <tr>
-                      <td className="px-4 py-3 font-medium text-slate-900">iCloud</td>
-                      <td className="px-4 py-3">smtp.mail.me.com</td>
-                      <td className="px-4 py-3">587</td>
-                    </tr>
-                  </tbody>
-                </table>
-
+            <section className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-start">
+              <div className="rounded-2xl border border-slate-200 bg-slate-50/80 p-5 sm:p-6">
+                <h2 className="text-lg font-semibold text-slate-900 sm:text-xl">Before You Begin</h2>
+                <div className="mt-3 space-y-4 text-sm leading-7 text-slate-700 sm:text-base">
+                  <p>
+                    Best Free Keylogger can deliver reports by Email, LAN, FTP, or USB. This page
+                    focuses on email delivery so the setup is easier to follow and verify.
+                  </p>
+                  <p>
+                    Open the main window with the Unhide HotKey (default:
+                    <strong className="font-semibold text-slate-900"> Ctrl + Alt + Shift + K</strong>)
+                    or the Unhide Keyword (default:
+                    <strong className="font-semibold text-slate-900"> unhide</strong> in the Run dialog).
+                  </p>
+                </div>
               </div>
-              <p>Click Test. If everything is working fine, you should receive a test email to your inbox.
 
-                If the test returns successful, you’re good to go.</p>
-            </div>
+              <div className="rounded-2xl border border-sky-200 bg-sky-50/80 p-5 sm:p-6">
+                <h2 className="text-lg font-semibold text-sky-900 sm:text-xl">Configuration at a glance</h2>
+                <ol className="mt-4 space-y-3 text-sm leading-7 text-sky-900 sm:text-base">
+                  <li className="rounded-xl bg-white/80 px-4 py-3 shadow-sm">1. Enable email sending.</li>
+                  <li className="rounded-xl bg-white/80 px-4 py-3 shadow-sm">2. Choose a preset or enter SMTP details manually.</li>
+                  <li className="rounded-xl bg-white/80 px-4 py-3 shadow-sm">3. Test the configuration before leaving the page.</li>
+                </ol>
+              </div>
+            </section>
 
-            <section className="mt-8 rounded-2xl border border-amber-200 bg-amber-50/80 p-5 sm:p-6">
+            <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-5 sm:p-6 lg:p-8">
+              <div className="grid gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center">
+                <div className="order-2 space-y-4 lg:order-1">
+                  <div>
+                    <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+                      1. Enable email sending
+                    </h2>
+                    <p className="mt-3 text-base leading-7 text-slate-700 sm:text-lg">
+                      Start in Settings, open Report Delivery, then switch Email delivery on.
+                    </p>
+                  </div>
+
+                  <div className="rounded-xl border border-sky-200 bg-sky-50/70 p-4 text-sm leading-7 text-slate-700 sm:text-base">
+                    <p className="font-medium text-slate-900">Steps</p>
+                    <ol className="mt-2 list-decimal space-y-2 pl-5">
+                      <li>Go to Settings from the toolbar.</li>
+                      <li>Click Report Delivery.</li>
+                      <li>Open the Email tab and enable Email Sending.</li>
+                    </ol>
+                  </div>
+                </div>
+
+                <div className="order-1 rounded-xl border border-slate-200 bg-slate-50 p-3 shadow-sm lg:order-2">
+                  <div className="grid gap-3">
+                    <img
+                      src="/assets/blog/email/best-free-keylogger-toolbar-click-settings (1).png"
+                      alt="Go to Settings from the toolbar"
+                      className="w-full rounded-md border border-slate-200 bg-white object-contain p-2"
+                    />
+                    <img
+                      src="/assets/blog/email/best-free-keylogger-settings-click-report-delivery.png"
+                      alt="Open Report Delivery in Settings"
+                      className="w-full rounded-md border border-slate-200 bg-white object-contain p-2"
+                    />
+                    <img
+                      src="/assets/blog/email/best-free-keylogger-settings-report-delivery-email-enable-email-sending.png"
+                      alt="Enable Email Sending in the Email tab"
+                      className="w-full rounded-md border border-slate-200 bg-white object-contain p-2"
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section className="mt-8 rounded-2xl border border-slate-200 bg-slate-50/80 p-5 sm:p-6 lg:p-8">
+              <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)] lg:items-start">
+                <div className="space-y-4">
+                  <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+                    2. Enter SMTP server details
+                  </h2>
+                  <p className="text-base leading-7 text-slate-700 sm:text-lg">
+                    Best Free Keylogger includes presets for common mailbox providers. Use a preset
+                    when available, or enter the SMTP host and port manually.
+                  </p>
+
+                  <div className="rounded-xl border border-emerald-200 bg-white p-4 shadow-sm">
+                    <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">
+                      Recommended approach
+                    </p>
+                    <p className="mt-2 text-sm leading-7 text-slate-700 sm:text-base">
+                      Click <strong className="font-semibold text-slate-900">Presets</strong> first.
+                      If the provider is not listed, copy the SMTP values from the table below.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="rounded-xl border border-slate-200 bg-white p-3 shadow-sm sm:p-4">
+                  <img
+                    src="/assets/blog/email/best-free-keylogger-settings-report-delivery-email-presets (1).png"
+                    alt="Email presets for SMTP setup"
+                    className="w-full rounded-md border border-slate-200 bg-white object-contain p-2"
+                  />
+                </div>
+              </div>
+
+              <div className="mt-6 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+                <div className="border-b border-slate-200 px-4 py-3">
+                  <h3 className="text-base font-semibold text-slate-900 sm:text-lg">
+                    SMTP host and port reference
+                  </h3>
+                </div>
+                <div className="overflow-x-auto">
+                  <table className="min-w-full divide-y divide-slate-200 text-left text-sm sm:text-base">
+                    <thead className="bg-slate-50 text-slate-900">
+                      <tr>
+                        <th className="px-4 py-3 font-semibold">Mailbox Provider</th>
+                        <th className="px-4 py-3 font-semibold">SMTP host</th>
+                        <th className="px-4 py-3 font-semibold">Port</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-slate-200 bg-white text-slate-700">
+                      <tr>
+                        <td className="px-4 py-3 font-medium text-slate-900">Gmail</td>
+                        <td className="px-4 py-3">smtp.gmail.com</td>
+                        <td className="px-4 py-3">587</td>
+                      </tr>
+                      <tr>
+                        <td className="px-4 py-3 font-medium text-slate-900">Yahoo Mail</td>
+                        <td className="px-4 py-3">smtp.mail.yahoo.com</td>
+                        <td className="px-4 py-3">587 or 465</td>
+                      </tr>
+                      <tr>
+                        <td className="px-4 py-3 font-medium text-slate-900">Outlook</td>
+                        <td className="px-4 py-3">smtp.office365.com</td>
+                        <td className="px-4 py-3">587</td>
+                      </tr>
+                      <tr>
+                        <td className="px-4 py-3 font-medium text-slate-900">Live (Hotmail)</td>
+                        <td className="px-4 py-3">smtp.live.com</td>
+                        <td className="px-4 py-3">587</td>
+                      </tr>
+                      <tr>
+                        <td className="px-4 py-3 font-medium text-slate-900">AOL</td>
+                        <td className="px-4 py-3">smtp.aol.com</td>
+                        <td className="px-4 py-3">587</td>
+                      </tr>
+                      <tr>
+                        <td className="px-4 py-3 font-medium text-slate-900">iCloud</td>
+                        <td className="px-4 py-3">smtp.mail.me.com</td>
+                        <td className="px-4 py-3">587</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <p className="mt-5 text-sm leading-7 text-slate-700 sm:text-base">
+                After entering the values, click <strong className="font-semibold text-slate-900">Test</strong>.
+                A successful test should send a message to your inbox.
+              </p>
+            </section>
+
+            <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-5 sm:p-6 lg:p-8">
+              <div className="mx-auto max-w-4xl">
+                <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+                  3. Enter email account details
+                </h2>
+                <p className="mt-4 max-w-5xl text-base leading-7 text-slate-700 sm:text-lg">
+                  Enter your email account details correctly in the input fields. These details are
+                  stored on the software itself, and they are never sent to our servers or
+                  elsewhere. So, your information is safe.
+                </p>
+
+                <div className="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 p-4 shadow-sm sm:p-5">
+                  <div className="rounded-xl border border-slate-300 bg-white p-4 shadow-sm sm:p-5">
+                    <div className="flex items-center gap-2 border-b border-slate-200 pb-3 text-sm text-slate-700">
+                      <span className="inline-flex items-center rounded-sm bg-emerald-500 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">
+                        ON
+                      </span>
+                      <span className="font-medium text-slate-900">Enable Email Sending</span>
+                    </div>
+
+                    <div className="mt-4 grid gap-5 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:items-start">
+                      <div className="space-y-4">
+                        {[
+                          ['Email Address', 'johndoe1.bfk@gmail.com'],
+                          ['SMTP Server', 'smtp.gmail.com'],
+                          ['User Name', 'johndoe1.bfk'],
+                          ['Password', '••••••••••'],
+                          ['Mail Subject', 'BFK Logs'],
+                        ].map(([label, value]) => (
+                          <div key={label} className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-3">
+                            <label className="w-28 text-right text-sm font-medium text-slate-900 sm:text-base">
+                              {label}:
+                            </label>
+                            <div className="flex min-h-8 items-center rounded-none border border-slate-400 bg-white px-2 text-sm text-slate-900 shadow-[inset_0_1px_0_rgba(255,255,255,0.75)] sm:text-base">
+                              {value}
+                            </div>
+                          </div>
+                        ))}
+
+                        <div className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-3">
+                          <label className="w-28 text-right text-sm font-medium text-slate-900 sm:text-base">
+                            Port:
+                          </label>
+                          <div className="flex items-center justify-between gap-3">
+                            <div className="flex h-8 w-20 items-center border border-slate-400 bg-white px-2 text-sm text-slate-900 shadow-[inset_0_1px_0_rgba(255,255,255,0.75)] sm:text-base">
+                              587
+                            </div>
+                            <button className="inline-flex h-8 items-center justify-center rounded-none bg-slate-400 px-8 text-sm font-medium text-white shadow-sm">
+                              Test
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="space-y-3">
+                        <div>
+                          <p className="mb-1 text-sm font-medium text-slate-900">Presets:</p>
+                          <div className="flex h-8 w-full items-center justify-between border border-slate-400 bg-white px-2 text-sm text-slate-900 shadow-[inset_0_1px_0_rgba(255,255,255,0.75)]">
+                            <span>Gmail (Google Mail)</span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                              className="h-4 w-4 text-slate-500"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.25a.75.75 0 0 1-1.06 0L5.21 8.29a.75.75 0 0 1 .02-1.08Z"
+                                clipRule="evenodd"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+
+                        <div className="flex items-center gap-3 pt-10">
+                          <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-sky-400 text-xs font-bold text-white">
+                            i
+                          </span>
+                          <div className="h-8 w-8 rounded-full bg-slate-200" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mx-auto mt-8 max-w-4xl space-y-4 text-base leading-7 text-slate-700 sm:text-lg">
+                  <p>
+                    Click <strong className="font-semibold text-slate-900">Test</strong>. If
+                    everything is working fine, you should receive a test email to your inbox.
+                  </p>
+                  <p>If the test returns successful, you&rsquo;re good to go.</p>
+                </div>
+              </div>
+            </section>
+
+            <section className="mt-8 rounded-2xl border border-amber-200 bg-amber-50/80 p-5 sm:p-6 lg:p-8">
               <h2 className="text-lg font-semibold text-amber-900 sm:text-xl">Common issues</h2>
               <p className="mt-2 text-sm leading-7 text-amber-900 sm:text-base">
-                If you run into any errors while configuring these settings, the following section
-                will be of help.
+                If the test fails, use the troubleshooting cards below to narrow down the cause.
               </p>
 
-              <div className="mt-5 space-y-5 rounded-xl bg-white p-5 text-sm leading-7 text-slate-700 shadow-sm sm:text-base">
-                <div>
-                  <h3 className="text-base font-semibold text-slate-900">Email Server Authentication Error</h3>
-                  <p className="mt-2">
-                    This error could occur due to either of these two reasons:
-                  </p>
-                  <ul className="mt-2 list-disc space-y-1 pl-5">
-                    <li>Wrong username or password</li>
-                    <li>Two-factor Authentication</li>
-                  </ul>
-                  <p className="mt-2">
-                    If you have two-factor authentication switched on, you may have to create an
-                    app password, and enter that as the password on BFK Email configuration instead
-                    of entering your regular email password.
-                  </p>
-                  <p className="mt-2">
-                    Important: In some cases, the error may continue to occur. In such an event,
-                    you will have to enable “Allow less secure apps” (Give temporary access to
-                    third-party apps) on your email account. Here’s how to do so:
+              <div className="mt-6 grid gap-4 lg:grid-cols-3">
+                <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+                  <h3 className="text-base font-semibold text-slate-900">Authentication error</h3>
+                  <p className="mt-2 text-sm leading-7 text-slate-700">
+                    Check the username and password first. If the account uses two-factor
+                    authentication, create and use an app password instead of the regular one.
                   </p>
                 </div>
 
-                <div>
-                  <h3 className="text-base font-semibold text-slate-900">Invalid SMTP Server or Connection Drop</h3>
-                  <p className="mt-2">
-                    Check that the SMTP host is correct and that your network connection is stable.
+                <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+                  <h3 className="text-base font-semibold text-slate-900">SMTP server or connection drop</h3>
+                  <p className="mt-2 text-sm leading-7 text-slate-700">
+                    Verify the SMTP host, confirm the internet connection, and try a preset if the
+                    provider is supported.
                   </p>
                 </div>
 
-                <div>
-                  <h3 className="text-base font-semibold text-slate-900">Invalid SMTP Port</h3>
-                  <p className="mt-2">
-                    Make sure the SMTP port matches the provider requirements listed above.
+                <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+                  <h3 className="text-base font-semibold text-slate-900">Invalid SMTP port</h3>
+                  <p className="mt-2 text-sm leading-7 text-slate-700">
+                    Recheck the port number against the provider requirements in the table above.
                   </p>
-                  <Link
-                    href="https://knowledge.workspace.google.com/admin/apps/control-access-to-less-secure-apps?hl=en&visit_id=639128551802519389-1673994516&rd=1"
-                    className="mt-2 inline-flex rounded-md bg-slate-100 px-3 py-1 text-sm text-slate-700 transition-colors hover:bg-slate-200"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Gmail
-                  </Link>
-
-                  <Link
-                    href="https://mail.google.com/"
-                    className="mt-2 inline-flex rounded-md bg-slate-100 px-3 py-1 text-sm text-slate-700 transition-colors hover:bg-slate-200"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Yahoo Mail
-                  </Link>
-
-                  <Link
-                    href="https://help.yahoo.com/kb/SLN27791.html?guccounter=1&guce_referrer=aHR0cHM6Ly9iZXN0eHNvZnR3YXJlLmNvbS8&guce_referrer_sig=AQAAAGWcovXZuVW2OH1cvIvFKeIaR_XW-XmT_c86n8zKvwEvGjdd46rZKYA7yhp_KAq1PmfBAqaqgjcIrATA4pYk3PFq33bd1eP9DzJjr-y1z3DDLG_TOSb-KVNB0JNePjsqO9KSDrJE9j-lp1fI1VhKWK8Bb7l2QUVjARFz_lvtGEI9"
-                    className="mt-2 inline-flex rounded-md bg-slate-100 px-3 py-1 text-sm text-slate-700 transition-colors hover:bg-slate-200"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    AOL Mail
-                  </Link>
                 </div>
-                <h2>Invalid SMTP Server or Connection Drop</h2>
-                <p>This error could occur when the SMTP Server name is mistyped or the connection is down. It is recommended that you use a preset whenever possible if your mailbox provider is listed on BFK. If this error continues to occur, please check whether the process is being interrupted by an antivirus program or firewall.</p>
+              </div>
 
-                <h2>Invalid SMTP Port</h2>
-                <p>This error could occur when SMTP port is mistyped. It is recommended that you use a preset whenever possible if your mailbox provider is listed on BFK. At the event of this error, please recheck the SMTP port and try again.</p>
-
-                <p>Please do not hesitate to contact our support team if you need assistance setting up email delivery -- we are ready to help!</p>
-
-                <a
+              <div className="mt-6 flex flex-wrap gap-3">
+                <Link
                   href="https://support.bestfreekeylogger.com/hc/en-us/requests/new"
                   className="inline-flex items-center justify-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Contact Support
-                </a>
+                </Link>
 
+                <Link
+                  href="https://knowledge.workspace.google.com/admin/apps/control-access-to-less-secure-apps?hl=en&visit_id=639128551802519389-1673994516&rd=1"
+                  className="inline-flex items-center justify-center rounded-md bg-slate-100 px-4 py-2 text-sm text-slate-700 transition-colors hover:bg-slate-200"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Gmail reference
+                </Link>
 
-
+                <Link
+                  href="https://help.yahoo.com/kb/SLN27791.html?guccounter=1&guce_referrer=aHR0cHM6Ly9iZXN0eHNvZnR3YXJlLmNvbS8&guce_referrer_sig=AQAAAGWcovXZuVW2OH1cvIvFKeIaR_XW-XmT_c86n8zKvwEvGjdd46rZKYA7yhp_KAq1PmfBAqaqgjcIrATA4pYk3PFq33bd1eP9DzJjr-y1z3DDLG_TOSb-KVNB0JNePjsqO9KSDrJE9j-lp1fI1VhKWK8Bb7l2QUVjARFz_lvtGEI9"
+                  className="inline-flex items-center justify-center rounded-md bg-slate-100 px-4 py-2 text-sm text-slate-700 transition-colors hover:bg-slate-200"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Yahoo Mail reference
+                </Link>
               </div>
             </section>
           </div>
 
-        </article >
-      </main >
+        </article>
+      </main>
 
       <Footer />
     </>
